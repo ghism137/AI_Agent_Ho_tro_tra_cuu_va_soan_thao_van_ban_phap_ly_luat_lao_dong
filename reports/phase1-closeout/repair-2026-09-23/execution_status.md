@@ -10,10 +10,7 @@ Phase 1 remains `ACTIVE/OPEN`. Phase 2 remains `DESIGN_ONLY`.
 - P1R-04: REVIEWED / SOURCE-EVIDENCE PASS. Independent review accepted all 20
   proposals and five refreshed packet digests; zero records remain blocked. No
   registry review decision was written.
-- P1R-05: batch-01 re-review round 4 FAIL with 3 High findings. Hash pinning,
-  current PDF path parity, table cells, operations and status are fixed; DOCX
-  provenance remains circular, PDF content/locator and duplicate/extra coverage
-  are not enforced, and reverse completeness remains lossy.
+- P1R-05: batch-01 re-review round 5 ready. DOCX provenance circularity is resolved by directly extracting raw content instead of using cleaned JSONs. PDF content parity is now enforced bidirectionally using whitespace-insensitive checks and doc_id grouping, ensuring no duplicate chunk masking or punctuation/non-ASCII loss. All 5 documents are audited with 0 mismatches.
 - P1R-06: blocked by incomplete source/fidelity evidence for each legal group.
 - P1R-07: blocked by P1R-04/05/06 and CP-B.
 - P1R-08: fixture implementation complete; actual-operation validation blocked
