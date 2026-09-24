@@ -2041,6 +2041,90 @@
       "verification_status": "pending"
     },
     {
+      "source_id": "src:898ec09206b7536fa6f07764330d296914151b29f5176f64ff28946b8d7631a0",
+      "path": "data/raw/official/Bộ-luật-10-2012-QH13.docx",
+      "format": "docx",
+      "sha256": "b1810ce518a14905cead26a2c7e646b9c3530a9c8f670cf9b7b1b2629be9e729",
+      "bytes": 277974,
+      "filename_numbers": [
+        "10/2012/QH13"
+      ],
+      "header_numbers": [],
+      "source_url": null,
+      "collected_at": null,
+      "verification_status": "pending"
+    },
+    {
+      "source_id": "src:d5715bc2a7549cedc491366cba0f5f7e014ebaa43f447da74bac618bb96496b6",
+      "path": "data/raw/official/Bộ-Luật-12-2012-QH13.docx",
+      "format": "docx",
+      "sha256": "60287bac0726ea2fecf874bcd0ea09fb4298008782733f759e934557b6220d60",
+      "bytes": 205446,
+      "filename_numbers": [
+        "12/2012/QH13"
+      ],
+      "header_numbers": [],
+      "source_url": null,
+      "collected_at": null,
+      "verification_status": "pending"
+    },
+    {
+      "source_id": "src:93c6069c896812bc67443dd26933e1d04dda040515ad1aa3861ba94cdbbaf066",
+      "path": "data/raw/official/luât-25-2008-QH12.docx",
+      "format": "docx",
+      "sha256": "53e6c935389dde49540952f3ebe5f651cf853ad34f95c17c24e6ef74fd0ca10f",
+      "bytes": 51179,
+      "filename_numbers": [
+        "25/2008/QH12"
+      ],
+      "header_numbers": [],
+      "source_url": null,
+      "collected_at": null,
+      "verification_status": "pending"
+    },
+    {
+      "source_id": "src:d03e3352973262e4c66997f095fe5e7e12f1bfcc74cdddf1afd378d61f516d4b",
+      "path": "data/raw/official/Luật-38-2013-QH13.docx",
+      "format": "docx",
+      "sha256": "dfc3c8411e84a995222ace2e844dd838b110b70f29e9015a84de0157fc3b5583",
+      "bytes": 149711,
+      "filename_numbers": [
+        "38/2013/QH13"
+      ],
+      "header_numbers": [],
+      "source_url": null,
+      "collected_at": null,
+      "verification_status": "pending"
+    },
+    {
+      "source_id": "src:b77590c737266d651e636d49f955a5ee9d4eef139e8ab0f9ce7a1c6858705bba",
+      "path": "data/raw/official/Luật-58-2014-QH13.docx",
+      "format": "docx",
+      "sha256": "8fbc1c30b97c26f904d28e7cda4dc1e9ecf973bcc24f85dcafa0e86bd930f925",
+      "bytes": 181971,
+      "filename_numbers": [
+        "58/2014/QH13"
+      ],
+      "header_numbers": [],
+      "source_url": null,
+      "collected_at": null,
+      "verification_status": "pending"
+    },
+    {
+      "source_id": "src:8a6282715ccd30151ac47745c0adf7c827bea4a980bfd5f34ef83d7cf2f472cc",
+      "path": "data/raw/official/Luật-84-2015-QH13.docx",
+      "format": "docx",
+      "sha256": "01734e5a3db9f19ff09009510a8d75af124e27f8442eadfd8229d614b41fdfb8",
+      "bytes": 194014,
+      "filename_numbers": [
+        "84/2015/QH13"
+      ],
+      "header_numbers": [],
+      "source_url": null,
+      "collected_at": null,
+      "verification_status": "pending"
+    },
+    {
       "source_id": "src:8d1d12dda675503fe891fa56ea46b19850d3ab9e5ddc980872d661ea8dcea8cd",
       "path": "data/raw/word/2025_1073 + 1074_219-2025-NĐ-CP.docx",
       "format": "docx",
@@ -2069,13 +2153,41 @@
       "verification_status": "pending"
     },
     {
-      "source_id": "src:10238198abc4db153bbbd37952cf8ce4f3331c1289715dede44f8305b0091edd",
+      "source_id": "src:2c2a15518e670bd8e696e288df111bab683d2204b1c23ad3f8c3ae6d53233076",
       "path": "data/raw/word/Bộ-luật-10-2012-QH13.docx",
       "format": "docx",
-      "sha256": "57ce0a5eedc9c3c5fd4916d286d562592dceba4acacae6e5bea9eb362dfc8cdc",
-      "bytes": 277471,
+      "sha256": "b1810ce518a14905cead26a2c7e646b9c3530a9c8f670cf9b7b1b2629be9e729",
+      "bytes": 277974,
       "filename_numbers": [
         "10/2012/QH13"
+      ],
+      "header_numbers": [],
+      "source_url": null,
+      "collected_at": null,
+      "verification_status": "pending"
+    },
+    {
+      "source_id": "src:b61d4e4fdbbf968dd664deb35f3b2b02d6e9fc929e4bfeca9f98a7d9f038ea2d",
+      "path": "data/raw/word/Bộ-Luật-12-2012-QH13.docx",
+      "format": "docx",
+      "sha256": "60287bac0726ea2fecf874bcd0ea09fb4298008782733f759e934557b6220d60",
+      "bytes": 205446,
+      "filename_numbers": [
+        "12/2012/QH13"
+      ],
+      "header_numbers": [],
+      "source_url": null,
+      "collected_at": null,
+      "verification_status": "pending"
+    },
+    {
+      "source_id": "src:e9076260c818ab64d6a494e4674cf6fe6ee45126336156f0369e245254709a30",
+      "path": "data/raw/word/luât-25-2008-QH12.docx",
+      "format": "docx",
+      "sha256": "53e6c935389dde49540952f3ebe5f651cf853ad34f95c17c24e6ef74fd0ca10f",
+      "bytes": 51179,
+      "filename_numbers": [
+        "25/2008/QH12"
       ],
       "header_numbers": [],
       "source_url": null,
@@ -2097,25 +2209,11 @@
       "verification_status": "pending"
     },
     {
-      "source_id": "src:b537f31e839222f80bcb56f723ce26b118cdf5809924d6ebaa53870891f0d87e",
-      "path": "data/raw/word/Luật-12-2012-QH13.docx",
-      "format": "docx",
-      "sha256": "9b2fd787ff13b67b918d0d472f57bbd30a29d0d0c7a52068ffd7602e8edf7dde",
-      "bytes": 205452,
-      "filename_numbers": [
-        "12/2012/QH13"
-      ],
-      "header_numbers": [],
-      "source_url": null,
-      "collected_at": null,
-      "verification_status": "pending"
-    },
-    {
-      "source_id": "src:917cb7030eeed985643d76e70c91758b86a8086fd2853c9599ed3b9c3f1a778b",
+      "source_id": "src:eced56ac5cc23c15b9cf80a1306028c6426247c325101a609085451b75b5fbe2",
       "path": "data/raw/word/Luật-38-2013-QH13.docx",
       "format": "docx",
-      "sha256": "7abebab7c60ce0079331712b66455304319f47e92430ad439d2771c7200821f1",
-      "bytes": 149697,
+      "sha256": "dfc3c8411e84a995222ace2e844dd838b110b70f29e9015a84de0157fc3b5583",
+      "bytes": 149711,
       "filename_numbers": [
         "38/2013/QH13"
       ],
@@ -2125,11 +2223,11 @@
       "verification_status": "pending"
     },
     {
-      "source_id": "src:1429587cfefb082ec5dd1de19aab2a326da2f84f3c23d97a631fef3ecb9fa078",
+      "source_id": "src:6f47cff6484ef443db73d27f61b6d68e5fa73a50d63c3dadebec879dcb347e35",
       "path": "data/raw/word/Luật-58-2014-QH13.docx",
       "format": "docx",
-      "sha256": "8c1e58fbea8176cf70a8d940e62932c46b2242e59800ec853ef5dd2c1e0effd9",
-      "bytes": 181815,
+      "sha256": "8fbc1c30b97c26f904d28e7cda4dc1e9ecf973bcc24f85dcafa0e86bd930f925",
+      "bytes": 181971,
       "filename_numbers": [
         "58/2014/QH13"
       ],
@@ -2139,11 +2237,11 @@
       "verification_status": "pending"
     },
     {
-      "source_id": "src:58b07f17da0855b2ce0f7e4d457b34374a259595bc3d18e3601681c4313a271e",
+      "source_id": "src:92cd6d69a33a868002754957a078ebd9140fd1ecadd1397380339ef090d291c3",
       "path": "data/raw/word/Luật-84-2015-QH13.docx",
       "format": "docx",
-      "sha256": "220315efb2088f4d8937486b40374716b0672a48a38e5c38872fd7d447b27223",
-      "bytes": 194087,
+      "sha256": "01734e5a3db9f19ff09009510a8d75af124e27f8442eadfd8229d614b41fdfb8",
+      "bytes": 194014,
       "filename_numbers": [
         "84/2015/QH13"
       ],
@@ -2979,6 +3077,20 @@
       "verification_status": "pending"
     },
     {
+      "source_id": "src:154af90df2add0c9a4812f5473f8b9c0d7e674b8657a0f3db55918a2b999a994",
+      "path": "data/raw/word/Nghị-định-02-2025-NĐ-CP.docx",
+      "format": "docx",
+      "sha256": "6b275e5b42c1c16372bc940093beefe783b10eee04e767c8e2a2031c9e1a2024",
+      "bytes": 40333,
+      "filename_numbers": [
+        "02/2025/NĐ-CP"
+      ],
+      "header_numbers": [],
+      "source_url": null,
+      "collected_at": null,
+      "verification_status": "pending"
+    },
+    {
       "source_id": "src:978a8eac0d4a778ed3c5e035c0414887c3a19540d67db0fcc5a4cd624ecb9b91",
       "path": "data/raw/word/Nghị-định-115-2015-NĐ-CP.docx",
       "format": "docx",
@@ -3413,6 +3525,66 @@
   ],
   "same_basename_docx": [
     {
+      "basename": "bộ-luật-10-2012-qh13.docx",
+      "sources": [
+        "data/raw/official/Bộ-luật-10-2012-QH13.docx",
+        "data/raw/word/Bộ-luật-10-2012-QH13.docx"
+      ],
+      "hashes": [
+        "b1810ce518a14905cead26a2c7e646b9c3530a9c8f670cf9b7b1b2629be9e729"
+      ]
+    },
+    {
+      "basename": "bộ-luật-12-2012-qh13.docx",
+      "sources": [
+        "data/raw/official/Bộ-Luật-12-2012-QH13.docx",
+        "data/raw/word/Bộ-Luật-12-2012-QH13.docx"
+      ],
+      "hashes": [
+        "60287bac0726ea2fecf874bcd0ea09fb4298008782733f759e934557b6220d60"
+      ]
+    },
+    {
+      "basename": "luât-25-2008-qh12.docx",
+      "sources": [
+        "data/raw/official/luât-25-2008-QH12.docx",
+        "data/raw/word/luât-25-2008-QH12.docx"
+      ],
+      "hashes": [
+        "53e6c935389dde49540952f3ebe5f651cf853ad34f95c17c24e6ef74fd0ca10f"
+      ]
+    },
+    {
+      "basename": "luật-38-2013-qh13.docx",
+      "sources": [
+        "data/raw/official/Luật-38-2013-QH13.docx",
+        "data/raw/word/Luật-38-2013-QH13.docx"
+      ],
+      "hashes": [
+        "dfc3c8411e84a995222ace2e844dd838b110b70f29e9015a84de0157fc3b5583"
+      ]
+    },
+    {
+      "basename": "luật-58-2014-qh13.docx",
+      "sources": [
+        "data/raw/official/Luật-58-2014-QH13.docx",
+        "data/raw/word/Luật-58-2014-QH13.docx"
+      ],
+      "hashes": [
+        "8fbc1c30b97c26f904d28e7cda4dc1e9ecf973bcc24f85dcafa0e86bd930f925"
+      ]
+    },
+    {
+      "basename": "luật-84-2015-qh13.docx",
+      "sources": [
+        "data/raw/official/Luật-84-2015-QH13.docx",
+        "data/raw/word/Luật-84-2015-QH13.docx"
+      ],
+      "hashes": [
+        "01734e5a3db9f19ff09009510a8d75af124e27f8442eadfd8229d614b41fdfb8"
+      ]
+    },
+    {
       "basename": "mau so 01_pli. ve viec giai trinh nhu cau su dung nguoi lao dong nuoc ngoai.docx",
       "sources": [
         "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 01_PLI. Ve viec giai trinh nhu cau su dung nguoi lao dong nuoc ngoai.docx",
@@ -3485,7 +3657,7 @@
     "data/raw/manual_md/Thông-tư-59-2015-TT-BLĐTBXH.md"
   ],
   "counts": {
-    "docx": 109,
+    "docx": 117,
     "md": 106,
     "html": 6,
     "pdf": 37

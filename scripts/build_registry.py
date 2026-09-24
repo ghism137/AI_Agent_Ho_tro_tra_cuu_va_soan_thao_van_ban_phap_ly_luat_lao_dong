@@ -8,7 +8,12 @@ from collections import defaultdict
 from pathlib import Path
 
 from backend.ingestion.schema import ParsedDocument, Source
-from scripts.review_decisions import apply_document_decisions, apply_source_decisions
+from scripts.review_decisions import (
+    apply_coverage_decisions,
+    apply_document_decisions,
+    apply_source_decisions,
+    load_review_bindings,
+)
 from scripts.fetch_official_text import PAGES as OFFICIAL_HTML_PAGES
 from scripts.fetch_congbao_corpus import URLS as CONGBAO_URLS
 
@@ -25,6 +30,31 @@ REQUIRED = {
     "unemployment": ["38/2013/QH13", "74/2025/QH15", "374/2025/NĐ-CP"],
     "minimum_wage": ["74/2024/NĐ-CP", "293/2025/NĐ-CP"],
 }
+
+OFFICIAL_WORD_URLS = {
+    "data/raw/official/Bộ-luật-10-2012-QH13.docx": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=27615",
+    "data/raw/official/Bộ-Luật-12-2012-QH13.docx": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=27625",
+    "data/raw/official/luât-25-2008-QH12.docx": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=12326",
+    "data/raw/official/Luật-38-2013-QH13.docx": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=32912",
+    "data/raw/official/Luật-58-2014-QH13.docx": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=46744",
+    "data/raw/official/Luật-84-2015-QH13.docx": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=70811",
+}
+
+
+def apply_registry_reviews(
+    sources: list[dict], documents: list[dict], coverage: list[dict],
+    *, reviews_dir: Path, bindings_path: Path,
+) -> tuple[list[dict], list[dict], list[dict]]:
+    bindings = load_review_bindings(bindings_path)
+    kwargs = {
+        "dependency_fingerprints": bindings.dependency_fingerprints,
+        "evidence_content_fingerprints": bindings.source_full_content_sha256,
+        "evidence_locator_fingerprints": bindings.locator_sha256,
+    }
+    sources = apply_source_decisions(sources, reviews_dir, **kwargs)
+    documents = apply_document_decisions(documents, sources, reviews_dir, **kwargs)
+    coverage = apply_coverage_decisions(coverage, sources, reviews_dir, **kwargs)
+    return sources, documents, coverage
 
 
 def canonical(value: str) -> str | None:
@@ -59,6 +89,7 @@ def source_document(entry: dict) -> str | None:
 def main() -> None:
     inventory = json.loads(INVENTORY.read_text(encoding="utf-8"))
     official_urls = {}
+    official_urls.update(OFFICIAL_WORD_URLS)
     for number, url in OFFICIAL_HTML_PAGES.items():
         official_urls[f"data/raw/official/{number}.html"] = url
     official_urls["data/raw/official/374-2025-ND-CP-congbao.pdf"] = "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/27/cong-bao-so-48-ngay-23-01-46946signed-17694874955991619007433.pdf"
@@ -90,7 +121,7 @@ def main() -> None:
     official_urls["data/raw/official/30-2023-QH15-congbao.pdf"] = "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/11/40866/47858-1-202443-4430-2023-qh15.pdf"
     for name, url in CONGBAO_URLS.items():
         official_urls[f"data/raw/official/{name}"] = url
-    for name in ("download_manifest.json", "text_download_manifest.json"):
+    for name in ("download_manifest.json", "text_download_manifest.json", "p1r04_word_manifest.json"):
         manifest_path = ROOT / "data/raw/official" / name
         if manifest_path.exists():
             for item in json.loads(manifest_path.read_text(encoding="utf-8")):
@@ -114,7 +145,8 @@ def main() -> None:
             "source_id": entry["source_id"], "path": entry["path"], "sha256": entry["sha256"],
             "format": entry["format"], "source_url": official_urls.get(entry["path"]), "collected_at": None,
             "verification_status": "pending", "extraction_method": "docx_xml" if entry["format"] == "docx" else "html_dom" if entry["format"] == "html" else "utf8_text" if entry["format"] == "md" else None,
-            "source_role": "alternate" if disposition and disposition["sha256"] == entry["sha256"] and disposition["disposition"] == "duplicate_derivative_excluded" else
+            "source_role": "body" if entry["path"] in OFFICIAL_WORD_URLS else
+                           "alternate" if disposition and disposition["sha256"] == entry["sha256"] and disposition["disposition"] == "duplicate_derivative_excluded" else
                            "continuation" if entry["path"].endswith("2025_979 + 980_188-2025-NĐ-CP.docx") else
                            "body_and_forms" if entry["path"].endswith("2025_1073 + 1074_219-2025-NĐ-CP.docx") else None,
         }).model_dump(mode="json"))
@@ -131,12 +163,11 @@ def main() -> None:
             coverage.append({"topic": topic, "doc_number": number, "target_as_of": "2026-09-17",
                              "population": "general", "source_present": number in mapping,
                              "verification_status": "pending", "gap": None if number in mapping else "source_missing"})
-    sources = apply_source_decisions(sources, OUT / "reviews")
-    documents = apply_document_decisions(documents, sources, OUT / "reviews")
-    verified_docs = {doc["doc_number"] for doc in documents if doc.get("verification_status") == "verified"}
-    for item in coverage:
-        if item["doc_number"] in verified_docs:
-            item["verification_status"] = "verified"
+    sources, documents, coverage = apply_registry_reviews(
+        sources, documents, coverage,
+        reviews_dir=OUT / "reviews",
+        bindings_path=OUT / "review_bindings.json",
+    )
     OUT.mkdir(parents=True, exist_ok=True)
     for name, data in (("sources", sources), ("documents", documents), ("coverage", coverage), ("quarantine", quarantine)):
         (OUT / f"{name}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

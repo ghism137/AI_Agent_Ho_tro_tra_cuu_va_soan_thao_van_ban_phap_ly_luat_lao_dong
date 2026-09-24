@@ -1,0 +1,35 @@
+{
+  "task_id": "P1R-04",
+  "status": "BUILDER_DONE_AWAITING_SOURCE_REVIEW",
+  "pending_ids_sha256": "51a5a3dec552883158782d2bb07759679e380d45221f787153344d041967ee7b",
+  "input_hashes": {
+    "data/registry/documents.json": "a8681234e9f68e6b579b84668ba2f9f0d55a515a295e1123f0771654ffde36f8",
+    "data/registry/sources.json": "1419dc6f7154a0a2ced57e62b7b2eb1f233c4ffcf1993051142dd479bb2a56b7",
+    "data/registry/source_selection.json": "e5f32dbbff40ba771c61483150fa57e9e966b6b12d1d9c89c9919e3ec4ef66d5",
+    "data/registry/reviews/archive/ARCHIVE_MANIFEST.json": "5550b1ae605ae70bf81c4e51e7c24ef0fda6c5be43b1fd7b409719739b5c09dd",
+    "reports/phase1-review-2026-09-23/evidence.json": "db61a46483402324c90036ae988f366ac7430ad8d0c50fb5757c976dfbe676cc"
+  },
+  "batch_files": [
+    "batch-01.json",
+    "batch-02.json",
+    "batch-03.json",
+    "batch-04.json"
+  ],
+  "dispositions": {
+    "proposed_awaiting_independent_review": 20,
+    "pending_missing_selected_official_source": 0
+  },
+  "active_review_reconciliation": {
+    "status_counts_after_neutral_replay": {
+      "verified": 41,
+      "pending": 20
+    },
+    "diagnostics": [],
+    "active_review_files": 41
+  },
+  "hash_convention": {
+    "full_content_sha256": "canonical_hash of ordered normalized locator/text blocks for the complete selected source",
+    "locator_sha256": "canonical_hash of newline-joined exact normalized text at the recorded locator(s)"
+  },
+  "registry_decisions_written": 0
+}

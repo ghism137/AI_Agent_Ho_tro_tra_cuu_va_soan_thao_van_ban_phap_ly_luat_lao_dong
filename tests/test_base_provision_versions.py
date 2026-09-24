@@ -1,6 +1,13 @@
 from backend.ingestion.chunker_v2 import chunk_articles
 from backend.ingestion.parser import parse_legal_document
-from backend.ingestion.version_builder import base_versions
+import copy
+import hashlib
+
+import pytest
+from pydantic import ValidationError
+
+from backend.ingestion.version_builder import base_versions, materialize_versions
+from backend.ingestion.schema import Operation
 
 
 def test_base_version_keeps_full_parent_and_pending_validity():
@@ -37,50 +44,152 @@ def test_base_version_keeps_full_parent_and_pending_validity():
     assert "doc:example:body/article:1/item:2" in provision_ids
 
 
-def test_materialization_handles_overlapping_validity_and_future_dates():
-    from backend.ingestion.version_builder import materialize_versions
-    # Mock base versions - must include doc_id for matching
-    # No source_hash/target_hash keys = provenance guard not triggered (absent != "unknown")
-    input_versions = [
-        {
-            "doc_id": "doc:1",
-            "provision_id": "doc:1:body/article:1",
-            "provision_version_id": "doc:1:body/article:1@abc123",
-            "structural_path": ["body", "article:1"],
-            "valid_from": "2015-01-01",
-            "valid_to": None,
-            "content": "Original",
-            "applied_relation_ids": [],
-        }
+def _hash(text):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _version(doc, path, content, *, valid_from="2015-01-01", source="src:test"):
+    provision = f"{doc}:{'/'.join(path)}"
+    return {
+        "doc_id": doc, "provision_id": provision,
+        "provision_version_id": f"{provision}@{_hash(content)[:16]}",
+        "structural_path": path, "content_kind": "normative", "content": content,
+        "valid_from": valid_from, "valid_to": None, "verification_status": "pending",
+        "source_refs": [{"source_id": source, "locator": "page:1", "source_url": None}],
+        "applied_relation_ids": [],
+    }
+
+
+def _replace_fixture():
+    target = _version("doc:1", ["body", "article:1", "item:1"], "Original", source="src:target")
+    instruction = _version(
+        "doc:2", ["body", "article:1", "item:1"], "Replace item 1 as follows:",
+        valid_from="2024-01-01", source="src:amendment",
+    )
+    payload = _version(
+        "doc:2", ["body", "article:1", "item:1", "amendment_payload", "item:1"],
+        "Amended text", valid_from="2024-01-01", source="src:amendment",
+    )
+    operation = {
+        "operation_id": "op-replace-1", "relation_id": "rel:1",
+        "source_clause": instruction["provision_id"], "source_hash": _hash(instruction["content"]),
+        "target_locator": target["provision_id"], "target_hash": _hash(target["content"]),
+        "verb": "replace", "effective_from": "2025-01-01", "review_status": "verified",
+        "population_predicate": "general",
+        "payload_refs": [payload["provision_id"]], "payload_hash": _hash(payload["content"]),
+    }
+    return [target, instruction, payload], operation
+
+
+def test_materialization_validates_hashes_preserves_inputs_and_payload_provenance():
+    versions, operation = _replace_fixture()
+    sibling = _version("doc:1", ["body", "article:1", "item:2"], "Untouched", source="src:target")
+    versions.append(sibling)
+    before = copy.deepcopy(versions)
+    materialized = materialize_versions(versions, [operation])
+    assert versions == before
+    original = next(row for row in materialized if row["content"] == "Original")
+    amended = next(row for row in materialized if row["content"] == "Amended text"
+                   and row["doc_id"] == "doc:1")
+    assert original["valid_to"] == "2025-01-01"
+    assert amended["valid_from"] == "2025-01-01"
+    assert amended["source_refs"][0]["source_id"] == "src:amendment"
+    assert amended["provision_version_id"] != operation["target_locator"] + "@" + _hash("Amended text")[:16]
+    untouched = next(row for row in materialized if row["content"] == "Untouched")
+    assert untouched["valid_to"] is None
+
+
+@pytest.mark.parametrize("field,value", [
+    ("source_hash", "unknown"), ("target_hash", None), ("target_hash", "0" * 64),
+])
+def test_materialization_rejects_missing_unknown_or_false_hashes(field, value):
+    versions, operation = _replace_fixture()
+    operation[field] = value
+    with pytest.raises(ValueError, match="hash|Stale"):
+        materialize_versions(versions, [operation])
+
+
+def test_materialization_rejects_inline_payload_mismatch_and_stale_ref():
+    versions, operation = _replace_fixture()
+    operation["payload"] = "not the referenced payload"
+    with pytest.raises(ValueError, match="Inline payload differs"):
+        materialize_versions(versions, [operation])
+    operation.pop("payload")
+    operation["payload_refs"] = ["doc:2:body/article:1/item:1/amendment_payload/item:missing"]
+    with pytest.raises(ValueError, match="payload ref"):
+        materialize_versions(versions, [operation])
+
+
+def test_materialization_rejects_unknown_population():
+    versions, operation = _replace_fixture()
+    operation["population_predicate"] = None
+    with pytest.raises(ValueError, match="Unknown population"):
+        materialize_versions(versions, [operation])
+
+
+def test_verified_operation_schema_rejects_placeholder_hashes():
+    _, operation = _replace_fixture()
+    operation["source_hash"] = "unknown"
+    with pytest.raises(ValidationError, match="real SHA-256"):
+        Operation.model_validate(operation)
+
+
+def test_materialization_rejects_broad_replace_and_allows_add_with_parent():
+    versions, operation = _replace_fixture()
+    operation["target_locator"] = "doc:1:body"
+    with pytest.raises(ValueError, match="Broad content target"):
+        materialize_versions(versions, [operation])
+
+    parent = _version("doc:1", ["body", "article:2"], "Article 2", source="src:target")
+    instruction = versions[1]
+    payload = versions[2]
+    add = {
+        **operation,
+        "operation_id": "op-add-1", "verb": "add",
+        "target_locator": "doc:1:body/article:2/item:1", "target_hash": _hash(""),
+        "source_hash": _hash(instruction["content"]),
+    }
+    result = materialize_versions([parent, instruction, payload], [add])
+    added = next(row for row in result if row["provision_id"] == add["target_locator"])
+    assert added["content"] == "Amended text"
+
+
+def test_scoped_amendment_requires_unique_precondition():
+    versions, operation = _replace_fixture()
+    operation.update({
+        "verb": "scoped_amendment", "match_text": "Original",
+        "payload_hash": _hash("Amended text"),
+    })
+    result = materialize_versions(versions, [operation])
+    assert any(row["doc_id"] == "doc:1" and row["content"] == "Amended text" for row in result)
+    operation["match_text"] = "missing"
+    with pytest.raises(ValueError, match="precondition failed"):
+        materialize_versions(versions, [operation])
+
+
+def test_repeated_edits_keep_distinct_timeline_instances_when_content_reappears():
+    versions, first = _replace_fixture()
+    instruction = _version(
+        "doc:2", ["body", "article:1", "item:2"], "Replace again:",
+        valid_from="2024-01-01", source="src:amendment",
+    )
+    payload = _version(
+        "doc:2", ["body", "article:1", "item:2", "amendment_payload", "item:1"],
+        "Original", valid_from="2024-01-01", source="src:amendment",
+    )
+    second = {
+        **first, "operation_id": "op-replace-2", "relation_id": "rel:2",
+        "source_clause": instruction["provision_id"], "source_hash": _hash(instruction["content"]),
+        "target_hash": _hash("Amended text"), "effective_from": "2026-01-01",
+        "payload_refs": [payload["provision_id"]], "payload_hash": _hash(payload["content"]),
+        "transition_rule": "new applications only",
+    }
+    result = materialize_versions(versions + [instruction, payload], [second, first])
+    target = [row for row in result if row["doc_id"] == "doc:1"]
+    assert [(row["content"], row["valid_from"], row["valid_to"]) for row in target] == [
+        ("Original", "2015-01-01", "2025-01-01"),
+        ("Amended text", "2025-01-01", "2026-01-01"),
+        ("Original", "2026-01-01", None),
     ]
-    # Operations without source_hash field = no provenance guard triggered
-    operations = [
-        {
-            "operation_id": "op-replace-1",
-            "target_locator": "doc:1:body/article:1",
-            "verb": "replace",
-            "effective_from": "2025-01-01",
-            "review_status": "verified",
-            "payload": "Amended text",
-        },
-        {
-            "operation_id": "op-repeal-1",
-            "target_locator": "doc:1:body/article:1",
-            "verb": "repeal",
-            "effective_from": "2025-08-15",
-            "review_status": "verified",
-        },
-    ]
-    materialized = materialize_versions(input_versions, operations)
-
-    # Original version must have valid_to set to the replace date
-    originals = [v for v in materialized if v.get("content") == "Original"]
-    assert len(originals) >= 1
-    assert originals[0]["valid_to"] == "2025-01-01"
-
-    # Amended version must exist
-    amended = [v for v in materialized if v.get("content") == "Amended text"]
-    assert len(amended) >= 1
-
-    # Result must have more than just the original (at least original + amended)
-    assert len(materialized) >= 2
+    assert len({row["provision_version_id"] for row in target}) == 3
+    assert target[-1]["transition_rule"] == "new applications only"

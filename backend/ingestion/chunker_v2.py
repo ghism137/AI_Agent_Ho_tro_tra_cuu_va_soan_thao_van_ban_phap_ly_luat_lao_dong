@@ -168,8 +168,19 @@ def chunk_versions(
             
             source_refs = [SourceRef(**ref) for ref in source_refs_dicts]
             if not source_refs and locators:
-                source_id = orig_art["structural_path"][1] if (orig_art and len(orig_art["structural_path"]) > 1) else "unknown"
-                source_refs = [SourceRef(source_id=source_id, source_url=None, locator=loc) for loc in locators]
+                # Data-contract violation: every version reaching chunk_versions must
+                # carry source_refs that cover its locators. Materialised versions
+                # inherit source_refs from their base version (version_builder.py,
+                # `new_v = dict(v)`). Base versions must have source_refs populated
+                # by chunk_articles (which always assigns a real source_id from the
+                # registry). Reaching this branch means a version arrived here without
+                # provenance — fabricating a source_id from structural_path (e.g.
+                # "article:1") is never acceptable; fail loudly instead.
+                raise ValueError(
+                    f"Data-contract violation: version {version_id} has locators "
+                    f"{locators!r} but no matching source_refs. "
+                    "All versions must carry valid source_refs before chunk_versions."
+                )
             if len(content) > max_chars:
                 raise ValueError(f"Chunk exceeds character safety budget: {prov_id} part {index}")
             digest = hashlib.sha256(content.encode("utf-8")).hexdigest()
@@ -187,6 +198,8 @@ def chunk_versions(
                 "valid_to": v.get("valid_to"),
                 "proposed_valid_from": v.get("proposed_valid_from"),
                 "proposed_valid_to": v.get("proposed_valid_to"),
+                "population_predicate": v.get("population_predicate"),
+                "transition_rule": v.get("transition_rule"),
                 "verification_status": v.get("verification_status", "pending"), "content": content, "content_hash": digest,
                 "content_length": len(content), "token_count": None, "is_fragment": fragment,
                 "topic_tags": meta.get("topic_tags", []), "source_refs": source_refs,

@@ -1,10 +1,10 @@
 # AI Agent Luật Lao Động — Bootstrap
 
-Cập nhật 2026-09-18 theo yêu cầu tạm dừng Phase 1 và chỉ thiết kế Phase 2.
+Cập nhật 2026-09-23: review và lập kế hoạch hoàn tất Phase 1; Phase 2 chỉ thiết kế.
 
 ## Trạng thái hiện hành
 
-- **Phase 1: PAUSED, closeout chưa nghiệm thu.** Active release tồn tại không chứng minh Gate 1 đã được chấp nhận. Không tiếp tục sửa, publish hoặc thay verified flags khi chưa được giao mở lại.
+- **Phase 1: ACTIVE/OPEN, closeout chưa nghiệm thu.** Đã review repair ngày 23/09; dùng [completion plan](project/phase1_completion_plan_2026-09-23.md). Builder Sol/Terra chỉ thực thi task được giao; active release không chứng minh acceptance.
 - **Phase 2: DESIGN_ONLY.** Đã lập thiết kế v2 và task cards; chưa cài đặt, code, tạo fixtures, embed, index hoặc eval. Không tự bắt đầu task vì có kế hoạch.
 - Phase 3–7: giữ roadmap hiện có, không mở thiết kế/thực thi trong yêu cầu này.
 
@@ -13,7 +13,7 @@ Cập nhật 2026-09-18 theo yêu cầu tạm dừng Phase 1 và chỉ thiết k
 1. [Trạng thái hiện hành](project/session_state.md), chỉ phần đầu; các mục lịch sử không cấp quyền chạy tiếp.
 2. [Project Guide](project/project_guide.md): routing model, giới hạn scope, prompt/handoff và kiểm tra đúng mức.
 3. [Phase 2 design](project/phase2_design.md) + duy nhất task card được giao; không nạp mọi plan/agent prompt.
-4. Chỉ khi quay lại Phase 1: [handoff paused](project/phase1_handoff_paused_2026-09-18.md) và issue list được dẫn trong đó.
+4. Phase 1: [completion plan 23/09](project/phase1_completion_plan_2026-09-23.md), findings và duy nhất task được giao. Handoff paused 18/09 là lịch sử, không còn là trạng thái hiện hành.
 
 ## Nguyên tắc
 

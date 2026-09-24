@@ -1,0 +1,268 @@
+{
+  "task_id": "P1R-04",
+  "batch": 4,
+  "status": "BUILDER_PROPOSALS_COMPLETE_AWAITING_REVIEW",
+  "document_count": 5,
+  "documents": [
+    {
+      "doc_id": "doc:73/2025/QH15",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:26282fec0c5ce13d2543ba23cc24e69d12ff3716c46195403241ec838d87fb9b",
+        "path": "data/raw/official/73-2025-QH15-congbao.pdf",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2025/7/45558/57693-1-967-968.pdf",
+        "source_sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+        "full_content_sha256": "ed9731e19879608f8cc56a959639d8f8298829658dd2f66d48c86a00b435ffab"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "022ef8f9dfcc5ccb7488e90295ca3d8210750b1f176d56bd4219acd4430c038f",
+      "proposed_values": {
+        "title": "Luật Nhà giáo",
+        "issued_date": "2025-06-16",
+        "valid_from": "2026-01-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:26282fec0c5ce13d2543ba23cc24e69d12ff3716c46195403241ec838d87fb9b",
+          "source_sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+          "full_content_sha256": "ed9731e19879608f8cc56a959639d8f8298829658dd2f66d48c86a00b435ffab",
+          "locator": "pdf/page:57/line:12-13",
+          "locator_sha256": "6da622ff5d791e90f8d66822f9f0f32befd6a90a7bd51bf506fb1605156681a7",
+          "text": "LUẬT\nNHÀ GIÁO"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:26282fec0c5ce13d2543ba23cc24e69d12ff3716c46195403241ec838d87fb9b",
+          "source_sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+          "full_content_sha256": "ed9731e19879608f8cc56a959639d8f8298829658dd2f66d48c86a00b435ffab",
+          "locator": "pdf/page:75/line:33-34",
+          "locator_sha256": "348e4be90684af55c7ea268b708c526867e859054e73cdf71525918a79555179",
+          "text": "Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XV,\nkỳ họp thứ 9 thông qua ngày 16 tháng 6 năm 2025."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:26282fec0c5ce13d2543ba23cc24e69d12ff3716c46195403241ec838d87fb9b",
+          "source_sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+          "full_content_sha256": "ed9731e19879608f8cc56a959639d8f8298829658dd2f66d48c86a00b435ffab",
+          "locator": "pdf/page:75/line:20-21",
+          "locator_sha256": "1481c36cfae4efb02f61a359c08b100229c1c8450efa740caf001c6c7c575724",
+          "text": "Điều 41. Hiệu lực thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2026."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/73-2025-QH15-congbao.pdf",
+        "reason": "Gazette issue 967+968 pages 57–75 contain Law 73, including Social Insurance Law amendment at Article 40."
+      }
+    },
+    {
+      "doc_id": "doc:74/2025/QH15",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "official Gazette source in document source_ids; explicit source_selection entry absent",
+      "source": {
+        "source_id": "src:a3c5cb151d13aa6475f3389ba25eae7206762552443ae1df4a3667e93edb3a17",
+        "path": "data/raw/official/74-2025-QH15-congbao.pdf",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2025/7/45558/57693-1-967-968.pdf",
+        "source_sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+        "full_content_sha256": "ed9731e19879608f8cc56a959639d8f8298829658dd2f66d48c86a00b435ffab"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "6998ccf606a59087a61a993dfd5463384f8433486d21ac8a9941ebe4aa594309",
+      "proposed_values": {
+        "title": "Luật Việc làm",
+        "issued_date": "2025-06-16",
+        "valid_from": "2026-01-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:a3c5cb151d13aa6475f3389ba25eae7206762552443ae1df4a3667e93edb3a17",
+          "source_sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+          "full_content_sha256": "ed9731e19879608f8cc56a959639d8f8298829658dd2f66d48c86a00b435ffab",
+          "locator": "pdf/page:29/line:13",
+          "locator_sha256": "47a7d4adea6a2ef01c7a58a0f3d8e52df221e90fd98e872f2ff96d2539182031",
+          "text": "LUẬT VIỆC LÀM"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:a3c5cb151d13aa6475f3389ba25eae7206762552443ae1df4a3667e93edb3a17",
+          "source_sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+          "full_content_sha256": "ed9731e19879608f8cc56a959639d8f8298829658dd2f66d48c86a00b435ffab",
+          "locator": "pdf/page:55/line:34-35",
+          "locator_sha256": "d8823661c24cecbe240d386e70fcd08ac1a6cf28e08a0f39168042ff1e9d7882",
+          "text": "Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XV,\nKỳ họp thứ 9 thông qua ngày 16 tháng 6 năm 2025."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:a3c5cb151d13aa6475f3389ba25eae7206762552443ae1df4a3667e93edb3a17",
+          "source_sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+          "full_content_sha256": "ed9731e19879608f8cc56a959639d8f8298829658dd2f66d48c86a00b435ffab",
+          "locator": "pdf/page:55/line:12-13",
+          "locator_sha256": "06b1daa5103cdc7881237dafba86ca5e6d7ddf952674c9c4628a7a180fe419f0",
+          "text": "Điều 54. Hiệu lực thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2026."
+        }
+      ],
+      "conflicts_or_alternates": "Gazette text layer is canonical proposal source; signed PDF is scan-only and HTML is an alternate.",
+      "explicit_source_selection": null
+    },
+    {
+      "doc_id": "doc:84/2015/QH13",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:8a6282715ccd30151ac47745c0adf7c827bea4a980bfd5f34ef83d7cf2f472cc",
+        "path": "data/raw/official/Luật-84-2015-QH13.docx",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=70811",
+        "source_sha256": "01734e5a3db9f19ff09009510a8d75af124e27f8442eadfd8229d614b41fdfb8",
+        "full_content_sha256": "120eeb8bb265d91bdfebbf307dc44d21378e5352a5f5a6a8b21518d6b63567c0"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "6c869281d0f6802a901ca076899eb011f281940e35f722d9802f8a31f03633d3",
+      "proposed_values": {
+        "title": "Luật An toàn, vệ sinh lao động",
+        "issued_date": "2015-06-25",
+        "valid_from": "2016-07-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:8a6282715ccd30151ac47745c0adf7c827bea4a980bfd5f34ef83d7cf2f472cc",
+          "source_sha256": "01734e5a3db9f19ff09009510a8d75af124e27f8442eadfd8229d614b41fdfb8",
+          "full_content_sha256": "120eeb8bb265d91bdfebbf307dc44d21378e5352a5f5a6a8b21518d6b63567c0",
+          "locator": "docx/paragraph:3-4",
+          "locator_sha256": "258a647f070d04868505abc532e8ed9e8cbf1b173ea345c88861bc781a5e4dd1",
+          "text": "LUẬT\nAN TOÀN, VỆ SINH LAO ĐỘNG"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:8a6282715ccd30151ac47745c0adf7c827bea4a980bfd5f34ef83d7cf2f472cc",
+          "source_sha256": "01734e5a3db9f19ff09009510a8d75af124e27f8442eadfd8229d614b41fdfb8",
+          "full_content_sha256": "120eeb8bb265d91bdfebbf307dc44d21378e5352a5f5a6a8b21518d6b63567c0",
+          "locator": "docx/paragraph:769",
+          "locator_sha256": "91e65010140e50a59c63d287370effefed9ede9ede82da37484a19c4dc7cabac",
+          "text": "Luật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIII, kỳ họp thứ 9 thông qua ngày 25 tháng 6 năm 2015."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:8a6282715ccd30151ac47745c0adf7c827bea4a980bfd5f34ef83d7cf2f472cc",
+          "source_sha256": "01734e5a3db9f19ff09009510a8d75af124e27f8442eadfd8229d614b41fdfb8",
+          "full_content_sha256": "120eeb8bb265d91bdfebbf307dc44d21378e5352a5f5a6a8b21518d6b63567c0",
+          "locator": "docx/paragraph:762",
+          "locator_sha256": "3d61283e73115047b9d981a0423cc240bb4f3e3251710f6541fb78c09166887c",
+          "text": "1. Luật này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2016."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/Luật-84-2015-QH13.docx",
+        "alternate": [
+          "data/raw/word/Luật-84-2015-QH13.docx"
+        ],
+        "reason": "User-provided Word attachment from the official VBPL record is selected; the pre-existing raw Word copy is byte-identical and retained only as an alternate."
+      }
+    },
+    {
+      "doc_id": "doc:84/2025/QH15",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:a198c491fb634a142b42ae562024a14012c85340eaa12742795b69db37bd8930",
+        "path": "data/raw/official/84-2025-QH15-congbao.pdf",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2025/7/45516/57590-1-953-954.pdf",
+        "source_sha256": "ab0c445c3003754d36430c2ecf6d091b326dc3ace65f91136292689450088f81",
+        "full_content_sha256": "b3b2e4c3c8b1081619f69345333b6310a12150bedfab3138429032a72a6bb35b"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "7b3e6b7bba09a4e7619df3026d15344c63ca2e21f93b419a33763bd2772de148",
+      "proposed_values": {
+        "title": "Luật Thanh tra",
+        "issued_date": "2025-06-25",
+        "valid_from": "2025-07-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:a198c491fb634a142b42ae562024a14012c85340eaa12742795b69db37bd8930",
+          "source_sha256": "ab0c445c3003754d36430c2ecf6d091b326dc3ace65f91136292689450088f81",
+          "full_content_sha256": "b3b2e4c3c8b1081619f69345333b6310a12150bedfab3138429032a72a6bb35b",
+          "locator": "pdf/page:4/line:13-14",
+          "locator_sha256": "547e23441765b11fe1ef749847026312874b0bdc44e49a26c18517ad1e2cbef9",
+          "text": "LUẬT\nTHANH TRA"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:a198c491fb634a142b42ae562024a14012c85340eaa12742795b69db37bd8930",
+          "source_sha256": "ab0c445c3003754d36430c2ecf6d091b326dc3ace65f91136292689450088f81",
+          "full_content_sha256": "b3b2e4c3c8b1081619f69345333b6310a12150bedfab3138429032a72a6bb35b",
+          "locator": "pdf/page:44/line:31-32",
+          "locator_sha256": "bed156a80fec63e15f5e3033dfd50e691c592450dc5b5a5998c1a0cb6f788df4",
+          "text": "Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XV,\nKỳ họp thứ 9 thông qua ngày 25 tháng 6 năm 2025."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:a198c491fb634a142b42ae562024a14012c85340eaa12742795b69db37bd8930",
+          "source_sha256": "ab0c445c3003754d36430c2ecf6d091b326dc3ace65f91136292689450088f81",
+          "full_content_sha256": "b3b2e4c3c8b1081619f69345333b6310a12150bedfab3138429032a72a6bb35b",
+          "locator": "pdf/page:43/line:28-29",
+          "locator_sha256": "834db10652fe53938f6b579514fc08879a4182ebb5b44a2e02b09dcd47dfd80d",
+          "text": "Điều 63. Hiệu lực thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2025."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/84-2025-QH15-congbao.pdf",
+        "reason": "Gazette issue 953+954 pages 4–44 contain Law 84, including repeal of Social Insurance Law inspection phrases in Article 62."
+      }
+    },
+    {
+      "doc_id": "doc:97/2015/QH13",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:81da25dc6b04639a1043f35e275228c9aa455b87dbfb8dde8b81ecebb49224b2",
+        "path": "data/raw/official/97-2015-QH13-congbao.pdf",
+        "source_url": "https://congbao.chinhphu.vn/van-ban/luat-so-97-2015-qh13-18431.htm",
+        "source_sha256": "370076673296d99991665b07e8846b8a705557d4caf3fcd2e41e181056076a72",
+        "full_content_sha256": "04edc12f11d818f1c197348d6446d003a2d80aa23c35b2324eb09d243875f67f"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "f0ac52d5b90372571d6c12e7877f31b90d890044d1bbb9953a62d54d1915ea39",
+      "proposed_values": {
+        "title": "Luật Phí và lệ phí",
+        "issued_date": "2015-11-25",
+        "valid_from": "2017-01-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:81da25dc6b04639a1043f35e275228c9aa455b87dbfb8dde8b81ecebb49224b2",
+          "source_sha256": "370076673296d99991665b07e8846b8a705557d4caf3fcd2e41e181056076a72",
+          "full_content_sha256": "04edc12f11d818f1c197348d6446d003a2d80aa23c35b2324eb09d243875f67f",
+          "locator": "pdf/page:1/line:13-14",
+          "locator_sha256": "99190af09fe726ec3e99ae42afc1035ee94e9a3dfb133d1645c3dcfd8a329628",
+          "text": "LUẬT\nPHÍ VÀ LỆ PHÍ"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:81da25dc6b04639a1043f35e275228c9aa455b87dbfb8dde8b81ecebb49224b2",
+          "source_sha256": "370076673296d99991665b07e8846b8a705557d4caf3fcd2e41e181056076a72",
+          "full_content_sha256": "04edc12f11d818f1c197348d6446d003a2d80aa23c35b2324eb09d243875f67f",
+          "locator": "pdf/page:7/line:22-23",
+          "locator_sha256": "e10b64e5f2de0a4a00a8f81e3a1f1747661110a60a9b29b7ed906fd497e968b6",
+          "text": "Luật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam\nkhóa XIII kỳ họp thứ 10 thông qua ngày 25 tháng 11 năm 2015."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:81da25dc6b04639a1043f35e275228c9aa455b87dbfb8dde8b81ecebb49224b2",
+          "source_sha256": "370076673296d99991665b07e8846b8a705557d4caf3fcd2e41e181056076a72",
+          "full_content_sha256": "04edc12f11d818f1c197348d6446d003a2d80aa23c35b2324eb09d243875f67f",
+          "locator": "pdf/page:6/line:25-26",
+          "locator_sha256": "932c0ec6b051d69d2a7735034ca54e770f77eff34d2dc012fcb08658d26fee62",
+          "text": "Điều 23. Hiệu lực thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2017."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/97-2015-QH13-congbao.pdf",
+        "reason": "Individual Gazette PDF pages 1–30 contain Law 97 and annex; Article 23(2)(d) repeals BHYT Article 18(4)."
+      }
+    }
+  ]
+}

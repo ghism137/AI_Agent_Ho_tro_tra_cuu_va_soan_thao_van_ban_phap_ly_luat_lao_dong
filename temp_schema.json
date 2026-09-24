@@ -1,0 +1,28 @@
+{
+  "keys": [
+    "articles",
+    "metadata",
+    "source_tables"
+  ],
+  "first_article": {
+    "article_number": "1",
+    "content": "Điều 1. Phạm vi điều chỉnh\nBộ luật lao động quy định tiêu chuẩn lao động; quyền, nghĩa vụ, trách nhiệm của người lao động, người sử dụng lao động, tổ chức đại diện tập thể lao động, tổ chức đại diện người sử dụng lao động trong quan hệ lao động và các quan hệ khác liên quan trực tiếp đến quan hệ lao động; quản lý nhà nước về lao động.",
+    "content_kind": "normative",
+    "content_segments": [
+      {
+        "locator": "body/p:13",
+        "text": "Điều 1. Phạm vi điều chỉnh"
+      },
+      {
+        "locator": "body/p:14",
+        "text": "Bộ luật lao động quy định tiêu chuẩn lao động; quyền, nghĩa vụ, trách nhiệm của người lao động, người sử dụng lao động, tổ chức đại diện tập thể lao động, tổ chức đại diện người sử dụng lao động trong quan hệ lao động và các quan hệ khác liên quan trực tiếp đến quan hệ lao động; quản lý nhà nước về lao động."
+      }
+    ],
+    "hierarchy_path": "CHƯƠNG I NHỮNG QUY ĐỊNH CHUNG",
+    "structural_path": [
+      "body",
+      "article:1"
+    ],
+    "title": "Phạm vi điều chỉnh"
+  }
+}

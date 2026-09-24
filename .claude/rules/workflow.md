@@ -2,7 +2,7 @@
 
 ## Phạm vi hiện hành
 
-- Phase 1 PAUSED; Phase 2 DESIGN_ONLY cho đến khi người dùng giao triển khai.
+- Phase 1 ACTIVE/OPEN; dùng completion plan 23/09 và task được giao. Phase 2 DESIGN_ONLY cho đến khi người dùng giao triển khai.
 - Chỉ sửa docs khi được yêu cầu design; không chạy code/fixtures/embedding/index/eval trước.
 - Routing/model/prompt/handoff dùng `.claude/project/project_guide.md`, không sao chép mapping sang nhiều file.
 
@@ -15,7 +15,7 @@
 ## Trong phiên
 
 - Một task, một writer/file. Vai trò trong plan không tự cho phép spawn hay song song.
-- Contract đổi cần quyết định hẹp của designer; thiếu data chuyển upstream issue, không tự sửa Phase 1 paused.
+- Contract đổi cần quyết định hẹp của designer; thiếu data chuyển upstream issue, không tự mở rộng ngoài task Phase 1 được giao.
 - Hai vòng cùng lỗi không tiến triển: ghi reproduction và blocker, tách/chuyển task đúng vai trò.
 - Không thay metadata/evidence để vượt gate. Không đổi snapshot giữa một lần chạy.
 

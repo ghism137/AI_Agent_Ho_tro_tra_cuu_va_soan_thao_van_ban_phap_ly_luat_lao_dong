@@ -1,0 +1,402 @@
+{
+  "review_date": "2026-09-23",
+  "scope": "read-only targeted review; no rebuild, pytest, corpus audit or legal sign-off",
+  "git_head": "8c49d3a2d727d86c13096bb5814095e32776fa77",
+  "input_sha256": {
+    "backend/ingestion/chunker_v2.py": "483bf15b941b9981fafe7df06b8f3dbd751db1f851bf1b5946aaaf4ef8dfd671",
+    "backend/ingestion/parser.py": "558111f8b37149e423623383dd7dc78f52075da4a12e519a48da3ae3b2101977",
+    "backend/ingestion/schema.py": "cc53411438fafc69f72b8ce3c9727d854347e6ca96e91aa2a1831911825c10a6",
+    "backend/ingestion/temporal.py": "0bd3b3e57916e3c9f24573f1aff8ac8a841a3637460e7eb26b36cca96ab107e1",
+    "backend/ingestion/version_builder.py": "410caa778523a03d3c883c94b2543fe9401acb84c87ea6392b518e3d69d6db9c",
+    "data/active_release.json": "bd8403f0c59d14428e795edad89c8f4645d4faf0a0c4705b4e5163dfd3294af6",
+    "data/raw/official/02-2025-ND-CP-congbao.pdf": "e7d5d66154cd8f43c0d7ac441e312d9511cfc2dac0005e3fcebf58048a0d9072",
+    "data/registry/coverage.json": "51cc4eb17353444b3808f16a76430c9ab9e3899bad9918730c6853869ec0fd21",
+    "data/registry/documents.json": "433de35ca7bfd87823e8226fb10044883fca522a4a4e2be7d1ce3d788f3b5725",
+    "data/registry/legal_verification.json": "d616de24b9d3856eb557163389f95eebeab2c6c081191c2c2326c561c18e8965",
+    "data/registry/operations.json": "3df0616888c8ba196c46fff47bd98e23f16b04075be8b51731a775ef2aada0b7",
+    "data/registry/relations_verified.json": "d853dc8bd4eee918c43f1f43233e55d2367cc2ade232b2ff586a92900f1e10e9",
+    "data/registry/reviews/archive/ARCHIVE_MANIFEST.json": "5550b1ae605ae70bf81c4e51e7c24ef0fda6c5be43b1fd7b409719739b5c09dd",
+    "data/registry/reviews/identity_41_2024_alias.json": "97fc1c24e05a59536998af51cb2686a451d067e82be7c1f33c7daaf757b46cee",
+    "data/registry/reviews/identity_45_2019_alias.json": "4746419bc2195672fc54346ea07ef3a4bd7b059ee62e26708cfccf70e6a07e3b",
+    "data/registry/reviews/metadata_02_2025_nd_cp.json": "6447e58928e5daeea7c4ecc254145925d3bf2d5dfcc8ec29ff58b167f1c49f5b",
+    "data/registry/reviews/metadata_06_2021_tt_bldtbxh.json": "c3632c4f40f4d4cba8434e294a6fe02989045d64f96002eeb8aac1dc4e49c56f",
+    "data/registry/reviews/metadata_09_2020_tt_bldtbxh.json": "1a69dc4f140a5dd3625b95ecf2b0d186ae347ec15dfd8e159bd696efc4ac6131",
+    "data/registry/reviews/metadata_104_2022_nd_cp.json": "283c26d0f3d25e39692ae1f0118768f459900a9b25c8e2df8d1412e3b2606fbd",
+    "data/registry/reviews/metadata_108_2021_nd_cp.json": "42376d2186f19570840313a9c2b0b5adf890c90aaedfe4247707e60de8e1a65d",
+    "data/registry/reviews/metadata_10_2020_tt_bldtbxh.json": "11f2a68c56e1e7ed2e24dda5e38f33c0223c92efbcab0f48157a976423db6bf6",
+    "data/registry/reviews/metadata_115_2015_nd_cp.json": "eaab158a304d842923d0392f259ed461c97287244572dcd591656da5354a3d71",
+    "data/registry/reviews/metadata_11_2020_tt_bldtbxh.json": "042bfdabbe3720b3d22716dc6abf3c619eded9eae55e20f6dae18569d8656a30",
+    "data/registry/reviews/metadata_11_2022_tt_bldtbxh.json": "73de1fe3262a992f513d285618990aca6561b09c18694853c12645597cc6cd38",
+    "data/registry/reviews/metadata_12_2022_nd_cp.json": "f99f8b3eaee7093e0e1237b18dbf4f870ec00961175cb864de2e61ef8f356be4",
+    "data/registry/reviews/metadata_135_2020_nd_cp.json": "b7315ac080aca138c48724df93745e7d76b5c8fc75467e40ea4f82c96c65fe84",
+    "data/registry/reviews/metadata_143_2018_nd_cp.json": "b018bc50b7f76f2af79617d78fa4c1ea003fb50ff0c7e75d369e639e2439bbf9",
+    "data/registry/reviews/metadata_145_2020_nd_cp.json": "c039280852f6fee1a30a63b1e786cf757cc395c3fc196c22dd892e17d2799829",
+    "data/registry/reviews/metadata_146_2018_nd_cp.json": "31db5d096d8bbf942374f1b6f2c78928b5856e139629e1361464d29dd335efe9",
+    "data/registry/reviews/metadata_152_2020_nd_cp.json": "8b57b50d3519fc320f454b8a9145da2bd0aea082ac1b64a91859323b4d49018b",
+    "data/registry/reviews/metadata_158_2025_nd_cp.json": "4a7977d94f106730f9a634729387f669216ca59104ea8798d8625ec240824ca1",
+    "data/registry/reviews/metadata_162_2026_nd_cp.json": "c290a4b785ef4abb3defb6bf53280ae50748c31cc696acc474618de454b9aea4",
+    "data/registry/reviews/metadata_188_2025_nd_cp.json": "deb9703e8896b9a041f0f8afd86968a816c268522db5b7d231c72298453ad50f",
+    "data/registry/reviews/metadata_191_2013_nd_cp.json": "3bc812012f2f6eb07b431c08b4f012a6ba68e10776cab3441e86e151373f9a30",
+    "data/registry/reviews/metadata_219_2025_nd_cp.json": "2cbc8a41e43ac49a4b95fec60980688ac642961b7e4772fd554e620361adaa91",
+    "data/registry/reviews/metadata_23_2021_qd_ttg.json": "f725673308af365caf0eb0c76ac10b1078b365038665aa82e2cd406ff7f8e2d2",
+    "data/registry/reviews/metadata_28_2015_nd_cp.json": "c0eefdbd85cfaa556b5f0ace882b61163e61d6c8f6044f0c5d5e755ce273b7f2",
+    "data/registry/reviews/metadata_28_2015_tt_bldtbxh.json": "48079cf567a251ab14aa7318f610b56c6310486aa428072c1ad9cf7af8bd819d",
+    "data/registry/reviews/metadata_293_2025_nd_cp.json": "a94292cc825aadd510334c47def817c5ce57a1842a9734d913dbbf0d24b146d4",
+    "data/registry/reviews/metadata_35_2022_nd_cp.json": "8114d0f9d7b5c848a3da4b2b650c6d56a29cf5b8077888bed14cf7c4dba4d4aa",
+    "data/registry/reviews/metadata_374_2025_nd_cp.json": "0e4a4cf22e557350a825ac07a8135d8852994ca22aa7cdac7b9624004b660659",
+    "data/registry/reviews/metadata_39_2016_nd_cp.json": "bd6ca8dff22e95604ea7f70f556000ec408d8fa1860b49806db527acef51ffe1",
+    "data/registry/reviews/metadata_42_2023_nd_cp.json": "591bdb680b63f12788f2e6c9d70135373029b4bb26fa04763af53470010f9714",
+    "data/registry/reviews/metadata_43_2013_nd_cp.json": "e124225e1f8f88ac562953a61d3d7ee6c9336cc14e9a7e83edb1d10c1d715a21",
+    "data/registry/reviews/metadata_44_2019_nd_cp.json": "7a3c085c2b970342e7d66fb3c1d4e5ca1e67272d7189c1c1e85e4b389d7073f4",
+    "data/registry/reviews/metadata_59_2015_tt_bldtbxh.json": "667337af42af8255c6ee963dc4bae0fda1ebceb8474c70042bd9abd07c8ebe5b",
+    "data/registry/reviews/metadata_61_2020_nd_cp.json": "8daa70c3635d8ccc22a5c8b79336bd42cb48f593c28beff9d513b865e4963c16",
+    "data/registry/reviews/metadata_70_2015_nd_cp.json": "98528cff5d3cbd4f5eb24106318c4fde3fc9c343315b52004d70b5d85a4dff6d",
+    "data/registry/reviews/metadata_70_2023_nd_cp.json": "77e69064dea8e18b8b478827d37d0854ae4044cfc12f3e5cac6895155ca64aec",
+    "data/registry/reviews/metadata_74_2024_nd_cp.json": "7eae47ea0a2fd591c797322695c5b36fb2525f8187a1bf8712d25067b061589e",
+    "data/registry/reviews/metadata_74_2025_nd_cp.json": "1a59bb4dbe8b794347318fa9ec1486d1baf8cde3c96dd21e251dca6ee252d788",
+    "data/registry/reviews/metadata_75_2023_nd_cp.json": "036ebd6a4582c7788c53184ffe0490ace4d8f4f246511bd0fb68b6a8339e80a8",
+    "data/registry/reviews/metadata_75_2024_nd_cp.json": "908fb7008f5dc0d130b46ac271a52ac7622d085630a163456b61537513d04e71",
+    "data/registry/reviews/metadata_88_2020_nd_cp.json": "9e19f9aea40c27a26fd315dba9da3d4c48c14d51f4357983dcefaf5dc3e34d4c",
+    "data/registry/source_selection.json": "12933b08db0382d2d9443d4f6f71e7bd81114a70beddad8668e945dde55adc95",
+    "data/registry/sources.json": "f89a3f8a7f4bf609795e55dedb60135f5a543332ff8412662af0f04dd5deb733",
+    "data/staging/phase1-candidate/manifest.json": "5018b6d6dde290bd540e73d8ed317780cf32e95800febe365f8833cab10b34e7",
+    "scripts/audit_gate1.py": "d1272b644e8fbcfcbd1602561338c0154b72384f150a8057aeb9e8554c46d89a",
+    "scripts/build_phase1_stage.py": "b8a8415308c708e4e07dae385c30c475a5fcf6155e86d00c3d1e5bbbca47d962",
+    "scripts/build_registry.py": "099818b759a649b634441fa2e1d86e91d3d2cf6735f89e8486ced997231d0b0f",
+    "scripts/publish_phase1_release.py": "ce8df009c2d03b1eaaa779a602c3f0d3b15d48080aa2d1255486715f633da909",
+    "scripts/retired_auto_metadata_review.py": "a3ef9112fb7a49c02e3d6ba6d14d0c7945e8063c3cd5e1ccef9d5d7b5c72a76f",
+    "scripts/review_decisions.py": "73ae78cb8939ab229f4c6e8920f3c53c55fdf6e6f935beba74db3960a1879739",
+    "tests/test_amendment_payload.py": "1ea81108b6d03a71805150697083c76c80dcbfc135aea7c42af418863c7e1228",
+    "tests/test_chunk_source_locators.py": "2724d4ab25f546e0c473b9856ee692dabfe581e634cafd521354555b3ffdc04b"
+  },
+  "parser_reproductions": {
+    "closing_on_last_clause": {
+      "input": "Điều 1. Sửa đổi\n1. Sửa đổi Điều 14 như sau:\n“Điều 14. Tên\n1. Nội dung một.\n2. Nội dung hai.”",
+      "articles": [
+        {
+          "article_number": "1",
+          "title": "Sửa đổi",
+          "content_kind": "normative",
+          "structural_path": [
+            "body",
+            "article:1"
+          ],
+          "hierarchy_path": "",
+          "content": "Điều 1. Sửa đổi",
+          "content_segments": [
+            {
+              "text": "Điều 1. Sửa đổi",
+              "locator": "line:1"
+            }
+          ]
+        },
+        {
+          "article_number": "1",
+          "title": "Sửa đổi",
+          "content_kind": "normative",
+          "structural_path": [
+            "body",
+            "article:1",
+            "item:1"
+          ],
+          "hierarchy_path": "",
+          "content": "1. Sửa đổi Điều 14 như sau:",
+          "content_segments": [
+            {
+              "text": "1. Sửa đổi Điều 14 như sau:",
+              "locator": "line:2"
+            }
+          ]
+        },
+        {
+          "article_number": "1",
+          "title": "Sửa đổi",
+          "content_kind": "normative",
+          "structural_path": [
+            "body",
+            "article:1",
+            "item:1",
+            "amendment_payload",
+            "article:14"
+          ],
+          "hierarchy_path": "",
+          "content": "“Điều 14. Tên",
+          "content_segments": [
+            {
+              "text": "“Điều 14. Tên",
+              "locator": "line:3"
+            }
+          ]
+        },
+        {
+          "article_number": "1",
+          "title": "Sửa đổi",
+          "content_kind": "normative",
+          "structural_path": [
+            "body",
+            "article:1",
+            "item:1",
+            "amendment_payload",
+            "article:14",
+            "item:1"
+          ],
+          "hierarchy_path": "",
+          "content": "1. Nội dung một.\n2. Nội dung hai.”",
+          "content_segments": [
+            {
+              "text": "1. Nội dung một.",
+              "locator": "line:4"
+            },
+            {
+              "text": "2. Nội dung hai.”",
+              "locator": "line:5"
+            }
+          ]
+        }
+      ]
+    },
+    "quote_semicolon": {
+      "input": "Điều 1. Sửa đổi\n1. Sửa đổi Điều 14 như sau:\n“Điều 14. Tên\n1. Nội dung.”;",
+      "error": "Amendment payload in Điều 1 did not close before end of article. Unclosed scope: body/article:1/item:1/amendment_payload. Document quarantined for manual review."
+    },
+    "single_line_payload": {
+      "input": "Điều 1. Sửa đổi\n1. Sửa đổi khoản 3 như sau:\n“3. Nội dung.”",
+      "error": "Amendment payload in Điều 1 did not close before end of article. Unclosed scope: body/article:1/item:1/amendment_payload. Document quarantined for manual review."
+    },
+    "point_instruction": {
+      "input": "Điều 1. Sửa đổi\n1. Sửa đổi Điều 14:\na) Sửa đổi khoản 3 như sau:\n“3. Nội dung\n”",
+      "articles": [
+        {
+          "article_number": "1",
+          "title": "Sửa đổi",
+          "content_kind": "normative",
+          "structural_path": [
+            "body",
+            "article:1"
+          ],
+          "hierarchy_path": "",
+          "content": "Điều 1. Sửa đổi",
+          "content_segments": [
+            {
+              "text": "Điều 1. Sửa đổi",
+              "locator": "line:1"
+            }
+          ]
+        },
+        {
+          "article_number": "1",
+          "title": "Sửa đổi",
+          "content_kind": "normative",
+          "structural_path": [
+            "body",
+            "article:1",
+            "item:1"
+          ],
+          "hierarchy_path": "",
+          "content": "1. Sửa đổi Điều 14:",
+          "content_segments": [
+            {
+              "text": "1. Sửa đổi Điều 14:",
+              "locator": "line:2"
+            }
+          ]
+        },
+        {
+          "article_number": "1",
+          "title": "Sửa đổi",
+          "content_kind": "normative",
+          "structural_path": [
+            "body",
+            "article:1",
+            "item:1",
+            "point:a"
+          ],
+          "hierarchy_path": "",
+          "content": "a) Sửa đổi khoản 3 như sau:\n“3. Nội dung\n”",
+          "content_segments": [
+            {
+              "text": "a) Sửa đổi khoản 3 như sau:",
+              "locator": "line:3"
+            },
+            {
+              "text": "“3. Nội dung",
+              "locator": "line:4"
+            },
+            {
+              "text": "”",
+              "locator": "line:5"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "canonical_pdf": {
+    "path": "data/raw/official/02-2025-ND-CP-congbao.pdf",
+    "pages": [
+      1,
+      9
+    ],
+    "error": "Amendment payload in Điều 1 did not close before end of article. Unclosed scope: body/article:1/item:8/amendment_payload. Document quarantined for manual review."
+  },
+  "active_pointer": {
+    "release_id": "phase1-febf5129f0e33d40",
+    "path": "data/releases/phase1-febf5129f0e33d40",
+    "manifest_sha256": "ef0c1688a72500c16958c5fcdeafd1893adc998db2cdfdabb8cd344b99e9d4ac"
+  },
+  "staging_manifest": {
+    "release_id": "candidate-3995dbe3f41d51cd",
+    "status": "candidate",
+    "published": false,
+    "sources_sha256": "f89a3f8a7f4bf609795e55dedb60135f5a543332ff8412662af0f04dd5deb733",
+    "parser_code_sha256": "eed7db902d6b5d31a868838dd2f4e3c9a945cd5c6d0763dd048818436719e805",
+    "verified_relations_sha256": "d853dc8bd4eee918c43f1f43233e55d2367cc2ade232b2ff586a92900f1e10e9",
+    "operations_sha256": "3df0616888c8ba196c46fff47bd98e23f16b04075be8b51731a775ef2aada0b7",
+    "schema_version": 2,
+    "documents_parsed": 61,
+    "chunks": 20410,
+    "provision_versions": 20318,
+    "quarantined_documents": 0,
+    "missing_required_parsed_documents": [],
+    "verified_as_of": null,
+    "gate1": "PASS",
+    "gate2": "PASS",
+    "gate3": "PASS"
+  },
+  "current_code_fingerprint": [
+    "candidate-c350e21f2516a157",
+    "8be447c43a6aa188e0767015887b544b6b8f51eda8a358efde61fc9ecec73feb"
+  ],
+  "archive": {
+    "entries": 61,
+    "classes": {
+      "Class A": 41,
+      "Class B": 20
+    },
+    "missing_files": []
+  },
+  "metadata": {
+    "current_status": {
+      "verified": 61
+    },
+    "in_memory_status": {
+      "verified": 41,
+      "pending": 20
+    },
+    "pending_ids": [
+      "doc:10/2012/QH13",
+      "doc:113/2025/QH15",
+      "doc:12/2012/QH13",
+      "doc:124/2025/QH15",
+      "doc:142/2025/QH15",
+      "doc:25/2008/QH12",
+      "doc:30/2023/QH15",
+      "doc:32/2013/QH13",
+      "doc:35/2018/QH14",
+      "doc:38/2013/QH13",
+      "doc:46/2014/QH13",
+      "doc:51/2024/QH15",
+      "doc:58/2014/QH13",
+      "doc:68/2020/QH14",
+      "doc:71/2025/QH15",
+      "doc:73/2025/QH15",
+      "doc:74/2025/QH15",
+      "doc:84/2015/QH13",
+      "doc:84/2025/QH15",
+      "doc:97/2015/QH13"
+    ],
+    "active_decisions": 41
+  },
+  "operations_status": {
+    "blocked": 2,
+    "pending": 13
+  },
+  "materializer_reproduction": {
+    "base_before": {
+      "doc_id": "doc:test",
+      "structural_path": [
+        "body",
+        "article:1",
+        "item:1"
+      ],
+      "provision_id": "doc:test:body/article:1/item:1",
+      "provision_version_id": "old",
+      "content": "OLD",
+      "valid_from": "2020-01-01",
+      "valid_to": null,
+      "source_refs": [
+        {
+          "source_id": "src:old",
+          "locator": "line:1"
+        }
+      ]
+    },
+    "operation": {
+      "operation_id": "x",
+      "review_status": "verified",
+      "verb": "replace",
+      "target_locator": "doc:test:body/article:1/item:1",
+      "effective_from": "2021-01-01",
+      "payload": "NEW"
+    },
+    "output": [
+      {
+        "doc_id": "doc:test",
+        "structural_path": [
+          "body",
+          "article:1",
+          "item:1"
+        ],
+        "provision_id": "doc:test:body/article:1/item:1",
+        "provision_version_id": "old",
+        "content": "OLD",
+        "valid_from": "2020-01-01",
+        "valid_to": "2021-01-01",
+        "source_refs": [
+          {
+            "source_id": "src:old",
+            "locator": "line:1"
+          }
+        ]
+      },
+      {
+        "doc_id": "doc:test",
+        "structural_path": [
+          "body",
+          "article:1",
+          "item:1"
+        ],
+        "provision_id": "doc:test:body/article:1/item:1",
+        "provision_version_id": "doc:test:body/article:1/item:1@a253ff09c5a8678e",
+        "content": "NEW",
+        "valid_from": "2021-01-01",
+        "valid_to": null,
+        "source_refs": [
+          {
+            "source_id": "src:old",
+            "locator": "line:1"
+          }
+        ]
+      }
+    ],
+    "base_after": {
+      "doc_id": "doc:test",
+      "structural_path": [
+        "body",
+        "article:1",
+        "item:1"
+      ],
+      "provision_id": "doc:test:body/article:1/item:1",
+      "provision_version_id": "old",
+      "content": "OLD",
+      "valid_from": "2020-01-01",
+      "valid_to": "2021-01-01",
+      "source_refs": [
+        {
+          "source_id": "src:old",
+          "locator": "line:1"
+        }
+      ]
+    }
+  }
+}

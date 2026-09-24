@@ -5,15 +5,15 @@
   "input_hashes": {
     "batch-01.json": "0036070b76f25062d682df5388e0abb214146f0f69af96f93bce24cba09e8887",
     "parsed.json": "669f4420e75ef551b0ea619023597d0afa484aaa469168987c4349a21e31e070",
-    "operations.json": "3df0616888c8ba196c46fff47bd98e23f16b04075be8b51731a775ef2aada0b7"
+    "operations.json": "3df0616888c8ba196c46fff47bd98e23f16b04075be8b51731a775ef2aada0b7",
+    "chunks.jsonl": "6781373229b6d0c97aecc68d61c3b96c896e625f062c25f60040fa91f4710a67"
   },
   "documents": [
     {
       "doc_id": "doc:10/2012/QH13",
-      "status": "mismatched",
+      "status": "audited",
       "source_hashes": {
-        "raw": "b1810ce518a14905cead26a2c7e646b9c3530a9c8f670cf9b7b1b2629be9e729",
-        "extracted": "30e0cd7063eedb23112f38a77c2c6bc731e07e103bacadf28b44788b06ffee4a"
+        "raw": "b1810ce518a14905cead26a2c7e646b9c3530a9c8f670cf9b7b1b2629be9e729"
       },
       "section_index": [
         {
@@ -7661,28 +7661,7 @@
           "status": "pending"
         }
       ],
-      "fidelity_mismatches": [
-        {
-          "path": "body/article:168/item:1",
-          "reason": "content_mismatch"
-        },
-        {
-          "path": "body/article:168/item:2",
-          "reason": "content_mismatch"
-        },
-        {
-          "path": "body/article:169/item:1/point:c",
-          "reason": "content_mismatch"
-        },
-        {
-          "path": "body/article:169/item:2",
-          "reason": "content_mismatch"
-        },
-        {
-          "path": "body/article:242",
-          "reason": "content_mismatch"
-        }
-      ]
+      "fidelity_mismatches": []
     },
     {
       "doc_id": "doc:113/2025/QH15",
@@ -9452,10 +9431,9 @@
     },
     {
       "doc_id": "doc:12/2012/QH13",
-      "status": "mismatched",
+      "status": "audited",
       "source_hashes": {
-        "raw": "60287bac0726ea2fecf874bcd0ea09fb4298008782733f759e934557b6220d60",
-        "extracted": "45c5a43dc445d1a3b9e42a1503451dcc79ea4ac5b32cd56c5a88b8dd5eab6001"
+        "raw": "60287bac0726ea2fecf874bcd0ea09fb4298008782733f759e934557b6220d60"
       },
       "section_index": [
         {
@@ -10452,12 +10430,7 @@
       ],
       "dependent_operations": [],
       "blocked_operations": [],
-      "fidelity_mismatches": [
-        {
-          "path": "body/article:8",
-          "reason": "content_mismatch"
-        }
-      ]
+      "fidelity_mismatches": []
     },
     {
       "doc_id": "doc:124/2025/QH15",

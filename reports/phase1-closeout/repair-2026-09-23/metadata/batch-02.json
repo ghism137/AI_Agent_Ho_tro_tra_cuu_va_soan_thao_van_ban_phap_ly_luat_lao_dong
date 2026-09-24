@@ -1,0 +1,274 @@
+{
+  "task_id": "P1R-04",
+  "batch": 2,
+  "status": "BUILDER_PROPOSALS_COMPLETE_AWAITING_REVIEW",
+  "document_count": 5,
+  "documents": [
+    {
+      "doc_id": "doc:25/2008/QH12",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:93c6069c896812bc67443dd26933e1d04dda040515ad1aa3861ba94cdbbaf066",
+        "path": "data/raw/official/luât-25-2008-QH12.docx",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=12326",
+        "source_sha256": "53e6c935389dde49540952f3ebe5f651cf853ad34f95c17c24e6ef74fd0ca10f",
+        "full_content_sha256": "055a7b8a5fbe9da9e2c7465ab7c39465e20c88992bc5c6bfc88d235dbbfcf5e5"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "f00c4253c8c75651ba8a5cd99dc9177ba9746aa483f9c63d06ab92577dc96948",
+      "proposed_values": {
+        "title": "Luật Bảo hiểm y tế",
+        "issued_date": "2008-11-14",
+        "valid_from": "2009-07-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:93c6069c896812bc67443dd26933e1d04dda040515ad1aa3861ba94cdbbaf066",
+          "source_sha256": "53e6c935389dde49540952f3ebe5f651cf853ad34f95c17c24e6ef74fd0ca10f",
+          "full_content_sha256": "055a7b8a5fbe9da9e2c7465ab7c39465e20c88992bc5c6bfc88d235dbbfcf5e5",
+          "locator": "docx/paragraph:1-2",
+          "locator_sha256": "c93af8c74e16b0f9ce61dcb89c9285e766cc26500d4059a6f723acf68a82d9b6",
+          "text": "LUẬT\nBẢO HIỂM Y TẾ"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:93c6069c896812bc67443dd26933e1d04dda040515ad1aa3861ba94cdbbaf066",
+          "source_sha256": "53e6c935389dde49540952f3ebe5f651cf853ad34f95c17c24e6ef74fd0ca10f",
+          "full_content_sha256": "055a7b8a5fbe9da9e2c7465ab7c39465e20c88992bc5c6bfc88d235dbbfcf5e5",
+          "locator": "docx/paragraph:411",
+          "locator_sha256": "12b5e567a32084729fa797b6716f54bfb8d37cd96f29157fc48910a3ef5c215b",
+          "text": "Luật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XII, kỳ họp thứ 4 thông qua ngày 14 tháng 11 năm 2008."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:93c6069c896812bc67443dd26933e1d04dda040515ad1aa3861ba94cdbbaf066",
+          "source_sha256": "53e6c935389dde49540952f3ebe5f651cf853ad34f95c17c24e6ef74fd0ca10f",
+          "full_content_sha256": "055a7b8a5fbe9da9e2c7465ab7c39465e20c88992bc5c6bfc88d235dbbfcf5e5",
+          "locator": "docx/paragraph:401",
+          "locator_sha256": "c9123894c33d350475f3fe3fa8c37e0d5681e9ac0bb71a438330603fd91e276f",
+          "text": "1. Luật này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2009."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/luât-25-2008-QH12.docx",
+        "alternate": [
+          "data/raw/word/luât-25-2008-QH12.docx"
+        ],
+        "reason": "User-provided Word attachment from the official VBPL record is selected; the pre-existing raw Word copy is byte-identical and retained only as an alternate."
+      }
+    },
+    {
+      "doc_id": "doc:30/2023/QH15",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:a07a8f30112e0308759f6521f9b16356e0df03a7e8cd5724fffa9402450b2d7d",
+        "path": "data/raw/official/30-2023-QH15-congbao.pdf",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/11/40866/47858-1-202443-4430-2023-qh15.pdf",
+        "source_sha256": "bea5756fef66028ca9e6c9a88c388ebe3f5abe7a886ecad7556c7ea2388c2947",
+        "full_content_sha256": "fb639395a1b1b8fefd64b5f0ee9d573750e16653931d2693afc981226e5fc6ae"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "3ca41ff16d133390991d36f179f52059f99c52d920f501f0edd8525508856688",
+      "proposed_values": {
+        "title": "Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở",
+        "issued_date": "2023-11-28",
+        "valid_from": "2024-07-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:a07a8f30112e0308759f6521f9b16356e0df03a7e8cd5724fffa9402450b2d7d",
+          "source_sha256": "bea5756fef66028ca9e6c9a88c388ebe3f5abe7a886ecad7556c7ea2388c2947",
+          "full_content_sha256": "fb639395a1b1b8fefd64b5f0ee9d573750e16653931d2693afc981226e5fc6ae",
+          "locator": "pdf/page:1/line:7-8",
+          "locator_sha256": "9c01a482e1541480cc0ae268a2087d2f5330f50ab6a79f933f9011566b5dcef9",
+          "text": "LUẬT\nLỰC LƯỢNG THAM GIA BẢO VỆ AN NINH, TRẬT TỰ Ở CƠ SỞ"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:a07a8f30112e0308759f6521f9b16356e0df03a7e8cd5724fffa9402450b2d7d",
+          "source_sha256": "bea5756fef66028ca9e6c9a88c388ebe3f5abe7a886ecad7556c7ea2388c2947",
+          "full_content_sha256": "fb639395a1b1b8fefd64b5f0ee9d573750e16653931d2693afc981226e5fc6ae",
+          "locator": "pdf/page:17/line:12-13",
+          "locator_sha256": "29a344773f48727c867608edc0e26b645402dcd5b4490f0d8cd2a81b7eeb064d",
+          "text": "Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XV,\nkỳ họp thứ 6 thông qua ngày 28 tháng 11 năm 2023./."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:a07a8f30112e0308759f6521f9b16356e0df03a7e8cd5724fffa9402450b2d7d",
+          "source_sha256": "bea5756fef66028ca9e6c9a88c388ebe3f5abe7a886ecad7556c7ea2388c2947",
+          "full_content_sha256": "fb639395a1b1b8fefd64b5f0ee9d573750e16653931d2693afc981226e5fc6ae",
+          "locator": "pdf/page:17/line:6-7",
+          "locator_sha256": "0a2f23dc9c5daa8e4d901c52a8b01037097aab13772c000a8b3ee23542f04efe",
+          "text": "Điều 33. Hiệu lực thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2024."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/30-2023-QH15-congbao.pdf",
+        "reason": "Individual Gazette PDF pages 1–17 contain Law 30; Article 32(2) adds BHYT Article 12(4)(c)."
+      }
+    },
+    {
+      "doc_id": "doc:32/2013/QH13",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:f793405496cf4efd631b3e87ad9bef489598c934ef75a7712ce3db4e77a1b756",
+        "path": "data/raw/official/32-2013-QH13-congbao.pdf",
+        "source_url": "https://congbao.chinhphu.vn/van-ban/luat-so-32-2013-qh13-6394.htm",
+        "source_sha256": "d74a73184e59dd507117dd6994fd2bef31f8d9b54c1571e2baabf386024ae87c",
+        "full_content_sha256": "4c69cbd81d6043c199d57ef7a357da57c08309b9cc6112edcf81b0bb0c809a00"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "d986f6983d8f89610f8e89faeb1d89339bc0b27f59cca1827cc531776bcd6425",
+      "proposed_values": {
+        "title": "Luật sửa đổi, bổ sung một số điều của Luật Thuế thu nhập doanh nghiệp",
+        "issued_date": "2013-06-19",
+        "valid_from": "2014-01-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:f793405496cf4efd631b3e87ad9bef489598c934ef75a7712ce3db4e77a1b756",
+          "source_sha256": "d74a73184e59dd507117dd6994fd2bef31f8d9b54c1571e2baabf386024ae87c",
+          "full_content_sha256": "4c69cbd81d6043c199d57ef7a357da57c08309b9cc6112edcf81b0bb0c809a00",
+          "locator": "pdf/page:1/line:15-17",
+          "locator_sha256": "fccaf5131082a33bc0a8b5c866a424a104501136de01fa7c495c8f38029dfb87",
+          "text": "LUẬT\nSửa đổi, bổ sung một số điều\ncủa Luật Thuế thu nhập doanh nghiệp"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:f793405496cf4efd631b3e87ad9bef489598c934ef75a7712ce3db4e77a1b756",
+          "source_sha256": "d74a73184e59dd507117dd6994fd2bef31f8d9b54c1571e2baabf386024ae87c",
+          "full_content_sha256": "4c69cbd81d6043c199d57ef7a357da57c08309b9cc6112edcf81b0bb0c809a00",
+          "locator": "pdf/page:11/line:16-17",
+          "locator_sha256": "87b370e17448fafb35274d09b3035ae85f9b8746c0197e469cd173a5bd785af3",
+          "text": "Luật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIII,\nkỳ họp thứ 5 thông qua ngày 19 tháng 6 năm 2013./."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:f793405496cf4efd631b3e87ad9bef489598c934ef75a7712ce3db4e77a1b756",
+          "source_sha256": "d74a73184e59dd507117dd6994fd2bef31f8d9b54c1571e2baabf386024ae87c",
+          "full_content_sha256": "4c69cbd81d6043c199d57ef7a357da57c08309b9cc6112edcf81b0bb0c809a00",
+          "locator": "pdf/page:10/line:6-8",
+          "locator_sha256": "c3dfc94e0e9acb2b630928ab2b2a29302eb84b3146452e47c646f87c50deb9f3",
+          "text": "Điều 2\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2014, trừ quy định\ntại khoản 2 Điều này."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/32-2013-QH13-congbao.pdf",
+        "reason": "Individual Gazette PDF pages 1–11 contain Law 32; Article 2(4)(b) repeals BHYT Article 4(2) income-tax provision."
+      }
+    },
+    {
+      "doc_id": "doc:35/2018/QH14",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:abdcbb3eed2152c7a51a4827ffc32210a76757b2625f59a4b4c9f1908dd716fe",
+        "path": "data/raw/official/35-2018-QH14-congbao.pdf",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2018/11/27813/24738-1-20181139-114035-2018-qh14.pdf",
+        "source_sha256": "6ebe64e782f429196cc20821e7ee091ee90187de9451e6f55c2a12f2b428527b",
+        "full_content_sha256": "ef5885724ee7fb07577992f008cf2a79bfaa9e5d6ae1bac2fc75859098580f7f"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "6ba2aba476ce10bcf51bb0ac71530123ea7bf51f87568f85ba5d01562182fcc0",
+      "proposed_values": {
+        "title": "Luật sửa đổi, bổ sung một số điều của 37 luật có liên quan đến quy hoạch",
+        "issued_date": "2018-11-20",
+        "valid_from": "2019-01-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:abdcbb3eed2152c7a51a4827ffc32210a76757b2625f59a4b4c9f1908dd716fe",
+          "source_sha256": "6ebe64e782f429196cc20821e7ee091ee90187de9451e6f55c2a12f2b428527b",
+          "full_content_sha256": "ef5885724ee7fb07577992f008cf2a79bfaa9e5d6ae1bac2fc75859098580f7f",
+          "locator": "pdf/page:1/line:12-14",
+          "locator_sha256": "834c2a5f1dfc049f94de2a620e3dcdf2a1274ae5f3eb3add40409566249d4a7c",
+          "text": "LUẬT\nSỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA 37 LUẬT\nCÓ LIÊN QUAN ĐẾN QUY HOẠCH"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:abdcbb3eed2152c7a51a4827ffc32210a76757b2625f59a4b4c9f1908dd716fe",
+          "source_sha256": "6ebe64e782f429196cc20821e7ee091ee90187de9451e6f55c2a12f2b428527b",
+          "full_content_sha256": "ef5885724ee7fb07577992f008cf2a79bfaa9e5d6ae1bac2fc75859098580f7f",
+          "locator": "pdf/page:77/line:24-25",
+          "locator_sha256": "70e889ac8659b2b6fae308b62371ec92a2a1160dcdab6803b93cdb90bffbd9fc",
+          "text": "Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIV,\nkỳ họp thứ 6 thông qua ngày 20 tháng 11 năm 2018."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:abdcbb3eed2152c7a51a4827ffc32210a76757b2625f59a4b4c9f1908dd716fe",
+          "source_sha256": "6ebe64e782f429196cc20821e7ee091ee90187de9451e6f55c2a12f2b428527b",
+          "full_content_sha256": "ef5885724ee7fb07577992f008cf2a79bfaa9e5d6ae1bac2fc75859098580f7f",
+          "locator": "pdf/page:77/line:20-21",
+          "locator_sha256": "c42211e224e5b32c23fba4db12f94dfe6a6f50b4aa2ff6ed5ceaee7ec9e183a6",
+          "text": "Điều 31. Hiệu lực thi hành\nLuật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2019."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/35-2018-QH14-congbao.pdf",
+        "reason": "Individual Gazette PDF pages 1–77 contain Law 35; Article 30 removes planning phrase from BHYT Article 6(2)."
+      }
+    },
+    {
+      "doc_id": "doc:38/2013/QH13",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:d03e3352973262e4c66997f095fe5e7e12f1bfcc74cdddf1afd378d61f516d4b",
+        "path": "data/raw/official/Luật-38-2013-QH13.docx",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=32912",
+        "source_sha256": "dfc3c8411e84a995222ace2e844dd838b110b70f29e9015a84de0157fc3b5583",
+        "full_content_sha256": "4e5a593134034d251fe86bfe8ee6db9022896630d62c9b6ff333deb1e2573217"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "9aa3d7750d139dd6344920d27ecb7ee553ed773adf9ecf560165f40c1a048110",
+      "proposed_values": {
+        "title": "Luật Việc làm",
+        "issued_date": "2013-11-16",
+        "valid_from": "2015-01-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:d03e3352973262e4c66997f095fe5e7e12f1bfcc74cdddf1afd378d61f516d4b",
+          "source_sha256": "dfc3c8411e84a995222ace2e844dd838b110b70f29e9015a84de0157fc3b5583",
+          "full_content_sha256": "4e5a593134034d251fe86bfe8ee6db9022896630d62c9b6ff333deb1e2573217",
+          "locator": "docx/paragraph:3-4",
+          "locator_sha256": "2442ac8423f6209433a3cf12c28b03e4e3bd771cf1d04c0aff824fe589cd2114",
+          "text": "LUẬT\nVIỆC LÀM"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:d03e3352973262e4c66997f095fe5e7e12f1bfcc74cdddf1afd378d61f516d4b",
+          "source_sha256": "dfc3c8411e84a995222ace2e844dd838b110b70f29e9015a84de0157fc3b5583",
+          "full_content_sha256": "4e5a593134034d251fe86bfe8ee6db9022896630d62c9b6ff333deb1e2573217",
+          "locator": "docx/paragraph:395",
+          "locator_sha256": "5398e82df8b3ca78b2ef83fb3390483b194315fe5f125e4ebee7a82b0ca613c6",
+          "text": "Luật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIII, kỳ họp thứ 6 thông qua ngày 16 tháng 11 năm 2013."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:d03e3352973262e4c66997f095fe5e7e12f1bfcc74cdddf1afd378d61f516d4b",
+          "source_sha256": "dfc3c8411e84a995222ace2e844dd838b110b70f29e9015a84de0157fc3b5583",
+          "full_content_sha256": "4e5a593134034d251fe86bfe8ee6db9022896630d62c9b6ff333deb1e2573217",
+          "locator": "docx/paragraph:391",
+          "locator_sha256": "efc7acc799ff3b1979410058bddb5c0c7dc59d51b5856a2f4cfb0dbce041e95b",
+          "text": "1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2015."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/Luật-38-2013-QH13.docx",
+        "alternate": [
+          "data/raw/word/Luật-38-2013-QH13.docx"
+        ],
+        "reason": "User-provided Word attachment from the official VBPL record is selected; the pre-existing raw Word copy is byte-identical and retained only as an alternate."
+      }
+    }
+  ]
+}

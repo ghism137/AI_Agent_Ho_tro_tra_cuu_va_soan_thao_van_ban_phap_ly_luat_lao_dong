@@ -56,11 +56,13 @@ def main():
             pass
 
     chunks_list = []
-    if (staging_dir / "chunks.jsonl").exists():
-        with open(staging_dir / "chunks.jsonl", "r", encoding="utf-8") as f:
+    chunks_path = staging_dir / "chunks.jsonl"
+    if chunks_path.exists():
+        with open(chunks_path, "r", encoding="utf-8") as f:
             for line in f:
                 if line.strip():
                     chunks_list.append(json.loads(line))
+        report["input_hashes"]["chunks.jsonl"] = file_hash(chunks_path)
                     
     chunks_by_doc = defaultdict(list)
     for c in chunks_list:
@@ -92,25 +94,12 @@ def main():
             if raw_file.exists():
                 doc_report["source_hashes"]["raw"] = file_hash(raw_file)
                 
-        # Find extracted file by provenance (metadata doc_number)
-        if doc_data and "metadata" in doc_data and "doc_number" in doc_data["metadata"]:
-            parsed_doc_number = doc_data["metadata"]["doc_number"]
-            if parsed_doc_number in extracted_files:
-                ext_file = extracted_files[parsed_doc_number]
-                doc_report["source_hashes"]["extracted"] = file_hash(ext_file)
-        
-        ext_data = {}
-        if ext_file:
-            ext_data = json.loads(ext_file.read_text(encoding="utf-8"))
-            
         if not doc_data:
             doc_report["status"] = "missing_in_parsed"
             report["documents"].append(doc_report)
             continue
             
         articles = doc_data.get("articles", [])
-        ext_articles = ext_data.get("articles", []) if isinstance(ext_data, dict) else []
-        ext_articles_map = {str(a.get("article_number")): unicodedata.normalize('NFC', a.get("content", "")) for a in ext_articles}
         
         path_counts = defaultdict(list)
         
@@ -128,40 +117,95 @@ def main():
                 "hash": content_hash(content)
             })
             
-            # Prove fidelity: normalize and check substring
-            content_norm = unicodedata.normalize('NFC', content).strip()
-            if ext_file:
-                if art_num not in ext_articles_map:
-                    if str(art_num).lower() not in ["none", ""]:
-                        doc_report["fidelity_mismatches"].append({
-                            "path": path,
-                            "reason": "missing_in_extracted"
-                        })
+            # We perform fidelity checks after the loop below.
+
+        if raw_path_str.endswith(".docx"):
+            # Direct DOCX Extraction Verification (Bypass Cleaned JSON)
+            try:
+                import sys
+                from pathlib import Path
+                if str(ROOT) not in sys.path:
+                    sys.path.insert(0, str(ROOT))
+                from backend.ingestion.docx_extractor import extract_docx
+                
+                blocks = extract_docx(ROOT / raw_path_str)
+                block_map = {}
+                for b in blocks:
+                    if b['kind'] == 'paragraph':
+                        block_map[b['locator']] = unicodedata.normalize('NFC', b['text'].strip())
+                    elif b['kind'] == 'table':
+                        for row_idx, r in enumerate(b.get('rows', [])):
+                            text = ' | '.join(r)
+                            block_map[f"{b['locator']}/row:{row_idx+1}"] = unicodedata.normalize('NFC', text.strip())
+                            
+                for a in articles:
+                    for seg in a.get("content_segments", []):
+                        loc = seg.get("locator")
+                        txt = unicodedata.normalize('NFC', seg.get("text", "").strip())
+                        if loc not in block_map:
+                            doc_report["fidelity_mismatches"].append({
+                                "path": loc,
+                                "reason": "missing_in_extracted"
+                            })
+                        else:
+                            txt_clean = re.sub(r'\s+', '', txt).lower()
+                            blk_clean = re.sub(r'\s+', '', block_map[loc]).lower()
+                            if txt_clean != blk_clean:
+                                doc_report["fidelity_mismatches"].append({
+                                    "path": loc,
+                                    "reason": "content_mismatch"
+                                })
+                            
+            except Exception as e:
+                doc_report["fidelity_mismatches"].append({
+                    "path": raw_path_str,
+                    "reason": f"missing_provenance_to_raw ({e})"
+                })
+        else:
+            # For PDF, Verify strict parity between parsed.json and chunks.jsonl
+            doc_chunks = chunks_by_doc.get(doc_id, [])
+            chunk_map = {c.get("locator") or "/".join(c.get("structural_path", [])): unicodedata.normalize('NFC', c.get("content", "").strip()) for c in doc_chunks}
+            
+            # 1. Verify provenance refs
+            for c in doc_chunks:
+                refs = [ref.get("source_id") for ref in c.get("source_refs", [])]
+                if raw_source_id not in refs:
+                    doc_report["fidelity_mismatches"].append({
+                        "path": c.get("locator", "") or "/".join(c.get("structural_path", [])),
+                        "reason": "missing_provenance_to_raw"
+                    })
+            
+            # 2. Check that every parsed article is correctly represented in chunks
+            parsed_paths = set()
+            for a in articles:
+                path = "/".join(a.get("structural_path", []))
+                parsed_paths.add(path)
+                txt = unicodedata.normalize('NFC', a.get("content", "").strip())
+                if path not in chunk_map:
+                    doc_report["fidelity_mismatches"].append({
+                        "path": path,
+                        "reason": "missing_chunk_coverage"
+                    })
                 else:
-                    ext_content_norm = ext_articles_map[art_num]
-                    if content_norm not in ext_content_norm:
+                    txt_clean = re.sub(r'\s+', '', txt).lower()
+                    chk_clean = re.sub(r'\s+', '', chunk_map[path]).lower()
+                    if txt_clean != chk_clean:
                         doc_report["fidelity_mismatches"].append({
                             "path": path,
                             "reason": "content_mismatch"
                         })
-
-        if ext_file:
-            parsed_art_nums = {str(a.get("article_number")) for a in articles}
-            for ext_art_num in ext_articles_map.keys():
-                if ext_art_num not in parsed_art_nums and str(ext_art_num).lower() not in ["none", ""]:
+            
+            # 3. Check for extra/duplicate chunks
+            for cp in chunk_map.keys():
+                if cp not in parsed_paths:
                     doc_report["fidelity_mismatches"].append({
-                        "path": f"extracted/article:{ext_art_num}",
+                        "path": cp,
                         "reason": "missing_in_parsed"
                     })
-        else:
-            # If no extracted file (PDFs), verify provenance by checking chunks
-            for c in chunks_by_doc.get(doc_id, []):
-                refs = [ref.get("source_id") for ref in c.get("source_refs", [])]
-                if raw_source_id not in refs:
-                    doc_report["fidelity_mismatches"].append({
-                        "path": c.get("locator", ""),
-                        "reason": "missing_provenance_to_raw"
-                    })
+        
+        for idx, art in enumerate(articles):
+            path = "/".join(art.get("structural_path", []))
+            content = art.get("content", "")
             
             # Check annex contamination
             if "body" in art.get("structural_path", []) and "phụ lục" in content.lower():
@@ -201,8 +245,6 @@ def main():
                     
         if doc_report["fidelity_mismatches"]:
             doc_report["status"] = "mismatched"
-        elif not doc_report["source_hashes"].get("extracted") and raw_path_str and not raw_path_str.endswith(".pdf"):
-            doc_report["status"] = "missing_extracted"
                 
         report["documents"].append(doc_report)
         

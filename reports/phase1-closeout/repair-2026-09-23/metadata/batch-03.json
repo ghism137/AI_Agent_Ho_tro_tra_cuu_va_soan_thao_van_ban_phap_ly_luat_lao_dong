@@ -1,0 +1,271 @@
+{
+  "task_id": "P1R-04",
+  "batch": 3,
+  "status": "BUILDER_PROPOSALS_COMPLETE_AWAITING_REVIEW",
+  "document_count": 5,
+  "documents": [
+    {
+      "doc_id": "doc:46/2014/QH13",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:9dd7d62ec6b461f31fea4e5fbf2fb47d119dfe1ebdbe354a27c4b79311216f28",
+        "path": "data/raw/official/46-2014-QH13-congbao.pdf",
+        "source_url": "https://congbao.chinhphu.vn/van-ban/luat-so-46-2014-qh13-3045.htm",
+        "source_sha256": "bc5f942f92a0891b0090576fd8119ae8f11288cf4950d7075635e9f1d9a9e7e0",
+        "full_content_sha256": "483e9521c2637acf3deeb315fd373abd8f902dd3a5c697a4db283292e0c5643d"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "6d4ba5b82724b12a166f6883aa5cea5cfb5e4153ae602cca83aaa806099419e1",
+      "proposed_values": {
+        "title": "Luật sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+        "issued_date": "2014-06-13",
+        "valid_from": "2015-01-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:9dd7d62ec6b461f31fea4e5fbf2fb47d119dfe1ebdbe354a27c4b79311216f28",
+          "source_sha256": "bc5f942f92a0891b0090576fd8119ae8f11288cf4950d7075635e9f1d9a9e7e0",
+          "full_content_sha256": "483e9521c2637acf3deeb315fd373abd8f902dd3a5c697a4db283292e0c5643d",
+          "locator": "pdf/page:1/line:13-14",
+          "locator_sha256": "dbf5de46cd5071d01dd6b9b7aff3ca42b324feec19c0ea6170004084cc1ee5d2",
+          "text": "LUẬT\nSỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM Y TẾ"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:9dd7d62ec6b461f31fea4e5fbf2fb47d119dfe1ebdbe354a27c4b79311216f28",
+          "source_sha256": "bc5f942f92a0891b0090576fd8119ae8f11288cf4950d7075635e9f1d9a9e7e0",
+          "full_content_sha256": "483e9521c2637acf3deeb315fd373abd8f902dd3a5c697a4db283292e0c5643d",
+          "locator": "pdf/page:14/line:20-21",
+          "locator_sha256": "37bf6c280a636ec29a977cb7e621ad8f52d59b2727a4877b3465ee73bbb0847c",
+          "text": "Luật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIII,\nkỳ họp thứ 7 thông qua ngày 13 tháng 6 năm 2014./."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:9dd7d62ec6b461f31fea4e5fbf2fb47d119dfe1ebdbe354a27c4b79311216f28",
+          "source_sha256": "bc5f942f92a0891b0090576fd8119ae8f11288cf4950d7075635e9f1d9a9e7e0",
+          "full_content_sha256": "483e9521c2637acf3deeb315fd373abd8f902dd3a5c697a4db283292e0c5643d",
+          "locator": "pdf/page:14/line:15-16",
+          "locator_sha256": "239c7fa6a0e0e0d640092380a4b3ac748f6dc80d73150fd0bc88dc240141ad73",
+          "text": "Điều 2.\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2015."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/46-2014-QH13-congbao.pdf",
+        "reason": "Individual Gazette PDF pages 1–14 contain Law 46 amending the BHYT law."
+      }
+    },
+    {
+      "doc_id": "doc:51/2024/QH15",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "single official source in document source_ids",
+      "source": {
+        "source_id": "src:b4bee6916e931a5e97926dc672d26f90ad42199ba380ae94a3d81bca7f9a8419",
+        "path": "data/raw/official/51-2024-QH15.html",
+        "source_url": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-bao-hiem-y-te-11924122017211787.htm",
+        "source_sha256": "c1b3d59b979d3e0b2247bf0d27d58301eb594832cd4d32b1a2a65af534b14dbd",
+        "full_content_sha256": "6c01294b19bb3c54f1d7e4b562adf8276d349744378af5e09fca19d54fa43c73"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "6ef572c5f873ae41ad846d05df85efe7366e6524fc73cec877c285ff6182f0af",
+      "proposed_values": {
+        "title": "Luật sửa đổi, bổ sung một số điều của Luật Bảo hiểm y tế",
+        "issued_date": "2024-11-27",
+        "valid_from": "2025-07-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:b4bee6916e931a5e97926dc672d26f90ad42199ba380ae94a3d81bca7f9a8419",
+          "source_sha256": "c1b3d59b979d3e0b2247bf0d27d58301eb594832cd4d32b1a2a65af534b14dbd",
+          "full_content_sha256": "6c01294b19bb3c54f1d7e4b562adf8276d349744378af5e09fca19d54fa43c73",
+          "locator": "html/articleBody/node:10-11",
+          "locator_sha256": "dbf5de46cd5071d01dd6b9b7aff3ca42b324feec19c0ea6170004084cc1ee5d2",
+          "text": "LUẬT\nSỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM Y TẾ"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:b4bee6916e931a5e97926dc672d26f90ad42199ba380ae94a3d81bca7f9a8419",
+          "source_sha256": "c1b3d59b979d3e0b2247bf0d27d58301eb594832cd4d32b1a2a65af534b14dbd",
+          "full_content_sha256": "6c01294b19bb3c54f1d7e4b562adf8276d349744378af5e09fca19d54fa43c73",
+          "locator": "html/articleBody/node:336",
+          "locator_sha256": "770e0469b15230f960609b5d6b40c18c14ee6da3334a6532c46e79f7e4e36f87",
+          "text": "Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XV, kỳ họp thứ 8 thông qua ngày 27 tháng 11 năm 2024."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:b4bee6916e931a5e97926dc672d26f90ad42199ba380ae94a3d81bca7f9a8419",
+          "source_sha256": "c1b3d59b979d3e0b2247bf0d27d58301eb594832cd4d32b1a2a65af534b14dbd",
+          "full_content_sha256": "6c01294b19bb3c54f1d7e4b562adf8276d349744378af5e09fca19d54fa43c73",
+          "locator": "html/articleBody/node:325",
+          "locator_sha256": "e3a2711439678a30d8bf8e6da618b0f3bb65b22792a61da53626989f53798b41",
+          "text": "1. Luật này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2025, trừ quy định tại khoản 2 và khoản 3 Điều này."
+        }
+      ],
+      "conflicts_or_alternates": "General effective date proposed; multiple provisions apply from 2025-01-01 and remain for P1R-06.",
+      "explicit_source_selection": null
+    },
+    {
+      "doc_id": "doc:58/2014/QH13",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:b77590c737266d651e636d49f955a5ee9d4eef139e8ab0f9ce7a1c6858705bba",
+        "path": "data/raw/official/Luật-58-2014-QH13.docx",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=46744",
+        "source_sha256": "8fbc1c30b97c26f904d28e7cda4dc1e9ecf973bcc24f85dcafa0e86bd930f925",
+        "full_content_sha256": "5b6e54dbccbc41fba5c73ccdd80a28ea92bbc3c41b5fe6ed2d3042eda1bd123c"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "26c48463f5e68940581ac2906ba8db5bf1a68cae41b3ca72838e14d57a0852a9",
+      "proposed_values": {
+        "title": "Luật Bảo hiểm xã hội",
+        "issued_date": "2014-11-20",
+        "valid_from": "2016-01-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:b77590c737266d651e636d49f955a5ee9d4eef139e8ab0f9ce7a1c6858705bba",
+          "source_sha256": "8fbc1c30b97c26f904d28e7cda4dc1e9ecf973bcc24f85dcafa0e86bd930f925",
+          "full_content_sha256": "5b6e54dbccbc41fba5c73ccdd80a28ea92bbc3c41b5fe6ed2d3042eda1bd123c",
+          "locator": "docx/paragraph:3-4",
+          "locator_sha256": "ad22dd9a3a4974271d38243d72b9190395f4f221af807bc0bf821be6f461aad8",
+          "text": "LUẬT\nBẢO HIỂM XÃ HỘI"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:b77590c737266d651e636d49f955a5ee9d4eef139e8ab0f9ce7a1c6858705bba",
+          "source_sha256": "8fbc1c30b97c26f904d28e7cda4dc1e9ecf973bcc24f85dcafa0e86bd930f925",
+          "full_content_sha256": "5b6e54dbccbc41fba5c73ccdd80a28ea92bbc3c41b5fe6ed2d3042eda1bd123c",
+          "locator": "docx/paragraph:846",
+          "locator_sha256": "62d8a5758edf2c30b1c7347bd1c79e9dcf40246ebbbece809db3f7c972a137cd",
+          "text": "Luật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIII, kỳ họp thứ 8 thông qua ngày 20 tháng 11 năm 2014."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:b77590c737266d651e636d49f955a5ee9d4eef139e8ab0f9ce7a1c6858705bba",
+          "source_sha256": "8fbc1c30b97c26f904d28e7cda4dc1e9ecf973bcc24f85dcafa0e86bd930f925",
+          "full_content_sha256": "5b6e54dbccbc41fba5c73ccdd80a28ea92bbc3c41b5fe6ed2d3042eda1bd123c",
+          "locator": "docx/paragraph:841",
+          "locator_sha256": "5759722de3e37acf7dfd7b96dd08a994d9f0971932d0b593dfc25d46d6099c3f",
+          "text": "1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2016, trừ quy định tại điểm b khoản 1 và khoản 2 Điều 2 của Luật này thì có hiệu lực thi hành kể từ ngày 01 tháng 01 năm 2018."
+        }
+      ],
+      "conflicts_or_alternates": "General effective date proposed; Article 124(1) has a 2018-01-01 exception for specified Article 2 provisions.",
+      "explicit_source_selection": {
+        "body": "data/raw/official/Luật-58-2014-QH13.docx",
+        "alternate": [
+          "data/raw/word/Luật-58-2014-QH13.docx"
+        ],
+        "reason": "User-provided Word attachment from the official VBPL record is selected; the pre-existing raw Word copy is byte-identical and retained only as an alternate."
+      }
+    },
+    {
+      "doc_id": "doc:68/2020/QH14",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:1758c50b526766cdc11241742a629040cd4cc0530b63c61e7d23903cf1717fc9",
+        "path": "data/raw/official/68-2020-QH14-congbao.pdf",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2020/11/32684/33716-1-20201179-118068-2020-qh14.pdf",
+        "source_sha256": "740784336d365ca3116a505afd2734a04c6619f57fd761ecf883a4949abea07a",
+        "full_content_sha256": "f674c7737c30e743d6ddadd7e6297b6d2991ed9ef25501f639f06b95e1698955"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "57e558c1a8c329f97ff8802b24f80ebe70b14470f70699f5c737150961e21a5a",
+      "proposed_values": {
+        "title": "Luật Cư trú",
+        "issued_date": "2020-11-13",
+        "valid_from": "2021-07-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:1758c50b526766cdc11241742a629040cd4cc0530b63c61e7d23903cf1717fc9",
+          "source_sha256": "740784336d365ca3116a505afd2734a04c6619f57fd761ecf883a4949abea07a",
+          "full_content_sha256": "f674c7737c30e743d6ddadd7e6297b6d2991ed9ef25501f639f06b95e1698955",
+          "locator": "pdf/page:1/line:14-15",
+          "locator_sha256": "de4c34a66e19dab31cc88aa76f812db195c2d1184da05d1edf98374af8270a7a",
+          "text": "LUẬT\nCƯ TRÚ"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:1758c50b526766cdc11241742a629040cd4cc0530b63c61e7d23903cf1717fc9",
+          "source_sha256": "740784336d365ca3116a505afd2734a04c6619f57fd761ecf883a4949abea07a",
+          "full_content_sha256": "f674c7737c30e743d6ddadd7e6297b6d2991ed9ef25501f639f06b95e1698955",
+          "locator": "pdf/page:27/line:14-15",
+          "locator_sha256": "b7b1fb893065cce51d81f669fead4d7398aa3b3834e71865bb6e02d78c43f4d9",
+          "text": "Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIV,\nkỳ họp thứ 10 thông qua ngày 13 tháng 11 năm 2020."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:1758c50b526766cdc11241742a629040cd4cc0530b63c61e7d23903cf1717fc9",
+          "source_sha256": "740784336d365ca3116a505afd2734a04c6619f57fd761ecf883a4949abea07a",
+          "full_content_sha256": "f674c7737c30e743d6ddadd7e6297b6d2991ed9ef25501f639f06b95e1698955",
+          "locator": "pdf/page:26/line:30+pdf/page:26/line:32",
+          "locator_sha256": "1cd0a5ea826fd828d595a7e54f5e137269e8ba07fe0c23bff9daa76734b3b5b0",
+          "text": "Điều 38. Điều khoản thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2021."
+        }
+      ],
+      "conflicts_or_alternates": null,
+      "explicit_source_selection": {
+        "body": "data/raw/official/68-2020-QH14-congbao.pdf",
+        "reason": "Individual Gazette PDF pages 1–27 contain Law 68; Article 37(2) amends BHYT Article 2(7)."
+      }
+    },
+    {
+      "doc_id": "doc:71/2025/QH15",
+      "disposition": "PROPOSED_AWAITING_INDEPENDENT_REVIEW",
+      "selection_basis": "explicit_source_selection",
+      "source": {
+        "source_id": "src:b79d8a86c8a7c7d8046421f1db78404f079cf8e231d7081f60a3822494994e20",
+        "path": "data/raw/official/71-2025-QH15-congbao.pdf",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2025/7/45551/57680-1-965-966.pdf",
+        "source_sha256": "42b72d237c9531c257b56165c86c18967d9772294e3a7236822cd3f4e7d3d17d",
+        "full_content_sha256": "35152f56a6469bdcfd87159839d4364c9246528b7df4660d89f80a2ff76a9945"
+      },
+      "subject_input_fingerprint_without_review_dependencies": "d5a85b2558c87f687efb807d5837f132744c531b483208178a40ac86e3ae3a2e",
+      "proposed_values": {
+        "title": "Luật Công nghiệp công nghệ số",
+        "issued_date": "2025-06-14",
+        "valid_from": "2026-01-01"
+      },
+      "evidence": [
+        {
+          "field": "title",
+          "source_id": "src:b79d8a86c8a7c7d8046421f1db78404f079cf8e231d7081f60a3822494994e20",
+          "source_sha256": "42b72d237c9531c257b56165c86c18967d9772294e3a7236822cd3f4e7d3d17d",
+          "full_content_sha256": "35152f56a6469bdcfd87159839d4364c9246528b7df4660d89f80a2ff76a9945",
+          "locator": "pdf/page:39/line:14-15",
+          "locator_sha256": "b2649747ba2371844bac9f4c87af0ea7c9dd11b0caab32c703cf642eda2bf58d",
+          "text": "LUẬT\nCÔNG NGHIỆP CÔNG NGHỆ SỐ"
+        },
+        {
+          "field": "issued_date",
+          "source_id": "src:b79d8a86c8a7c7d8046421f1db78404f079cf8e231d7081f60a3822494994e20",
+          "source_sha256": "42b72d237c9531c257b56165c86c18967d9772294e3a7236822cd3f4e7d3d17d",
+          "full_content_sha256": "35152f56a6469bdcfd87159839d4364c9246528b7df4660d89f80a2ff76a9945",
+          "locator": "pdf/page:69/line:32-33",
+          "locator_sha256": "f6a9fa77728ee833193184f6ff19c51ffe753b4f638548119e2205383cdc39e2",
+          "text": "Luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XV,\nKỳ họp thứ 9 thông qua ngày 14 tháng 6 năm 2025."
+        },
+        {
+          "field": "valid_from",
+          "source_id": "src:b79d8a86c8a7c7d8046421f1db78404f079cf8e231d7081f60a3822494994e20",
+          "source_sha256": "42b72d237c9531c257b56165c86c18967d9772294e3a7236822cd3f4e7d3d17d",
+          "full_content_sha256": "35152f56a6469bdcfd87159839d4364c9246528b7df4660d89f80a2ff76a9945",
+          "locator": "pdf/page:69/line:10-14",
+          "locator_sha256": "a167d57dd09d5c845d9f6bde4a624a9f4c91c57361b51b38826da555a389ee13",
+          "text": "Điều 50. Hiệu lực thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2026, trừ trường hợp\nquy định tại khoản 2 Điều này.\n2. Các điều 11, 28 và 29 của Luật này có hiệu lực thi hành từ ngày 01 tháng 7\nnăm 2025."
+        }
+      ],
+      "conflicts_or_alternates": "General effective date proposed; Articles 11, 28 and 29 took effect 2025-07-01. Signed scan retained as alternate.",
+      "explicit_source_selection": {
+        "body": "data/raw/official/71-2025-QH15-congbao.pdf",
+        "alternate": [
+          "data/raw/official/71-2025-QH15.signed.pdf"
+        ],
+        "reason": "Gazette issue 965+966 pages 39–69 contain only Law 71; signed government PDF is a scanned comparison copy."
+      }
+    }
+  ]
+}

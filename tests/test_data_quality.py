@@ -67,3 +67,9 @@ def test_temporal_interval_boundary_and_unknown():
     assert eligibility(version, date(2021, 1, 1), coverage_verified=True, applicability_resolved=True) == "eligible"
     assert eligibility(version, date(2025, 7, 1), coverage_verified=True, applicability_resolved=True) == "ineligible"
     assert eligibility(version, date(2022, 1, 1), coverage_verified=False, applicability_resolved=True) == "unknown"
+    assert eligibility(version, date(2022, 1, 1), coverage_verified=True,
+                       applicability_resolved=True, population_matches=None) == "unknown"
+    assert eligibility(version, date(2022, 1, 1), coverage_verified=True,
+                       applicability_resolved=True, population_matches=False) == "ineligible"
+    assert eligibility(version, date(2022, 1, 1), coverage_verified=True,
+                       applicability_resolved=True, transition_resolved=False) == "unknown"

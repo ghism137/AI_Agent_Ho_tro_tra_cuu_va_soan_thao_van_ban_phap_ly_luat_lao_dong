@@ -1,0 +1,52 @@
+{
+  "task_id": "P1R-00",
+  "recorded_at": "2026-09-23",
+  "status": "BLOCKED",
+  "as_of_date": "2026-09-17",
+  "scope_requirements": {
+    "base_documents_required": 37,
+    "current_documents_required": 61,
+    "coverage_records_required": 15,
+    "legal_groups_required": 6
+  },
+  "base_documents_37": {
+    "status": "BLOCKED_MISSING_EVIDENCE",
+    "document_ids": [],
+    "reason": "The only prior scope_lock.json has total_documents_count=0 and base_documents_37=[]; no pinned 37-document list was found in the P1R-00 inputs. The current 61-document registry must not be silently substituted for the missing historical base scope."
+  },
+  "current_documents_61": [
+    "doc:02/2025/NĐ-CP", "doc:06/2021/TT-BLĐTBXH", "doc:09/2020/TT-BLĐTBXH", "doc:10/2012/QH13", "doc:10/2020/TT-BLĐTBXH", "doc:104/2022/NĐ-CP", "doc:108/2021/NĐ-CP", "doc:11/2020/TT-BLĐTBXH", "doc:11/2022/TT-BLĐTBXH", "doc:113/2025/QH15", "doc:115/2015/NĐ-CP", "doc:12/2012/QH13", "doc:12/2022/NĐ-CP", "doc:124/2025/QH15", "doc:135/2020/NĐ-CP", "doc:142/2025/QH15", "doc:143/2018/NĐ-CP", "doc:145/2020/NĐ-CP", "doc:146/2018/NĐ-CP", "doc:152/2020/NĐ-CP", "doc:158/2025/NĐ-CP", "doc:162/2026/NĐ-CP", "doc:188/2025/NĐ-CP", "doc:191/2013/NĐ-CP", "doc:219/2025/NĐ-CP", "doc:23/2021/QĐ-TTg", "doc:25/2008/QH12", "doc:28/2015/NĐ-CP", "doc:28/2015/TT-BLĐTBXH", "doc:293/2025/NĐ-CP", "doc:30/2023/QH15", "doc:32/2013/QH13", "doc:35/2018/QH14", "doc:35/2022/NĐ-CP", "doc:374/2025/NĐ-CP", "doc:38/2013/QH13", "doc:39/2016/NĐ-CP", "doc:41/2024/QH15", "doc:42/2023/NĐ-CP", "doc:43/2013/NĐ-CP", "doc:44/2019/NĐ-CP", "doc:45/2019/QH14", "doc:46/2014/QH13", "doc:51/2024/QH15", "doc:58/2014/QH13", "doc:59/2015/TT-BLĐTBXH", "doc:61/2020/NĐ-CP", "doc:68/2020/QH14", "doc:70/2015/NĐ-CP", "doc:70/2023/NĐ-CP", "doc:71/2025/QH15", "doc:73/2025/QH15", "doc:74/2024/NĐ-CP", "doc:74/2025/NĐ-CP", "doc:74/2025/QH15", "doc:75/2023/NĐ-CP", "doc:75/2024/NĐ-CP", "doc:84/2015/QH13", "doc:84/2025/QH15", "doc:88/2020/NĐ-CP", "doc:97/2015/QH13"
+  ],
+  "coverage_15": [
+    {"topic": "labor", "doc_number": "45/2019/QH14", "population": "general"},
+    {"topic": "labor", "doc_number": "145/2020/NĐ-CP", "population": "general"},
+    {"topic": "labor", "doc_number": "35/2022/NĐ-CP", "population": "general"},
+    {"topic": "labor", "doc_number": "219/2025/NĐ-CP", "population": "general"},
+    {"topic": "social_insurance", "doc_number": "58/2014/QH13", "population": "general"},
+    {"topic": "social_insurance", "doc_number": "41/2024/QH15", "population": "general"},
+    {"topic": "social_insurance", "doc_number": "158/2025/NĐ-CP", "population": "general"},
+    {"topic": "health_insurance", "doc_number": "25/2008/QH12", "population": "general"},
+    {"topic": "health_insurance", "doc_number": "51/2024/QH15", "population": "general"},
+    {"topic": "health_insurance", "doc_number": "188/2025/NĐ-CP", "population": "general"},
+    {"topic": "unemployment", "doc_number": "38/2013/QH13", "population": "general"},
+    {"topic": "unemployment", "doc_number": "74/2025/QH15", "population": "general"},
+    {"topic": "unemployment", "doc_number": "374/2025/NĐ-CP", "population": "general"},
+    {"topic": "minimum_wage", "doc_number": "74/2024/NĐ-CP", "population": "general"},
+    {"topic": "minimum_wage", "doc_number": "293/2025/NĐ-CP", "population": "general"}
+  ],
+  "legal_groups_6": [
+    "labor, minimum wage, and sanctions",
+    "foreign workers",
+    "social insurance",
+    "health insurance",
+    "employment and unemployment insurance",
+    "trade union, occupational safety and remaining corpus"
+  ],
+  "input_hashes": {
+    "data/registry/sources.json": "f89a3f8a7f4bf609795e55dedb60135f5a543332ff8412662af0f04dd5deb733",
+    "data/registry/documents.json": "433de35ca7bfd87823e8226fb10044883fca522a4a4e2be7d1ce3d788f3b5725",
+    "data/registry/coverage.json": "51cc4eb17353444b3808f16a76430c9ab9e3899bad9918730c6853869ec0fd21",
+    "data/registry/source_selection.json": "12933b08db0382d2d9443d4f6f71e7bd81114a70beddad8668e945dde55adc95",
+    "reports/phase1-closeout/scope_lock.json": "fe0af63c819aa391349dfa87d070d3eed89001caaec343a24408ac62b4465975"
+  }
+}

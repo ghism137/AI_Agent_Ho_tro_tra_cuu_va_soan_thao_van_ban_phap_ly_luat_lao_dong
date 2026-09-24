@@ -1,16 +1,65 @@
 # Session State — AI Agent Luật Lao Động
 
-> **Cập nhật hiện hành: 2026-09-18 — chỉ thiết kế, tối ưu giao việc.**
+> **Cập nhật hiện hành: 2026-09-24 — CP-A và P1R-04 PASS; P1R-05 batch-01 re-review vòng 4 FAIL với 3 High, đang chờ repair vòng năm.**
 >
-> **Phase 1: PAUSED; closeout chưa nghiệm thu. Phase 2: DESIGN_ONLY.**
+> **Phase 1: ACTIVE (Đã mở lại để xử lý fix/review). Phase 2: DESIGN_ONLY.**
 >
-> Nguồn trạng thái: [handoff paused](phase1_handoff_paused_2026-09-18.md). Active pointer không là acceptance. Chưa thực thi P2-01…10; P2-10 còn BLOCKED_BY_PHASE1.
+> **Closeout OPEN, chưa nghiệm thu.** Review 23/09 tái hiện lỗi parser trên PDF canonical NĐ 02/2025; còn lỗi gate/materializer/evidence. Các claims PASS cũ không phải acceptance hiện hành.
+
+## Điểm vào hiện hành 23/09/2026
+
+- [Review findings + giới hạn kiểm tra](../../reports/phase1-review-2026-09-23/review.md); [evidence/input hashes](../../reports/phase1-review-2026-09-23/evidence.json).
+- [Completion plan P1R-00…12](phase1_completion_plan_2026-09-23.md) thay thứ tự A–F trong handoff 21/09; giữ scope 37 nền/61 hiện tại + dependencies/15 coverage/6 nhóm, as-of 2026-09-17.
+- Actual executor gần nhất là Codex `gpt-5` (không giả tên Sol/Terra). P1R-00 vẫn blocked do thiếu danh sách 37 IDs; full suite builder gần nhất có 75 assertions PASS qua `tmp_path` đặt trong workspace, còn ACL temp hệ thống là giới hạn môi trường. Independent Bugbot CP-A re-review vòng 4 đã khớp 7/7 hash, không có finding mới và trả `PASS — SIGNED OFF`. P1R-04 hiện có 4 batch x 5: 20 source-backed proposals, 0 blocked; sáu proposal bổ sung đang chờ independent review và không có registry decision mới. P1R-08 đã hoàn tất fixture materializer độc lập, còn actual operations chờ CP-B.
+- CP-A lần đầu `FAIL` với bốn finding; Bugbot review độc lập lần hai đã xác nhận
+  bốn finding đó đóng, nhưng `FAIL — NOT SIGNED OFF` với High mới: predicate
+  payload có thể nuốt `Điều N` top-level khi amendment verb ở clause trước đó và
+  dòng cuối kết thúc `như sau:`. Fix vòng 3 đã đóng trigger đó, nhưng re-review
+  vòng 3 phát hiện payload point đã đóng quote vẫn có thể rò amendment verb sang
+  đoạn thường phía sau. Builder đã thêm closing-quote boundary; independent
+  round 4 xác nhận repair và toàn bộ finding cũ vẫn đóng. Xem [round-4 review record](../../reports/phase1-closeout/repair-2026-09-23/checkpoints/CP-A-rereview-4-bugbot-review-2026-09-24.md).
+  P1R-04 source-evidence đã PASS cho 20/20 proposal; P1R-05 có thể bắt đầu theo từng document đủ proposal, P1R-06…07 vẫn chờ fidelity/source/legal evidence và CP-B; P1R-09…12 bị chặn theo
+  dependency. Không task nào tự ký.
+- Stored registry 61 verified; áp dụng active metadata reviews trong bộ nhớ cho 41 verified/20 pending. Archive 61 entries (41 A/20 B), không thiếu archived filenames. Không phải kết quả rebuild hoặc legal review mới.
+- Staging lưu candidate-3995dbe3f41d51cd (61 docs/20.410 chunks/20.318 versions), stale so current-input fingerprint candidate-c350e21f2516a157. Operations: 13 pending/2 blocked. Active pointer giữ phase1-febf5129f0e33d40, chưa kiểm toàn release trong phiên này.
+- Đã sửa parser amendment, decision lifecycle/coverage contract và materializer fixtures; không sửa review/data generated, không rebuild/ingestion/embedding/full eval, không publish. Kiểm builder gần nhất sau repair High vòng 3: full assertion suite `75 passed in 8.69s`; CP-A focused `48 passed in 0.80s`; materializer/chunker/temporal trước đó `19 passed`; canonical PDF `69/69/4` và 0 duplicate path; `py_compile` PASS; `git diff --check` không có whitespace error. Harness tái lập được lưu cùng baseline, thư mục test sinh trong lượt này đã dọn; pytest temp hệ thống vẫn bị sandbox từ chối như packet P1R-00.
+
+### Đang làm / chuyển tiếp
+
+- Điểm dừng: P1R-05 batch-01 re-review vòng 4 `FAIL — NOT SIGNED OFF`.
+  DOCX provenance vẫn circular; PDF chưa kiểm content/locator và chưa reject
+  duplicate/extra chunks; reverse completeness vẫn lossy.
+- Bước tiếp theo: builder repair vòng năm, dựng bằng chứng từ raw độc lập rồi
+  re-review batch-01. Không tiếp tục các fidelity batch sau trước PASS.
+  Không tự tạo metadata reviewer identity hoặc verified decision.
+- Handoff hiện hành: [handoff_2026-09-24.md](handoff_2026-09-24.md).
+- Handoff đã bổ sung mục `6.1` ngày 2026-09-24: bộ file bắt buộc theo thứ tự
+  cho CP-A re-review, bộ readiness/điều kiện đủ cho CP-B và các file không được
+  dùng để suy sign-off.
+
+### Quyết định đã chốt trong phiên
+
+- Amendment payload dùng namespace nguồn riêng; mọi locator/path-dependent decision cũ phải revalidate.
+- Review v2 tách proposed/verified values và bind source bytes, full locator, dependencies; metadata không nâng coverage.
+- Materializer yêu cầu hash/payload refs/population thật, không fallback target text.
+- Chưa có independent reviewer thì không tạo verified legal decisions, không rebuild final và không publish.
+- CP-A PASS vòng 4 chỉ mở dependency; metadata proposals không tự trở thành
+  verified decisions và không suy ra CP-B/Gate 1 PASS.
+
+### File đang làm việc
+
+- `backend/ingestion/parser.py`, `backend/ingestion/schema.py`, `backend/ingestion/version_builder.py`, `backend/ingestion/chunker_v2.py`, `backend/ingestion/temporal.py`.
+- `scripts/review_decisions.py`, `scripts/build_registry.py`, `scripts/retired_auto_metadata_review.py`.
+- Focused tests và `reports/phase1-closeout/packets/P1R-00.md` … `P1R-12.md`.
+- P1R-04 metadata packets và deterministic builder dưới
+  `reports/phase1-closeout/repair-2026-09-23/metadata/`.
 
 ## Quy ước thiết kế hiện hành
 
 - Phase 2 dùng [design v2](phase2_design.md), [Project Guide](project_guide.md) và 5 task packs; tất cả task chưa thực thi.
-- Chỉ sửa docs trong yêu cầu hiện tại; không chuẩn bị code, fixtures, môi trường hay chạy thử Phase 2.
-- Phase 1 tiếp tục PAUSED theo [handoff](phase1_handoff_paused_2026-09-18.md). Claims PASS/release trong lịch sử bên dưới không phải acceptance hiện hành.
+- Yêu cầu hiện tại: tiếp tục Phase 1 theo completion cards và dependencies;
+  không triển khai hoặc chạy thử Phase 2.
+- Phase 1 ĐÃ ACTIVE trở lại để tiếp tục fix bug và chốt closeout. Claims PASS/release trong lịch sử bên dưới không phải acceptance hiện hành.
 
 ## Lịch sử Phase 1 và roadmap — không dùng làm lệnh tiếp tục
 
@@ -161,11 +210,11 @@ Các task có ngày bên dưới ghi lại công việc đã thực hiện trư�
 
 ---
 
-## Đang làm — trạng thái hiện hành
+## Đang làm — lịch sử 18/09, superseded bởi phần đầu file
 
 Đợt cập nhật tài liệu Phase 2 đã hoàn thành; chờ nhiệm vụ tiếp theo của người dùng. Không chạy nền, không mở lại Phase 1. RAM/GPU chưa xác nhận do CIM bị từ chối quyền đọc; không có benchmark mới. Working tree Phase 1 được giữ nguyên.
 
-## File định hướng phiên sau
+## File định hướng phiên sau — lịch sử 18/09
 
 `phase2_design.md`, `project_guide.md`, `phase2/01_contract_fixtures.md` đến `05_acceptance.md`. Chỉ đọc card được giao. Muốn quay lại Phase 1 thì dùng handoff paused và issue list được dẫn trong đó.
 
