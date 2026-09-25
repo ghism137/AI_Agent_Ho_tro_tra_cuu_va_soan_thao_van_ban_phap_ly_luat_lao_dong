@@ -10,7 +10,7 @@ Phase 1 remains `ACTIVE/OPEN`. Phase 2 remains `DESIGN_ONLY`.
 - P1R-04: REVIEWED / SOURCE-EVIDENCE PASS. Independent review accepted all 20
   proposals and five refreshed packet digests; zero records remain blocked. No
   registry review decision was written.
-- P1R-05: batch-01 re-review round 6 ready. PDF chunks validation now uses a Counter to explicitly flag duplicates, missing locators, and directly verifies against `extract_pdf_text` instead of merely comparing two generated JSON files. Reverse completeness for both DOCX and PDF is enforced by checking bounded sequences of locators, ensuring no internal article paragraphs can be dropped without failing the fidelity audit. All 5 documents are audited with 0 mismatches.
+- P1R-05: batch-01 re-review round 7 ready. Reverse completeness is now authoritatively verified across both DOCX and PDF by cross-checking against expected `normative` locators derived directly from `chunks.jsonl`. Provenance is strictly enforced by reconstructing chunk texts from `raw_blocks` and matching them against `chunk["content"]`, preventing locator swapping. The structural double loop was removed. All 5 documents are audited with 0 mismatches.
 - P1R-06: blocked by incomplete source/fidelity evidence for each legal group.
 - P1R-07: blocked by P1R-04/05/06 and CP-B.
 - P1R-08: fixture implementation complete; actual-operation validation blocked
