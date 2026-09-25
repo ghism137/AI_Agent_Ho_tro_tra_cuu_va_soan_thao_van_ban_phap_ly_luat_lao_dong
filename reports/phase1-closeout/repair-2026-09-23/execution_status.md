@@ -10,7 +10,7 @@ Phase 1 remains `ACTIVE/OPEN`. Phase 2 remains `DESIGN_ONLY`.
 - P1R-04: REVIEWED / SOURCE-EVIDENCE PASS. Independent review accepted all 20
   proposals and five refreshed packet digests; zero records remain blocked. No
   registry review decision was written.
-- P1R-05: batch-01 re-review round 7 ready. Reverse completeness is now authoritatively verified across both DOCX and PDF by cross-checking against expected `normative` locators derived directly from `chunks.jsonl`. Provenance is strictly enforced by reconstructing chunk texts from `raw_blocks` and matching them against `chunk["content"]`, preventing locator swapping. The structural double loop was removed. All 5 documents are audited with 0 mismatches.
+- P1R-05: batch-01, batch-02 REVIEWED / AUDIT PASS - SIGNED OFF. Independent review confirmed all fidelity protections (reverse completeness, provenance, order, bounds, etc.) are robust. The candidate correctly fails the audit due to Article 242 mismatches and requires a clean authorized rebuild in subsequent tasks.
 - P1R-06: blocked by incomplete source/fidelity evidence for each legal group.
 - P1R-07: blocked by P1R-04/05/06 and CP-B.
 - P1R-08: fixture implementation complete; actual-operation validation blocked
