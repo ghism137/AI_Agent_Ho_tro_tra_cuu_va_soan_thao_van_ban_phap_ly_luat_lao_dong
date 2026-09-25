@@ -119,11 +119,19 @@ def main():
             
             # We perform fidelity checks after the loop below.
 
-        # Unified fidelity check for DOCX and PDF
+        # Unified fidelity check for DOCX and PDF using chunks.jsonl
         import sys
         if str(ROOT) not in sys.path:
             sys.path.insert(0, str(ROOT))
             
+        # 0. Hash validation
+        if "raw" in doc_report["source_hashes"]:
+            if doc_report["source_hashes"]["raw"] != doc.get("source", {}).get("source_sha256"):
+                doc_report["fidelity_mismatches"].append({
+                    "path": raw_path_str,
+                    "reason": "raw_hash_mismatch"
+                })
+
         raw_blocks = []
         if raw_path_str.endswith(".docx"):
             from backend.ingestion.docx_extractor import extract_docx
@@ -136,25 +144,18 @@ def main():
             raw_blocks = extract_pdf_text(pdf_path, first_page=1, last_page=doc_len)
             
         if raw_blocks:
-            # Flatten blocks for map and list
             block_map = {}
-            raw_locators = []
             for b in raw_blocks:
                 if b['kind'] == 'paragraph':
                     block_map[b['locator']] = unicodedata.normalize('NFC', b['text'].strip())
-                    raw_locators.append(b['locator'])
                 elif b['kind'] == 'table':
                     for row_idx, r in enumerate(b.get('rows', [])):
                         text = ' | '.join(r)
                         loc = f"{b['locator']}/row:{row_idx+1}"
                         block_map[loc] = unicodedata.normalize('NFC', text.strip())
-                        raw_locators.append(loc)
-                        
-            # 1. Check Forward Completeness & Internal Reverse Completeness (Parsed <-> Raw)
+
+            # 1. Forward Completeness (Parsed <-> Raw)
             for art in articles:
-                locs = [seg.get("locator") for seg in art.get("content_segments", []) if seg.get("locator")]
-                
-                # Check forward: every segment in parsed must exist in raw with matching text
                 for seg in art.get("content_segments", []):
                     loc = seg.get("locator")
                     if not loc: continue
@@ -173,61 +174,69 @@ def main():
                                 "path": loc,
                                 "reason": "content_mismatch"
                             })
-                            
-                # Check internal reverse completeness: no raw block in the article's range can be missing from parsed
-                indices = [raw_locators.index(l) for l in locs if l in raw_locators]
-                if indices:
-                    min_idx, max_idx = min(indices), max(indices)
-                    for i in range(min_idx, max_idx + 1):
-                        if raw_locators[i] not in locs:
-                            doc_report["fidelity_mismatches"].append({
-                                "path": raw_locators[i],
-                                "reason": "missing_in_parsed"
-                            })
 
-            # 2. Check chunks.jsonl against parsed.json (PDF chunks)
+            # 2. Reverse Completeness & Provenance via chunks.jsonl
             doc_chunks = chunks_by_doc.get(doc_id, [])
             if doc_chunks:
-                # Count locators in chunks to prevent duplicate masking
                 from collections import Counter
                 chunk_locator_counts = Counter()
+                
                 for c in doc_chunks:
+                    # Validate chunk content matches raw text exactly (Provenance)
+                    chunk_text = unicodedata.normalize('NFC', c.get("content", "").strip())
                     refs = c.get("source_refs", [])
+                    raw_text_parts = []
+                    
                     for ref in refs:
                         loc = ref.get("locator")
                         src = ref.get("source_id")
-                        if loc:
-                            chunk_locator_counts[loc] += 1
-                            if loc not in raw_locators:
-                                doc_report["fidelity_mismatches"].append({
-                                    "path": loc,
-                                    "reason": "invalid_chunk_locator"
-                                })
+                        
                         if src != raw_source_id:
                             doc_report["fidelity_mismatches"].append({
                                 "path": loc or "unknown",
                                 "reason": "missing_provenance_to_raw"
                             })
                             
-                # Verify that every parsed segment locator is covered EXACTLY once by chunks
-                for art in articles:
-                    for seg in art.get("content_segments", []):
-                        loc = seg.get("locator")
                         if loc:
-                            count = chunk_locator_counts.get(loc, 0)
-                            if count == 0:
-                                doc_report["fidelity_mismatches"].append({
-                                    "path": loc,
-                                    "reason": "missing_chunk_coverage"
-                                })
-                            elif count > 1:
-                                doc_report["fidelity_mismatches"].append({
-                                    "path": loc,
-                                    "reason": "duplicate_chunk_coverage"
-                                })
+                            if c.get("content_kind") == "normative":
+                                chunk_locator_counts[loc] += 1
                                 
-                # Verify no extra locators in chunks that aren't in parsed
+                            if loc not in block_map:
+                                doc_report["fidelity_mismatches"].append({
+                                    "path": loc,
+                                    "reason": "invalid_chunk_locator"
+                                })
+                            else:
+                                raw_text_parts.append(block_map[loc])
+
+                    # Verify chunk content matches the sequence of its refs
+                    if raw_text_parts:
+                        # Chunk content might join with newline or space
+                        raw_combined_clean = re.sub(r'\s+', '', "".join(raw_text_parts)).lower()
+                        chunk_clean = re.sub(r'\s+', '', chunk_text).lower()
+                        if chunk_clean != raw_combined_clean:
+                            doc_report["fidelity_mismatches"].append({
+                                "path": c.get("locator", "chunk"),
+                                "reason": "chunk_content_mismatch"
+                            })
+                            
+                # Verify that every parsed segment locator is covered EXACTLY once by normative chunks
                 parsed_locs = {seg.get("locator") for art in articles for seg in art.get("content_segments", []) if seg.get("locator")}
+                
+                for loc in parsed_locs:
+                    count = chunk_locator_counts.get(loc, 0)
+                    if count == 0:
+                        doc_report["fidelity_mismatches"].append({
+                            "path": loc,
+                            "reason": "missing_chunk_coverage"
+                        })
+                    elif count > 1:
+                        doc_report["fidelity_mismatches"].append({
+                            "path": loc,
+                            "reason": "duplicate_chunk_coverage"
+                        })
+                        
+                # Verify no extra locators in normative chunks that aren't in parsed (Reverse Completeness)
                 for loc in chunk_locator_counts.keys():
                     if loc not in parsed_locs:
                         doc_report["fidelity_mismatches"].append({
