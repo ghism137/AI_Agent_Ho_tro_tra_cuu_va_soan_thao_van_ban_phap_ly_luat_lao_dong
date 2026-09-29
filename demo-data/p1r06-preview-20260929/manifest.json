@@ -20,10 +20,11 @@
     "doc:75/2023/NĐ-CP"
   ],
   "files": {
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
     "chunks.jsonl": "e38741e139a3efdb26c689971f993c8524030ba65b76f7a11f3569f635d216d0",
     "historical-fidelity-decision.md": "8086a2d9f500006677506ed9e15eac3351732192edd692083521b55bb644a547",
-    "parsed.json": "595a5926b886f7ead7905e18c5e6f22c7101de2f3daeaf12eca1bb9824bb66ac",
-    "README.md": "d24225cc174d216e336cfcd96aac4e34af23f03ac82947154a0b608882387c13",
-    "sources.json": "e33bee5c3664ff4c53bc1973c78c19b39ac71d9441f6573bc4720649f51564e1"
+    "parsed.json": "2541e2a775c87360eaad08a945ea13a9a07b2d3694fff3189cbb8465e072793a",
+    "README.md": "98a55d66b5f001401d88d4e79c7a8b6ef62ebeed823fe3c05c4f71f59b54a5d2",
+    "sources.json": "c0c476be3e54e7b08ba8df98c33e7c1a5e3f434c278ede1a1278aa95fb6e900d"
   }
 }
