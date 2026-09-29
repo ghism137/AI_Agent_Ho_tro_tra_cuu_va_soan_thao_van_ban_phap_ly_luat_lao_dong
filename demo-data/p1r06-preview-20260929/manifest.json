@@ -1,0 +1,29 @@
+{
+  "purpose": "source_text_demo_only",
+  "legal_acceptance": "FAIL P1R-06 — NOT SIGNED OFF",
+  "parent_candidate": "candidate-b4031f5962906d9e",
+  "parent_hashes": {
+    "parsed.json": "220836f9cf8de57e64e31b14815b7b4dfb8b97ec26486ee15b2dbd21c0adeb77",
+    "chunks.jsonl": "c98fcf27f9c293ad661449b91fcab7ac9b18233137a941327c020a624dc15719",
+    "manifest.json": "b3867525aea0ecae8eab494227225076f81648f80acdf4839bce9b449134da1b"
+  },
+  "documents": 29,
+  "chunks": 9990,
+  "excluded_changed_or_identity_documents": [
+    "doc:02/2025/NĐ-CP",
+    "doc:113/2025/QH15",
+    "doc:32/2013/QH13",
+    "doc:41/2024/QH15",
+    "doc:45/2019/QH14",
+    "doc:46/2014/QH13",
+    "doc:74/2025/NĐ-CP",
+    "doc:75/2023/NĐ-CP"
+  ],
+  "files": {
+    "chunks.jsonl": "e38741e139a3efdb26c689971f993c8524030ba65b76f7a11f3569f635d216d0",
+    "historical-fidelity-decision.md": "8086a2d9f500006677506ed9e15eac3351732192edd692083521b55bb644a547",
+    "parsed.json": "595a5926b886f7ead7905e18c5e6f22c7101de2f3daeaf12eca1bb9824bb66ac",
+    "README.md": "d24225cc174d216e336cfcd96aac4e34af23f03ac82947154a0b608882387c13",
+    "sources.json": "e33bee5c3664ff4c53bc1973c78c19b39ac71d9441f6573bc4720649f51564e1"
+  }
+}
