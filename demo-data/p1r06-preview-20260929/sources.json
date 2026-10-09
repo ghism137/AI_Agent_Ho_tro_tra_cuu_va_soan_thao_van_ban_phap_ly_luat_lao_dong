@@ -1,0 +1,350 @@
+[
+  {
+    "doc_id": "doc:10/2012/QH13",
+    "sources": [
+      {
+        "source_id": "src:898ec09206b7536fa6f07764330d296914151b29f5176f64ff28946b8d7631a0",
+        "path": "data/raw/official/Bộ-luật-10-2012-QH13.docx",
+        "sha256": "b1810ce518a14905cead26a2c7e646b9c3530a9c8f670cf9b7b1b2629be9e729",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=27615",
+        "format": "docx"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:104/2022/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:16daca587f20beb7f565e586565f4adf8b4fe30efe7cc094de3a55422e4a2f8f",
+        "path": "data/raw/official/104-2022-ND-CP-congbao.pdf",
+        "sha256": "15b057dabc31b8f3379b32be352ea3abde4306c4e52c51c38ace9d9f2e9681a0",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2022/12/38392/42711-1-2022965-966104-2022-nd-cp.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:108/2021/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:dfa5fd03e507572804c595b0a7e6cf6ad691d7d329c6f9dbef636c6cf4728bba",
+        "path": "data/raw/official/108-2021-ND-CP-congbao.pdf",
+        "sha256": "9e35d14f64351698500ba26427d1e52d61831d857b42b58930339ec63d8726ab",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2021/12/34934/37803-1-20211043-1044108-2021-nd-cp.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:12/2012/QH13",
+    "sources": [
+      {
+        "source_id": "src:d5715bc2a7549cedc491366cba0f5f7e014ebaa43f447da74bac618bb96496b6",
+        "path": "data/raw/official/Bộ-Luật-12-2012-QH13.docx",
+        "sha256": "60287bac0726ea2fecf874bcd0ea09fb4298008782733f759e934557b6220d60",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=27625",
+        "format": "docx"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:124/2025/QH15",
+    "sources": [
+      {
+        "source_id": "src:102e290a775e86a87d1e1fb4c47c6e1fe06de4ca73de4b9db157302e5146ad87",
+        "path": "data/raw/official/124-2025-QH15-congbao.pdf",
+        "sha256": "48f89542a1be6495333740fb0bca8cc0f6ad827d6123365eb0c9fe59ae81a50b",
+        "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/cong-bao-so-36-ngay-21-01-46934signed-17692388704141728786340.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:142/2025/QH15",
+    "sources": [
+      {
+        "source_id": "src:0b54a605762afb9ac5d22be518652681881ba1e528c94ec514b8cbfb1af33bf3",
+        "path": "data/raw/official/142-2025-QH15-congbao.pdf",
+        "sha256": "e1dd1eea40bc2c9af74d1e66591a303002357673613750ab35f82e1cb958c1f9",
+        "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/27/cong-bao-so-44-ngay-22-01-46942signed-1769480518503381294115.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:146/2018/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:2dbf81b533f22dc8226fb5dbca6acd923a08e701a2ec01d0724de1b9857c309f",
+        "path": "data/raw/official/146-2018-ND-CP-congbao.pdf",
+        "sha256": "552aa754db437935c6eabd4fa76aa1b26bca565c68b93d5726644a96273b4222",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2018/10/27525/24204-1-20181019-1020146-2018-nd-cp.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:158/2025/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:a318dc83f58ee61011990f833b006987a0fb7eaf7005af7ae1479e932c98254c",
+        "path": "data/raw/official/158-2025-ND-CP.html",
+        "sha256": "46518ade5d7c8562335149a9ef766f5e13c954b2ac68df9e58ffbd04cbaeed1c",
+        "source_url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-158-2025-nd-cp-quy-dinh-ve-bao-hiem-xa-hoi-bat-buoc-119250629171336803.htm",
+        "format": "html"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:162/2026/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:50b3e38ffb93ed01253d9326844222d1c766f7f84a34c8d87397839eda5214fb",
+        "path": "data/raw/official/162-2026-ND-CP-congbao.pdf",
+        "sha256": "0bfcf34621ca82e2e9bbf8ae5f3ab397b535e5fd4466b9ab70555e2a01f8f771",
+        "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/29/cong-bao-so-290-639154061914615919-ngay-29-05-47209_1780017031_signed.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:25/2008/QH12",
+    "sources": [
+      {
+        "source_id": "src:93c6069c896812bc67443dd26933e1d04dda040515ad1aa3861ba94cdbbaf066",
+        "path": "data/raw/official/luât-25-2008-QH12.docx",
+        "sha256": "53e6c935389dde49540952f3ebe5f651cf853ad34f95c17c24e6ef74fd0ca10f",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=12326",
+        "format": "docx"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:293/2025/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:d2b1ace4397ea13fd2507f7977c0fc1a82f79dc89adc848560cb8194e9ff293a",
+        "path": "data/raw/official/293-2025-ND-CP-congbao.pdf",
+        "sha256": "8ebf219debf9224796c98670d1eb5b8e5757d8ed74590c45ff5eab0dfc4fdbd0",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/11/46568/59713-1-20251591-1592293-2025-nd-cp.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:30/2023/QH15",
+    "sources": [
+      {
+        "source_id": "src:a07a8f30112e0308759f6521f9b16356e0df03a7e8cd5724fffa9402450b2d7d",
+        "path": "data/raw/official/30-2023-QH15-congbao.pdf",
+        "sha256": "bea5756fef66028ca9e6c9a88c388ebe3f5abe7a886ecad7556c7ea2388c2947",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/11/40866/47858-1-202443-4430-2023-qh15.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:35/2018/QH14",
+    "sources": [
+      {
+        "source_id": "src:abdcbb3eed2152c7a51a4827ffc32210a76757b2625f59a4b4c9f1908dd716fe",
+        "path": "data/raw/official/35-2018-QH14-congbao.pdf",
+        "sha256": "6ebe64e782f429196cc20821e7ee091ee90187de9451e6f55c2a12f2b428527b",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2018/11/27813/24738-1-20181139-114035-2018-qh14.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:374/2025/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:b62f2f339d6001bd6ee68c525c2309cad6e3fc4081aeaeff5fe0f6617405bea3",
+        "path": "data/raw/official/374-2025-ND-CP-congbao.pdf",
+        "sha256": "35c18218c653bfffc59301ed411718d01a798e19d982de3bb254e81f7da1d5fc",
+        "source_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/27/cong-bao-so-48-ngay-23-01-46946signed-17694874955991619007433.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:38/2013/QH13",
+    "sources": [
+      {
+        "source_id": "src:d03e3352973262e4c66997f095fe5e7e12f1bfcc74cdddf1afd378d61f516d4b",
+        "path": "data/raw/official/Luật-38-2013-QH13.docx",
+        "sha256": "dfc3c8411e84a995222ace2e844dd838b110b70f29e9015a84de0157fc3b5583",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=32912",
+        "format": "docx"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:42/2023/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:1a9a563988ea1d2afddd35aa85cff7b0cd0ece4af4a88064ed089cc302378799",
+        "path": "data/raw/official/42-2023-ND-CP-congbao.pdf",
+        "sha256": "fa37ad3c06c9fecc7daf52dde54602a9eaf7c713fdecafedcabcf685dde3e087",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/6/39701/45663-1-2023815-81642-2023-nd-cp.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:44/2019/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:a99cadb9c5ee8f6184eef7006714d08445461afca0be5bb85ecf2bc739740a63",
+        "path": "data/raw/official/44-2019-ND-CP-congbao.pdf",
+        "sha256": "937a3c286f4d24f4af5aee31f29019b139ef08e52192cb9e8fc2cb9c0faf0c2b",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2019/5/28999/26822-1-2019457-45844-2019-nd-cp.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:51/2024/QH15",
+    "sources": [
+      {
+        "source_id": "src:b4bee6916e931a5e97926dc672d26f90ad42199ba380ae94a3d81bca7f9a8419",
+        "path": "data/raw/official/51-2024-QH15.html",
+        "sha256": "c1b3d59b979d3e0b2247bf0d27d58301eb594832cd4d32b1a2a65af534b14dbd",
+        "source_url": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-bao-hiem-y-te-11924122017211787.htm",
+        "format": "html"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:58/2014/QH13",
+    "sources": [
+      {
+        "source_id": "src:b77590c737266d651e636d49f955a5ee9d4eef139e8ab0f9ce7a1c6858705bba",
+        "path": "data/raw/official/Luật-58-2014-QH13.docx",
+        "sha256": "8fbc1c30b97c26f904d28e7cda4dc1e9ecf973bcc24f85dcafa0e86bd930f925",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=46744",
+        "format": "docx"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:61/2020/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:a3bd2d637932a588459a2c1143de5ab161a359fc09c1ff6dc13550a9cfdbe562",
+        "path": "data/raw/official/61-2020-ND-CP-congbao.pdf",
+        "sha256": "96d9570d72cb698894392248baae9cf3d904a33f1eb7a9d2039a3b1a8e61ba23",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2020/5/31455/31418-1-2020635-63661-2020-nd-cp.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:68/2020/QH14",
+    "sources": [
+      {
+        "source_id": "src:1758c50b526766cdc11241742a629040cd4cc0530b63c61e7d23903cf1717fc9",
+        "path": "data/raw/official/68-2020-QH14-congbao.pdf",
+        "sha256": "740784336d365ca3116a505afd2734a04c6619f57fd761ecf883a4949abea07a",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2020/11/32684/33716-1-20201179-118068-2020-qh14.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:70/2015/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:323e2124de0449a6cbfdad60d138454901ee5a220c97ad494bfb99a2d41d8e61",
+        "path": "data/raw/official/70-2015-ND-CP-congbao.pdf",
+        "sha256": "ee3ad65820af7a6500ffd701a9e67a301938380a7941933c6b2ada70ee25ecde",
+        "source_url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-70-2015-nd-cp-16714.htm",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:71/2025/QH15",
+    "sources": [
+      {
+        "source_id": "src:b79d8a86c8a7c7d8046421f1db78404f079cf8e231d7081f60a3822494994e20",
+        "path": "data/raw/official/71-2025-QH15-congbao.pdf",
+        "sha256": "42b72d237c9531c257b56165c86c18967d9772294e3a7236822cd3f4e7d3d17d",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2025/7/45551/57680-1-965-966.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:73/2025/QH15",
+    "sources": [
+      {
+        "source_id": "src:26282fec0c5ce13d2543ba23cc24e69d12ff3716c46195403241ec838d87fb9b",
+        "path": "data/raw/official/73-2025-QH15-congbao.pdf",
+        "sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2025/7/45558/57693-1-967-968.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:74/2025/QH15",
+    "sources": [
+      {
+        "source_id": "src:a3c5cb151d13aa6475f3389ba25eae7206762552443ae1df4a3667e93edb3a17",
+        "path": "data/raw/official/74-2025-QH15-congbao.pdf",
+        "sha256": "2b7535f43224225b1360c888d5447d9291301c220aaa689e2d5063fe467877dd",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2025/7/45558/57693-1-967-968.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:75/2024/NĐ-CP",
+    "sources": [
+      {
+        "source_id": "src:ed46aa975b43465df4badd4898700b8b926c085e55cfbbb6a8c154f0e5d4ab7a",
+        "path": "data/raw/official/75-2024-ND-CP-congbao.pdf",
+        "sha256": "afeba2041ac2761ea1b1d4bba01a6808f3102048b12a0d8bb4f66b58b215b1dd",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2024/6/42171/50689-1-2024787-78875-2024-nd-cp.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:84/2015/QH13",
+    "sources": [
+      {
+        "source_id": "src:8a6282715ccd30151ac47745c0adf7c827bea4a980bfd5f34ef83d7cf2f472cc",
+        "path": "data/raw/official/Luật-84-2015-QH13.docx",
+        "sha256": "01734e5a3db9f19ff09009510a8d75af124e27f8442eadfd8229d614b41fdfb8",
+        "source_url": "https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=70811",
+        "format": "docx"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:84/2025/QH15",
+    "sources": [
+      {
+        "source_id": "src:a198c491fb634a142b42ae562024a14012c85340eaa12742795b69db37bd8930",
+        "path": "data/raw/official/84-2025-QH15-congbao.pdf",
+        "sha256": "ab0c445c3003754d36430c2ecf6d091b326dc3ace65f91136292689450088f81",
+        "source_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/CongBao/2025/7/45516/57590-1-953-954.pdf",
+        "format": "pdf"
+      }
+    ]
+  },
+  {
+    "doc_id": "doc:97/2015/QH13",
+    "sources": [
+      {
+        "source_id": "src:81da25dc6b04639a1043f35e275228c9aa455b87dbfb8dde8b81ecebb49224b2",
+        "path": "data/raw/official/97-2015-QH13-congbao.pdf",
+        "sha256": "370076673296d99991665b07e8846b8a705557d4caf3fcd2e41e181056076a72",
+        "source_url": "https://congbao.chinhphu.vn/van-ban/luat-so-97-2015-qh13-18431.htm",
+        "format": "pdf"
+      }
+    ]
+  }
+]
