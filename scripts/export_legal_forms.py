@@ -177,6 +177,8 @@ def make_audit(repo, sources, records, pins):
         actual = sha(path.read_bytes()) if path.is_file() else None
         status = "MATCH" if actual == source["sha256"] else ("MISSING" if actual is None else "MISMATCH")
         raw_checks.append({"source_id": sid, "path": source["path"], "expected_sha256": source["sha256"], "actual_sha256": actual, "status": status})
+        if status == "MISSING":
+            raise ValueError(f"Referenced raw source missing: {sid} ({source['path']})")
         if status == "MISMATCH":
             raise ValueError(f"Referenced raw source hash mismatch: {sid}")
         if status == "MATCH":

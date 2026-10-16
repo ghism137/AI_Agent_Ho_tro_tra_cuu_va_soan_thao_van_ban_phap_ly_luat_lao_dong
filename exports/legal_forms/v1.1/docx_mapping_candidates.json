@@ -1,0 +1,1052 @@
+{
+  "alternative_source_integrity": "NOT_CHECKED",
+  "documents": {
+    "doc:09/2020/TT-BLĐTBXH": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Phu luc V. Danh muc nghe cong viec nguoi tu du 15 tuoi den chua du 18 tuoi co the duoc lam them gio lam viec vao ban dem.docx",
+        "sha256": "b080286a5507fc5c5e4696db32e6778443ac172931f6423fe2f97796d8f24317",
+        "source_id": "src:0e9490b315778ab4a0ff3d39b99d5d6bade4fe9f1e9cf15a67d772a560a52a17",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Mau so 06. So theo doi tinh hinh su dung lao dong chua thanh nien.docx",
+        "sha256": "ae4b66e15584f96e5782acd76a081c2dc370982410af7b7933d680e275a6da22",
+        "source_id": "src:216f0ebdb49b9d7eb6fd7203cc1ca72f28729fa32f78807df6735905c96d14be",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Phu luc III. Danh muc cong viec gay ton hai den su phat trien the luc tri luc nhan cach cua nguoi chua thanh nien.docx",
+        "sha256": "ac85e1ee1c4b6a0b8c5083e48ecd3e44016147801dbb9e529046f75bcfd45663",
+        "source_id": "src:550e8cee492909eadee74ce1ec7664894a82c76df124fd9e2f418ee1367ad526",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Mau so 04. Van ban dong y viec su dung nguoi chua du 13 tuoi lam viec.docx",
+        "sha256": "9272f0fa4fa8e41e9880f833c83d98a6682833db0ea0dd92a4dbfd947015d1d6",
+        "source_id": "src:5c1ee90b857db162ca75437bba435a24eb5f1f83f37f971d0578ef017a223b61",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Mau so 05. Bao cao tinh hinh dong y su dung nguoi chua du 13 tuoi lam viec.docx",
+        "sha256": "a706a3a88a606a57e4f775764300cd8dbd712959ea0d5872c9fe1bb185f67a91",
+        "source_id": "src:639c91650194d96b32c2515328172b14e1bd1564a3c361e7ce409b98db037b6a",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Phu luc II. Danh muc cong viec nhe nguoi tu du 13 tuoi den chua du 15 tuoi duoc lam.docx",
+        "sha256": "4fe50dcc8bfc99ef204db7f0549cf86f51eb3584fd06c087fb3b63d5afbd4c42",
+        "source_id": "src:79b4ea76e9f89aad9026cfe9e85263a8859937aa059e583ace4e6666b7d1bf28",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Phu luc IV. Danh muc noi lam viec gay ton hai den su phat trien the luc tri luc nhan cach cua nguoi chua thanh nien.docx",
+        "sha256": "a32679e400a806e22ffe1906aa78e6c273bf204f6b3be738bd1163600d6a28fd",
+        "source_id": "src:ab0fecd0e28035b222feda1df8b7025021dce7f6b30e19f6a74f787b003b5118",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Mau so 03. Phieu dong y cua nguoi dai dien theo phap luat cua nguoi chua du 13 tuoi lam viec.docx",
+        "sha256": "813473b99cbfb2c79e90852603420d8cc6fd4bedf0f66540f5f0d0da1c987439",
+        "source_id": "src:c7c343e9aaf37a6977703ff9304c16d2405e39ddbaa207329dfef6ca228284ae",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Thông-tư-09-2020-TT-BLĐTBXH.docx",
+        "sha256": "703ef37e6b469a859c4d359825c0701e1daab4c8add0cf3c5236440e7c402624",
+        "source_id": "src:c86d76e962dd1ef5b04bb4bc1decf74f3c4a4847d3528790cf184451b3a38a84",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Mau so 01. Van ban de nghi viec su dung nguoi chua du 13 tuoi lam viec.docx",
+        "sha256": "05e9ce3924d2b6b0825227e67dfb2e0b927b575d6897645614825418b5da9a59",
+        "source_id": "src:fb1b9c104aac1f937b410864bce52d75150e1d56bc3ebccf61efa1fa87c78f63",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 09-2020-TT-BLĐTBXH/Mau so 02. Ban cam ket chua tung bi truy cuu trach nhiem hinh su xu phat VPHC ve hanh vi xam hai tre em.docx",
+        "sha256": "fc09845c360f2018597396df8f4cc2a2b384c6513fa93c77059a76f7f00e1f15",
+        "source_id": "src:fc8c0fb8c47bb9e6cc8285c77879519330969b4fb1f827ec727f0b28666e1f19",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:10/2020/TT-BLĐTBXH": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Phu luc. Danh muc nghe_cong viec co anh huong xau toi chuc nang sinh san va nuoi con.docx",
+        "sha256": "818b431d94dced4fe3a23d6c41d5552d79a337c756b1d6dabe89376f69a88a80",
+        "source_id": "src:4621054cacec2db9de8aec5e0fcecf76469f6c9afc742d1cda61faa70a5f515d",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông-tư-10-2020-TT-BLĐTBXH.docx",
+        "sha256": "7a9c9f3f555f1c7b973d303ce4ff8a15a555aa348d07b1f670628e39d40d20da",
+        "source_id": "src:62e5a04f2d14c686944e73d010ba7e8454065c3aaedeee5ec43662e1590c619d",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:104/2022/NĐ-CP": [],
+    "doc:11/2022/TT-BLĐTBXH": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 11-2022-TT-BLĐTBXH/Mau so 03. Phieu thong tin ve nguoi lao dong.docx",
+        "sha256": "eaf0c250e3c2bbffbeced086e046f6c3d46fa4b94535cb24a4973b630d8bb707",
+        "source_id": "src:0f6a6c8d5ea08213392d1ddf4a650f51afd9011824a8b2499bd5d6a3cf9d2df7",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 11-2022-TT-BLĐTBXH/Mau so 02. Phieu thong tin nguoi tim viec.docx",
+        "sha256": "df066a66b995ee0187b99b2ead0d99ca8ee3dfe9eccedbd3910c3795fbed25ef",
+        "source_id": "src:5c10d6e28c00a710429fbd61c29b93bf00fa3ce709839e234c0dd7666e5d3b64",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 11-2022-TT-BLĐTBXH/Thông-tư-11-2022-TT-BLĐTBXH.docx",
+        "sha256": "5279bfac9057628b6f5ed13f33a0c91009db0797f79cb8e662b901dad786c7b4",
+        "source_id": "src:cedc95aa04f86c68ba88bf9f4653c0c4f727383146148554e6d405c6fddb753a",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Thông tư 11-2022-TT-BLĐTBXH/Mau so 01. Phieu thong tin nhu cau tuyen dung lao dong.docx",
+        "sha256": "cc17648154b3bd017028f07b67ef84325ccf4b03d15bbc00f01790bbe3492e28",
+        "source_id": "src:f0e0f20ebef8a24931979f356ed2edbb047b3e617b8b9f5dafd33c0ed6d61706",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:135/2020/NĐ-CP": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 135-2020-NĐ-CP/Phu luc I. Lo trinh tuoi nghi huu trong dieu kien lao dong binh thuong gan voi thang nam sinh tuong ung.docx",
+        "sha256": "4bff8b3be71048da99c0057d0aad4b867dcc386ac3d00aa1308ac24978ecd78f",
+        "source_id": "src:390cbf9ce1be398eca99b02aa2d51ef15b4da2b93211eaf29b7b28984c9dd69b",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 135-2020-NĐ-CP/Nghị-định-135-2020-NĐ-CP.docx",
+        "sha256": "d841fe006660fbb7b4ddaf66b88167f6ae3b7e7ee0b1e95751edcb0a28443653",
+        "source_id": "src:924d424357fdb99a66a89a15e77a4c80f2995ce816f2aa7488b9cd58d1545f28",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 135-2020-NĐ-CP/Phu luc II. Tuoi nghi huu thap nhat gan voi thang nam sinh tuong ung.docx",
+        "sha256": "6cfdbf8aaa2821e16505571f834169809c6bde0db9b5551951071dacdfdbca8c",
+        "source_id": "src:b578840d2869883ffac4d46ad05c3f718fb4bb5f87b9d5ce6a0eef41902532ee",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 135-2020-NĐ-CP/Phu luc III. Cong viec khai thac than trong ham lo.docx",
+        "sha256": "c92a6c0371f145737c26d5ad219342296e7330b628243def761f027920f68203",
+        "source_id": "src:f2091c02d9df46586362890ac27f34eafa7451d5f52b5cd97c7cf50f4cd7d970",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:145/2020/NĐ-CP": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 08 PLIII.docx",
+        "sha256": "2cad52e8ad6671085aaf2991526e619c21ae0bd1cc8962e4d62be7b5e2061374",
+        "source_id": "src:0716cd23b1020ca84e6846e9e96c9ff19667a1daeadd11ec3fe6ade8188baada",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 01 PLIV.docx",
+        "sha256": "256989c96fe92b451b186b9a49c7045033a659cc6a7f7d3279c09fddec2546a9",
+        "source_id": "src:164da072370ee9d289bb9b1fe4c17f29996459b2cd1ff6438a7a416e75c371f3",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 12 PLIII.docx",
+        "sha256": "4b58467db0fc4c1b0b3c35cccbbdc850161148a61a6132037c2a878a6e5d35db",
+        "source_id": "src:2785d3469df24534fd5bcd7230d20635e2299872584bd4e699172254fdc767f1",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 03 PLV.docx",
+        "sha256": "c58dc52b268cea6babc4ce6d4b40ed62780f8e2361a05f798df737a843039751",
+        "source_id": "src:3b5e74e306b3031dda259a716a007b2bcabc98243182b8e639067dd0dcb18d8a",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 05 PLIII.docx",
+        "sha256": "db1a30a0a8698650169424a659576a54aa63b02f576735420c1c17963164d335",
+        "source_id": "src:4ac9f7ae33b101c78441bbe916df1bcc948233d4d7dd4b4dade297ee1435463a",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Phu luc VI. Danh muc noi su dung lao dong khong duoc dinh cong.docx",
+        "sha256": "b52dbfde007835b417663d491377c5f7bdb4d0ba21fe60f605fdf03c0bfb06e0",
+        "source_id": "src:50e117e5ec4d49142cc3b39d451ce5c607a5d9f16382f11aec5e1f828a92bee5",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 02 PLI.docx",
+        "sha256": "cdf16aafd61f513e525249b2283f2c902418881b25de5a5361f26211660a2d22",
+        "source_id": "src:5a196c83f42032fe94a6e0592ab30b73c27d9efba49d8af53544f715ba3bea9a",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Phu luc II. Danh muc cong viec duoc thuc hien cho thue lai lao dong.docx",
+        "sha256": "91734d6c67244fcea0e8c264d8297721d8f4ab0668d31de4af34455e311d733e",
+        "source_id": "src:674e2e92148bc43bde22d302fd93c04faef0e077d201820254e39af35a38dc9f",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 02 PLIII.docx",
+        "sha256": "7df71f1e5202e9e28c1eb97baa3370b87208765a5b19dda3fae58f089db0ccd9",
+        "source_id": "src:71639ed2dd02e389a47feec96d43f1ff62569c220abdbcf67700bb9b4b7ee83a",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Nghị-định-145-2020-NĐ-CP.docx",
+        "sha256": "30e1077b5e359452bafeea650dc56a3a812c45fbd97edc7b519752ca49a15baf",
+        "source_id": "src:7d95b08d244c418e42c5ec81655e4c77f38cb518588d0f2733ca0e88780fd646",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 01 PLV.docx",
+        "sha256": "8506eb9f661da2db1ce5237fd69636066abf483a284dbc5f70f1ea238987e8b8",
+        "source_id": "src:8a9ad34a4870e324780e0c85a6a6c032050a4a9516fa0a1d1242a4f765f50482",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 03 PLIII.docx",
+        "sha256": "995ef7e9f98dd1a5dcac085e8822d5663355962d4ad413963a158658e53a4c2b",
+        "source_id": "src:8ac84651155ed25193c02b15b12ef686160d63c6934b34f26b6a56403b4b95ed",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 01 PLIII.docx",
+        "sha256": "3e96dd93504fab851c5a9fa4adcc4528de80be8bb46862384fa5c1827c848911",
+        "source_id": "src:906d19f1089c7f986b4dbe097ca66ba263cca82f4b4eeb2d1c82568b842a6d45",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 04 PLIII.docx",
+        "sha256": "d3a8436a3609abae7a7b9157af95c0f380f28f7ceabaf3413a7f41dc24982063",
+        "source_id": "src:945ff77d4e99df29bb8ef4dab9afa5d188a1ae6ce625eddfb9ebf27dbeab8b53",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 07 PLIII.docx",
+        "sha256": "a5e5e31e441007db8d58e2a5d90e54d9c3beed8635a8f79c2d756909faa34f72",
+        "source_id": "src:9955a971922bf5be85fba6460bbdcee3bc0a9957f506c5956e71e9db782ecfbc",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 02 PLIV.docx",
+        "sha256": "9d88f5867932521da4d529295ebcf78c4d420e4da06799118f33fffc8c50bf6e",
+        "source_id": "src:abf2e4b92211e7af8b6e9fc463ebbf0e0770ed415e79ffcc7e7a4cede7dcc65d",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 11 PLIII.docx",
+        "sha256": "61f86210e2c5604630713a499dac47f224ff6f39f12cf5e57af076e933db1972",
+        "source_id": "src:c88ac54dcde0508ce0ab7cf39fdb89bc9447cfd92e50ca3fd60f00e3626e5815",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 02 PLV.docx",
+        "sha256": "092d30ae40438a04ee37f129fdf17411f5774389b5cf0dab1df5fd4eefcef9f9",
+        "source_id": "src:ca4a4f7207c517206acd5cd8eb71c764a2bff9ba523b70ea24cbde381a1f4ca3",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 10 PLIII.docx",
+        "sha256": "5c719ef566ae55870b8808da5b700f6c9d58d0179f6d1328d06b6bdc4b9a674a",
+        "source_id": "src:dcd7c0a61676295bf5fc31649e02b328c20779411b6a78ef2847ca554a620751",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 09 PLIII.docx",
+        "sha256": "aba2c4a072504737050491c12c9317433c6d4aa1f793eb68c96da8bb7828b7e3",
+        "source_id": "src:dd210368dcbb2260317456328cea21b7ffe90f323a49b4ee940e05e2184f8c43",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 01 PLI.docx",
+        "sha256": "c2864b3ff9007764f8249e7f41b7472df225aaa1303605c92a1a1524a9a07082",
+        "source_id": "src:e23ebf09323163b34d00134b7858952c9e8393c73b788e6370d558a09610a351",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 145-2020-NĐ-CP và phụ lục/Mau so 06 PLIII.docx",
+        "sha256": "7710c3903e45c4989e46e48002c7b012f80a785d061b835355ea020f38a9ab63",
+        "source_id": "src:e4ceb2efee5abc1a528b4a4bf76907a5c68eb7ea09e17b1cf2ca331b3ced3ea9",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:146/2018/NĐ-CP": [],
+    "doc:152/2020/NĐ-CP": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 02_PLI. Ve viec giai trinh thay doi nhu cau su dung nguoi lao dong nuoc ngoai.docx",
+        "sha256": "9abf33b97a86a9aeb56d0a4d0d9ed19c7ce2cc4f099ee0070ee32997dea3c6de",
+        "source_id": "src:16d440924c7ae9df77b75c00617cf932ab87726f2388afdd79849dcd0d0e48ea",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 04_PLII. Bao cao tinh hinh cung ung cho thue lai lao dong Viet Nam lam viec cho to chuc ca nhan nuoc ngoai tai Viet Nam.docx",
+        "sha256": "6b93309061a28c0649c79ff43a186c79608462814ba5a60f1ec8fe5fca697ad9",
+        "source_id": "src:2a7e4762f95ad78887af4d4bcb19fc7055ec4291a732596835ec6fc7906029bb",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 08_PLI. Bao cao tinh hinh nguoi lao dong nuoc ngoai.docx",
+        "sha256": "17157e398317bb84fc444b8ce12ba6a18940c41e35b5d4d002623e99725f6f4e",
+        "source_id": "src:361a6305cd7960fd0e1ac0008849899219c15f4dce4cfc545c40537ebb9f6c87",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 14_PLI. So theo doi nguoi lao dong nuoc ngoai.docx",
+        "sha256": "c5a10605aa20b86c22ab5393cf9d109eedafc1cf3341287afa8fe5e49f12531a",
+        "source_id": "src:46650b2da0af427af1905ad20561d1a23af24aef1d60b69765648d5b028e8e38",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 12_PLI. Giay phep lao dong.docx",
+        "sha256": "979f78833efb5c200bd3337bb5069e94f2e7459922fe5fa1b1ab0812ef42d763",
+        "source_id": "src:637785f42aa961e4b89f56a1b5e6f76d23ef197205b04b80d1c90e54dac7a88b",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 04_PLI. Ve viec de nghi tuyen nguoi lao dong Viet Nam vao cac vi tri cong viec du kien tuyen nguoi lao dong nuoc ngoai.docx",
+        "sha256": "4f824f16e3098f9a83f604354e1fcb7556aca043133cdb15a602577d0c9b6f61",
+        "source_id": "src:86fae8f9fad600edf4ff0110e061143d5ef7482171922f9f4e7657d2f931e37d",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 09_PLI. Ve viec xac nhan nguoi lao dong nuoc ngoai khong thuoc dien cap giay phep lao dong.docx",
+        "sha256": "8c4e85f2d65d235c20974de29ecafe3cd22d6d0fc292583e60bca20cc511123c",
+        "source_id": "src:8a3853f562bb2c7016237bd4870d675d1d09bb2c7f6ba9a490aa1141398e8cdc",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 03_PLI. Ve viec chap thuan vi tri cong viec su dung nguoi lao dong nuoc ngoai.docx",
+        "sha256": "7198f1691cc64212045508cf4948d7c661cb26f757f68014312dde5bb595e4e5",
+        "source_id": "src:9af3a6adc481d015d4ab0ae86a7769c9889431bb06f44cd10904a67d8b99869d",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 05_PLI. Ve viec dieu chinh bo sung nhu cau su dung nguoi lao dong nuoc ngoai.docx",
+        "sha256": "98ceef43abfeeae24de0cfa2d9c0e284104c48b45ec2136a1af9c95cb9f503b1",
+        "source_id": "src:aa754509f85a7a511e4d886a0b7e9fda88f323446579aa6a4338ad8f5cdcec14",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 06_PLI. Ve viec tuyen NLD nuoc ngoai vao cac vi tri cong viec khong tuyen duoc NLD Viet Nam.docx",
+        "sha256": "dd9af7c666fcf09d98f39a3dd7580cba5a90fd7c5300f2aed7cff0b1f466f982",
+        "source_id": "src:b9e908da47fd87a81f68e72862d2e4aee5569bc6a986ee28df87f4f5fdb8cc21",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 01_PLI. Ve viec giai trinh nhu cau su dung nguoi lao dong nuoc ngoai.docx",
+        "sha256": "2a95b1fe7269b087f1913c69b4594396d9dd7096537c089d68447ba60c81ed03",
+        "source_id": "src:baf1fb6d84af9f916780931d1dbacbd20f54be552e864d3e97d6ea34da9a8c69",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 13_PLI. Quyet dinh ve viec thu hoi giay phep lao dong cua nguoi lao dong nuoc ngoai.docx",
+        "sha256": "075235da75e64637623dbe9180afb7ced896f229920c0964b964e17a9df19b5e",
+        "source_id": "src:bf0b78dd4f6407a2b190489512ed255384a69a51ab8b56aa50e49959315485ce",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 03_PLII. Bao cao tinh hinh tuyen dung quan ly NLD Viet Nam lam viec cho to chuc ca nhan nuoc ngoai tai Viet Nam.docx",
+        "sha256": "6f020994baa71627b46d177dbf3653bb6931cf8974ae3b251eef9fbe1e9361b0",
+        "source_id": "src:c1ea6432afeb06b830d608651df67df2f153e36a4731bb95a3d601e7e6819df0",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 10_PLI. Giay xac nhan khong thuoc dien cap giay phep lao dong.docx",
+        "sha256": "8a0d633330af06cf708c0557e2cc88cfb2b7a33abf38f2645a24fee96336496f",
+        "source_id": "src:c3d442e6824b26868e79524857549f5d37471c80fa7a836fa0a63341cd574dc2",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 15_PLI. Ve viec khong duoc xac nhan khong thuoc dien cap GPLD khong cap cap lai gia han GPLD.docx",
+        "sha256": "76452259fda44ecd6d6da766c077b2bebc9b9531fa39b126eaff16127278952d",
+        "source_id": "src:d51acdd0c60f8de251a77d5c1a5bbdaccec818ed872b068c51166b3fb3fb94a7",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Nghị-định-152-2020-NĐ-CP.docx",
+        "sha256": "7f06f2d9133ccfab4ecc20f6dbdc2d09754abcb6649e4e953912ba9fa10c5a04",
+        "source_id": "src:da050a05d1be4b64b7ea1728d1a3bf8e7ead45458f6e2ceaa9372880efc29b37",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 11_PLI. Ve viec cap cap lai gia han giay phep lao dong cho nguoi lao dong nuoc ngoai.docx",
+        "sha256": "816ed494cd2eca0b8c2d7764949d7fe8ee5e2c2dbb886de1e5fd6af6030552f2",
+        "source_id": "src:e3316be729d08ca303d49de9aa6a5dbafcfc92b7638bb05d05c6844d3e9b42f3",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 07_PLI. Bao cao tinh hinh su dung nguoi lao dong nuoc ngoai.docx",
+        "sha256": "4f4034c2de2f24d429a4cad7ef11c870deec59ea97afac48a2b72792527c7752",
+        "source_id": "src:e3ce8fa10cbe641c865cca0d7d9a7a3f81275be4763b45887dea099192101aa9",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 02_PLII. Bao cao tinh hinh tuyen dung su dung NLD Viet Nam.docx",
+        "sha256": "356aafee74d6cb025f3838f389a8890f7642d89115dffa334c8c75fe3e17b0b3",
+        "source_id": "src:e5b470835d6322f9de912c830ae7e0a3e13edb503a1dcbc8b8bb5af4c3b0dee6",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 152-202-NĐ-CP và phụ lục/Mau so 01_PLII. Phieu dang ky du tuyen lao dong.docx",
+        "sha256": "a0343b8717d8fcea8fb873cad9d74e6e3e3580858f735e925f67c30f325bf8b4",
+        "source_id": "src:f0d78ff08713b896b4bbc2a3f868d6abf84eb18b30838949f0ed305aeea65045",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:158/2025/NĐ-CP": [],
+    "doc:188/2025/NĐ-CP": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/2025_979 + 980_188-2025-NĐ-CP.docx",
+        "sha256": "4cedb18a4a86bf33e8834ab50fed5d5076c2573bc207dd5c2776c98d6e78a5a4",
+        "source_id": "src:c5fe691754a78f1831ae3ae89e4a84e627d73d80ac578f314a426217e8b90a5d",
+        "source_role": "continuation",
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:219/2025/NĐ-CP": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/2025_1073 + 1074_219-2025-NĐ-CP.docx",
+        "sha256": "a19cc41c0546d99db0b02e4032421b0077e9e452dca8f522dbc3af4c00a84991",
+        "source_id": "src:8d1d12dda675503fe891fa56ea46b19850d3ab9e5ddc980872d661ea8dcea8cd",
+        "source_role": "body_and_forms",
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:23/2021/QĐ-TTg": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Quyết-định-23-2021-QĐ-TTg.docx",
+        "sha256": "e9652170568b1fd01794c2d8571f49d6a1640817aad0b649802b9ef989732aca",
+        "source_id": "src:7be756627bf24f9bbe096f3dc1332ce79db6364d610ee25f555410bb34aa6e90",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:293/2025/NĐ-CP": [],
+    "doc:374/2025/NĐ-CP": [],
+    "doc:39/2016/NĐ-CP": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị-định-39-2016-NĐ-CP.docx",
+        "sha256": "ad29d4e426a32ee15ee65920b82d720acf733aa96fc31ccb21e21badf818e41f",
+        "source_id": "src:147ae14c455a2cdf3e0990d9346cfe317ee8ced57932d1fcf5460db82d3ae52d",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:61/2020/NĐ-CP": [],
+    "doc:70/2023/NĐ-CP": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị-định-70-2023-NĐ-CP.docx",
+        "sha256": "773386b418cdcad578fcc55238a26ba5d35939597de15c82b4d7f4e0d91913f2",
+        "source_id": "src:07ff3602e9ba50c3ba6c35834362672d36edfd93efda3efb1efc4612f06d93d5",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 70-2023-NĐ-CP và phụ lục/Mau so 17_PLI. Bao cao tinh hinh nguoi lao dong nuoc ngoai den lam viec.docx",
+        "sha256": "94a24c03a47f9f72731c316b7dd51f484ecde003ee28a3267ee5535a4d1d2439",
+        "source_id": "src:0b8b7317736cdb79f95fba47828161c78d7766938e0329a8df056da0a522e491",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 70-2023-NĐ-CP và phụ lục/Mau so 02_PLI. Ve viec giai trinh thay doi nhu cau su dung nguoi lao dong nuoc ngoai.docx",
+        "sha256": "4e2a1d77779774e2b91e57d43b5954512f13a907b8c961d989968e0e821eabf3",
+        "source_id": "src:33189176e9296dfca93b81279c55b71993b19766865ebf601dd35986611c1f3c",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 70-2023-NĐ-CP và phụ lục/Nghị-định-70-2023-NĐ-CP.docx",
+        "sha256": "6894c353fa3627109fa67e6166962b5c9f726741b7d40773a14d72c595379d45",
+        "source_id": "src:386feb9ae2240f7dd81893270436ae3249fc64319843fae960fe1533a028c2a4",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 70-2023-NĐ-CP và phụ lục/Mau so 16_PLI. Ma so tinh thanh pho truc thuoc trung uong va ma so Bo Lao dong Thuong binh va Xa hoi.docx",
+        "sha256": "34aedd2a39bbf18bbfa3712fda9509eb1e1a7cb77c3942f6a83567fc86d90bde",
+        "source_id": "src:b3070d9796c8572e3d1393bc65e4843d3795648a2da05d89f91c241e2c37a034",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 70-2023-NĐ-CP và phụ lục/Mau so 07_PLI. Bao cao tinh hinh su dung nguoi lao dong nuoc ngoai.docx",
+        "sha256": "52ff9d60f1afbf6c08b5f495158179f88f37316da756323b127c7d6d878cd89f",
+        "source_id": "src:c0417524ed20825c65f5aa16b93691de8ede995349b344c8327b19ba7463feae",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 70-2023-NĐ-CP và phụ lục/Mau so 08_PLI. Bao cao tinh hinh nguoi lao dong nuoc ngoai.docx",
+        "sha256": "b901d2c8e45b0d129bb98d1cb17b160fac45d8e37994e3f5d9cce7eb20a5f2e5",
+        "source_id": "src:c53504f0f0d4194ecfabaf589563ea86bebdf542366c2c93305986a53e1b0a6d",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 70-2023-NĐ-CP và phụ lục/Mau so 01_PLI. Ve viec giai trinh nhu cau su dung nguoi lao dong nuoc ngoai.docx",
+        "sha256": "5c747de27c7b4016c0de7230a3261814da71489d37b0b0fdb39dfdb643fee4e3",
+        "source_id": "src:cd30ebcbc00d379678cae9167786aa8c3ad9127383c566806c217a6da64bb7f5",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:74/2024/NĐ-CP": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Phu luc. Danh muc dia ban ap dung muc luong toi thieu tu ngay 01 thang 7 nam 2024.docx",
+        "sha256": "2405ecc2135f7862642ee226b165b555c6c2822630cfed8e731cfdaaf7c44557",
+        "source_id": "src:34e80698b50b6fc668bf24cc57bb0c3703f80be2bf743ca0d2c654c51e91e51f",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị-định-74-2024-NĐ-CP.docx",
+        "sha256": "2e263bd4d1f0fed92b49e55d3f712ed061afdd3fdae2d708dff182be2856311b",
+        "source_id": "src:6e729b16978650b8d59564b92ee347761629ec0fde2da25016f01c6bf6580d12",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:75/2023/NĐ-CP": [],
+    "doc:88/2020/NĐ-CP": [
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 13. Ke hoach kinh phi ho tro chuyen doi nghe nghiep phong ngua chia se rui ro ve tai nan lao dong benh nghe nghiep....docx",
+        "sha256": "fbe3d0e3732059bb91f4fd0f9e71d0ed496758982a9b0e2b5cdcf52486f08732",
+        "source_id": "src:10451a849a8a5ff052ecf4977186f72afabd2142096168fd6cd615b3b844c8ad",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 12. Quyet dinh ve viec ho tro kinh phi huan luyen an toan ve sinh lao dong.docx",
+        "sha256": "850f61d0a6feba414fdfd6afbc153c0467c4ce6f7befe5e76bda1f61c44353a0",
+        "source_id": "src:3948467254434dabd256b80ee8dedb8d0af214be48e090620ff48250fe2c6126",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 06. Quyet dinh ve viec ho tro kinh phi kham benh nghe nghiep.docx",
+        "sha256": "2179a090b8199ec667cf9b2810c7438f99e88a58cc703e9b2846f552920cfaf4",
+        "source_id": "src:527ffbb89f7fb18ee5deafe746a0066577a8e0f2a2c009af64b04dca057f8209",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 03. Van ban de nghi ho tro kinh phi dao tao chuyen doi nghe nghiep.docx",
+        "sha256": "b876e3b5d346a0b43f00f37ff91ae9551fb68df6e3281809f0b657af0907c4c5",
+        "source_id": "src:5c3e57e026851bc706975b87944fab653dd7b8b7c2dae828d1b6370dc8797149",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 02. Don de nghi ve viec ho tro kinh phi kham chua benh nghe nghiep.docx",
+        "sha256": "a7dbcfcf7d0063569781e871e949fbb3dfd7b0670367a7b59dc7171a4e5f86d7",
+        "source_id": "src:63400c7cc5b6a768dbed56f4f6a2cd7711bdc907ff1493c0e89ceb490e9dc86f",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 14. Bao cao tong hop tinh hinh thuc hien bao hiem xa hoi ve tai nan lao dong benh nghe nghiep.docx",
+        "sha256": "393efe9a84b1d0c93675564f9eded966eae11e92d6244e743b0e0ff9d47757c9",
+        "source_id": "src:85095cb813bb65f8bfdd8b4964b42aeeeeab2c0f8c324a35ed9a8ce8cbd591a7",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 09. Van ban de nghi ho tro kinh phi phuc hoi chuc nang lao dong.docx",
+        "sha256": "d59c4d0a9033efa37ae92f5f7195ca9139eb1d07b2b39c8fb7b14a31fd6c4274",
+        "source_id": "src:a5de410fa9efaa262de4bf406b4dcfd9d7bf16c297dbec7be4acce0c2b7d08a1",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 11. Van ban de nghi ho tro kinh phi huan luyen an toan ve sinh lao dong.docx",
+        "sha256": "5beff27eb9a81f4c08358648429cdfaef7f7167caca209c622a09cae6fabcd9a",
+        "source_id": "src:a79d15db492266c6e9acd8584022a32192f5bb61d312dd4e0eb6a4d9864b61a1",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 08. Quyet dinh ve viec ho tro kinh phi chua benh nghe nghiep.docx",
+        "sha256": "05da2c48925644041fbc9dd9bc74c33a51eb562dc2f5fd3aed0470359ae388d0",
+        "source_id": "src:c812b7fee04028fe5f32b285daaee0a9ac72bd0811f3b41143de5d59c79aa465",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 10. Quyet dinh ve viec ho tro kinh phi phuc hoi chuc nang lao dong.docx",
+        "sha256": "6b56ab3f11a4d63460ba49db60751c4a18e19946d2595474bf374cc391e5084d",
+        "source_id": "src:c9b6f8fa237248745afaec62f79bf1e5d58d71252320b000b535556327cd04d8",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 01. Don de nghi ve viec huong che do benh nghe nghiep.docx",
+        "sha256": "d77e21c667b6c4714f0b52763a447ef8a20d2e1cf937c18ebf0c7016f8cffee9",
+        "source_id": "src:ce37e73f6ed976346072f2a9fb69aa6a714ff3b95e11b6e1e7f21170b9d3cf4b",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 07. Van ban de nghi ho tro kinh phi chua benh nghe nghiep.docx",
+        "sha256": "c0d9c186fa92aaa0726431cf325f26aef2848e75ac78cd072afaa3f294525c9b",
+        "source_id": "src:d04f04970018f02fbaa306aa9545f8b3b6eabc07a5ba8d7f68892ce39708bcc6",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 05. Van ban de nghi ho tro kinh phi kham benh nghe nghiep.docx",
+        "sha256": "5b2aee57c44558f76e0d072896cb26c790981d3e20f6c36705c7fc3d1f50ca74",
+        "source_id": "src:edb16d40f3dd0722cea39df66ef4813b94beee65940e419debb7c1a9d9fd89c7",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Mau so 04. Quyet dinh ve viec ho tro kinh phi dao tao chuyen doi nghe nghiep.docx",
+        "sha256": "9f4cbc906af1557851b8b9e3ba36297747bc4e200bc7d08ee7b1adaa47a166da",
+        "source_id": "src:f23866a4d2aa1dd5379e951d63ffaab9502a3a5f96c36482fb6d97466fa6d27a",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      },
+      {
+        "collected_at": null,
+        "extraction_method": "docx_xml",
+        "format": "docx",
+        "path": "data/raw/word/Nghị định 88-2020-NĐ-CP/Nghị-định-88-2020-NĐ-CP.docx",
+        "sha256": "a6fd822baace856767d3d2a7bc222fc94ce217214c3224a98f3e66454c92e84b",
+        "source_id": "src:f629fda9d30554d16ef037634e1c96c5bf90abab043ddc4a4f00fba183a084d4",
+        "source_role": null,
+        "source_url": null,
+        "verification_status": "pending"
+      }
+    ],
+    "doc:97/2015/QH13": []
+  },
+  "mapping_verified": false
+}
