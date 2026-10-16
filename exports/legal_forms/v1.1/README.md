@@ -44,7 +44,9 @@ F04: group membership and source order are covered; lossless reassembly is not v
 
 The original v1 manifest keeps the historical exporter fingerprint. Replaying v1 with the hardened exporter changes its exporter SHA256 only; do not overwrite that historical manifest. Use a fresh output directory for a new export.
 
-Engineering tests do not constitute independent review, legal applicability approval, semantic template-selection acceptance or DOCX structural fidelity acceptance. Direct independent review of commit 4611111680835bf8eb8264a7afe6369aa7fb9ff6 returned MODIFY for EXP11-R01 (incomplete provenance allowed to collapse). The repaired helper rejects those inputs; its exact new commit awaits independent re-review before any owner merge. The requested Bugbot-specific runner remains unavailable; the direct review is not described as Bugbot and the repair is not self-signed off.
+**MANUAL_ENGINEERING_REVIEW = ACCEPT; EXP11-R01 = CLOSED**, independently reviewed at commit `f6e9023e70e282998e13bfb4d73608ad4e0e221d` on 16/10/2026. The reviewer reran 37/37 tests successfully and confirmed rejection of incomplete provenance, unchanged v1/derived data bytes, and no new P1/P2 findings. [Accepted re-review report](../reviews/EXPORT_PHASE1_V11_REREVIEW_f6e9023_20261016.md) follows the preserved [initial MODIFY review](../reviews/EXPORT_PHASE1_V11_REVIEW_4611111_20261016.md).
+
+Owner authorized the subsequent GitHub handoff. This post-review update records that decision and refreshes generated README/manifest/checksums; engineering implementation and all six derived data files remain unchanged from the reviewed commit. Acceptance is bound to the reviewed commit above. This was direct independent review, not Bugbot: BUGBOT_REVIEW remains NOT_RUN_RUNNER_UNAVAILABLE. Engineering acceptance does not cover legal applicability, semantic template selection, DOCX structural/render fidelity or production document generation. Legal statuses remain PENDING_REVIEW, TEXT_ONLY and generation_ready=false.
 
 ## Reproduction
 

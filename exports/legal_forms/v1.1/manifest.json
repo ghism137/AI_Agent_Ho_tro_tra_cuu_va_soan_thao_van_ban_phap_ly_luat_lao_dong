@@ -3,7 +3,7 @@
   "bugbot_review_status": "NOT_RUN_RUNNER_UNAVAILABLE",
   "build_base_commit": "9bf662b99fc8219085e22aa61df44382ce52c828",
   "code_sha256": {
-    "build_legal_forms_v11.py": "38d4d4dda47b93a32afdb132800057f680103b46e5d2ff47ea718a41eb39c65f",
+    "build_legal_forms_v11.py": "16ef70f205f3d75034ac5b294bed624aadc209ea26b01ee1b0f2b88ad0f4e4b2",
     "export_legal_forms.py": "9f5e68ebcc17590d0b82a3a6e29ec91b9fe0409c504b5e7fc25538cbf25c46cb"
   },
   "counts": {
@@ -29,8 +29,8 @@
       "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
     },
     "README.md": {
-      "bytes": 6732,
-      "sha256": "f5e51a305bb26288b3d3acd9fb2f9f7d7a2d8f936c9810852061934868275f6c"
+      "bytes": 7279,
+      "sha256": "e98dbfb0623fd34ed5bca7e6c91740694975a0071571468c1ad4bcccb929a8e2"
     },
     "annex_review_queue.jsonl": {
       "bytes": 33560,
@@ -57,13 +57,14 @@
       "sha256": "ebc9b350e6e4f656fb07a87d0e13ce12a0ff052df1426498d9053bf9785cecbe"
     }
   },
-  "independent_review_status": "MANUAL_REVIEW_MODIFY_FIX_AWAITING_REREVIEW",
+  "independent_review_status": "MANUAL_ENGINEERING_REVIEW_ACCEPT",
   "legal_metadata_status": "PENDING_REVIEW",
   "manual_review": {
-    "decision": "MODIFY",
+    "decision": "ACCEPT",
     "finding": "EXP11-R01",
-    "repair_status": "BUILDER_FIXED_AWAITING_REREVIEW",
-    "reviewed_commit": "4611111680835bf8eb8264a7afe6369aa7fb9ff6"
+    "finding_status": "CLOSED",
+    "reviewed_commit": "f6e9023e70e282998e13bfb4d73608ad4e0e221d",
+    "scope": "Engineering export only; excludes legal applicability and DOCX fidelity"
   },
   "schema_version": "legal_forms.v1.1",
   "source_chunks_sha256": "6216af1cee83efc1d1963f8b8202ebe5efd2fab25dc4b6655b4a2ef965144f1f",
