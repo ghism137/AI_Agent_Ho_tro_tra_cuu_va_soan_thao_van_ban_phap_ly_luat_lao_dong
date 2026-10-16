@@ -1,8 +1,9 @@
 {
   "automated_legal_document_generation_production": "BLOCKED",
+  "bugbot_review_status": "NOT_RUN_RUNNER_UNAVAILABLE",
   "build_base_commit": "9bf662b99fc8219085e22aa61df44382ce52c828",
   "code_sha256": {
-    "build_legal_forms_v11.py": "2767a889f8643a97aa92edef780cba62d339c7064684b469d40a5256aaf62afd",
+    "build_legal_forms_v11.py": "38d4d4dda47b93a32afdb132800057f680103b46e5d2ff47ea718a41eb39c65f",
     "export_legal_forms.py": "9f5e68ebcc17590d0b82a3a6e29ec91b9fe0409c504b5e7fc25538cbf25c46cb"
   },
   "counts": {
@@ -28,8 +29,8 @@
       "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
     },
     "README.md": {
-      "bytes": 6241,
-      "sha256": "c35ccca49a9aaf109037ca301ca17b4770bb532f0eba012377d49c7df53668f6"
+      "bytes": 6732,
+      "sha256": "f5e51a305bb26288b3d3acd9fb2f9f7d7a2d8f936c9810852061934868275f6c"
     },
     "annex_review_queue.jsonl": {
       "bytes": 33560,
@@ -56,8 +57,14 @@
       "sha256": "ebc9b350e6e4f656fb07a87d0e13ce12a0ff052df1426498d9053bf9785cecbe"
     }
   },
-  "independent_review_status": "NOT_RUN_BUGBOT_RUNNER_UNAVAILABLE",
+  "independent_review_status": "MANUAL_REVIEW_MODIFY_FIX_AWAITING_REREVIEW",
   "legal_metadata_status": "PENDING_REVIEW",
+  "manual_review": {
+    "decision": "MODIFY",
+    "finding": "EXP11-R01",
+    "repair_status": "BUILDER_FIXED_AWAITING_REREVIEW",
+    "reviewed_commit": "4611111680835bf8eb8264a7afe6369aa7fb9ff6"
+  },
   "schema_version": "legal_forms.v1.1",
   "source_chunks_sha256": "6216af1cee83efc1d1963f8b8202ebe5efd2fab25dc4b6655b4a2ef965144f1f",
   "source_document_registry_sha256": "433de35ca7bfd87823e8226fb10044883fca522a4a4e2be7d1ce3d788f3b5725",
