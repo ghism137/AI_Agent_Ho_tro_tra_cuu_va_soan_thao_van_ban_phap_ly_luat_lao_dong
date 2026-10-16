@@ -2,6 +2,14 @@
 
 Gói hiện hành gồm **[v1](v1/README.md) + [v1.1](v1.1/README.md)**. Gửi cả hai folder cho đồng nghiệp: v1 chứa text chunks gốc; v1.1 bổ sung metadata và candidate/grouping index. Không có raw DOCX hoặc embedding trong gói này.
 
+## Tích hợp vào branch dữ liệu frozen — 16/10/2026
+
+Gói export được bổ sung vào `codex/frozen-demo-data-20261009` theo yêu cầu owner, trên baseline frozen `5ae5c56fdc26dec07dc32daaaa694080a6f51011`. Chỉ tích hợp bốn commit của task từ main bằng cherry-pick: `9bf662b` → `8f9d295`, `4611111` → `609aa96`, `f6e9023` → `e4deee7`, `897449c` → `99c76cf`. Các thay đổi Phase 1 khác của main không được đưa sang branch này.
+
+Toàn bộ `demo-data/`, gồm preview ngày 29/09 và SOURCE_ONLY manifest/supplement ngày 09/10, giữ nguyên Git tree và hashes của baseline frozen. Gói `exports/legal_forms/` sử dụng published release `phase1-febf5129f0e33d40`; đây là dữ liệu bổ sung riêng, không thay corpus SOURCE_ONLY hoặc thay đổi search baseline 9.520 chunks. Nội dung các folder v1/v1.1, tooling và báo cáo review khớp bytes từ main `897449cc797c0c872186ed0fd2e2447aaec669e0`.
+
+Commit được reviewer nghiệm thu vẫn là `f6e9023` trên dòng main; commit cherry-pick tương ứng có cùng nội dung sửa. Để tái lập trong một clone chỉ tải branch frozen, cần tải các pinned source commits từ main (`git fetch origin main`) và cung cấp riêng source repository có published release/raw files được pin bằng hash. Các nguyên liệu đó không được copy vào gói export.
+
 ## Nội dung
 
 - **v1**: 212 form chunks, 131 annex chunks; 15 văn bản có form và tổng 21 văn bản khi tính annex. Xem [danh sách văn bản](v1/README.md#những-văn-bản-đã-có-biểu-mẫu-được-chunk) và [catalog 185 logical form provisions](v1/FORM_CATALOG.md). Số provision không phải số biểu mẫu pháp lý đã deduplicate.
