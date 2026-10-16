@@ -1,0 +1,81 @@
+{
+  "chunk_schema_version": 2,
+  "data_limitations": [
+    "STRUCTURAL_FIDELITY_LIMITATION: retrieval plain text does not retain DOCX table merges, widths, styles, pagination or exact layout; no exact DOCX reconstruction claim.",
+    "Snapshot verification_status and dates are preserved, not revalidated legal applicability at document-generation time. Current Phase 1 closeout is OPEN / NOT SIGNED OFF.",
+    "Published container ID and embedded candidate release_id differ; both are recorded without rewriting source records.",
+    "Unique forms means unique provision_id, not deduplicated legal templates; full-document and standalone sources can repeat content.",
+    "Fragments have no explicit fragment index or character offsets in this snapshot; source line order is retained, and exact lossless reassembly is not certified.",
+    "Missing URLs remain null. Non-DOCX sources do not have a certified exact DOCX counterpart; document-registry alternatives are contextual only.",
+    "Annex categories are descriptive text evidence, not legal review; ambiguous or mixed annexes remain NEEDS_REVIEW.",
+    "Raw corpus and snapshot data are external, ignored inputs: repository commit alone does not identify their bytes; use pinned SHA256 values.",
+    "Date metadata contains repeated 2020-01-01 values and issuance years inconsistent with document-number years; retained unchanged and flagged for separate legal metadata review."
+  ],
+  "embedded_chunk_release_ids": [
+    "candidate-febf5129f0e33d40"
+  ],
+  "export_schema_version": "legal_forms.v1",
+  "export_timestamp": "2026-10-16T17:30:15+07:00",
+  "exporter_base_commit_sha": "fac00ca23ee5395bae718be002363a02ad9c8389",
+  "exporter_sha256": "5f1588ae543d2ea77557ccf355aa69bfbe10514da6c913e7a891a7e42705fb97",
+  "files": {
+    "annex_chunks.jsonl": {
+      "bytes": 1527702,
+      "sha256": "d89de7b1f8591032905089f3082088aba49776d49187e4019aacd21349e1ea1f"
+    },
+    "audit.json": {
+      "bytes": 334810,
+      "sha256": "ab82e89c43a53de83f4b63ad1e67a6f2c93f6877652ab7cd438bde14155ee584"
+    },
+    "document_registry.json": {
+      "bytes": 21902,
+      "sha256": "b4fd9d66c10ed16834391f6462209d81431ad2b5c440a71243dd920d17c54fde"
+    },
+    "form_chunks.jsonl": {
+      "bytes": 2037074,
+      "sha256": "94a91fc0eaa655aa281efb5aa02a038f293b34a0674100b9739d2a073069f1be"
+    },
+    "source_registry.json": {
+      "bytes": 48721,
+      "sha256": "df8ee46a434c8d850e573154c222d5dd6272050c67e3c9393acbe4605e035609"
+    }
+  },
+  "order": "Original physical source line order; original record bytes retained",
+  "source_chunk_file": "data/staging/phase1-candidate/chunks.jsonl",
+  "source_chunk_file_sha256": "6216af1cee83efc1d1963f8b8202ebe5efd2fab25dc4b6655b4a2ef965144f1f",
+  "source_document_registry_sha256": "433de35ca7bfd87823e8226fb10044883fca522a4a4e2be7d1ce3d788f3b5725",
+  "source_manifest_sha256": "ef0c1688a72500c16958c5fcdeafd1893adc998db2cdfdabb8cd344b99e9d4ac",
+  "source_pointer_sha256": "bd8403f0c59d14428e795edad89c8f4645d4faf0a0c4705b4e5163dfd3294af6",
+  "source_registry_sha256": "f89a3f8a7f4bf609795e55dedb60135f5a543332ff8412662af0f04dd5deb733",
+  "source_release_id": "phase1-febf5129f0e33d40",
+  "source_repository_commit_sha": "fac00ca23ee5395bae718be002363a02ad9c8389",
+  "total_exported_chunks": 343,
+  "totals": {
+    "annex": {
+      "chunks": 131,
+      "fragment_chunks": 52,
+      "source_formats": {
+        "docx": 24,
+        "html": 1,
+        "pdf": 8
+      },
+      "unique_doc_ids": 21,
+      "unique_provision_ids": 72,
+      "unique_source_ids": 33
+    },
+    "form": {
+      "chunks": 212,
+      "fragment_chunks": 35,
+      "source_formats": {
+        "docx": 72,
+        "html": 1,
+        "pdf": 6
+      },
+      "unique_doc_ids": 15,
+      "unique_provision_ids": 185,
+      "unique_source_ids": 79
+    }
+  },
+  "unique_provision_ids": 257,
+  "unique_source_ids": 101
+}
