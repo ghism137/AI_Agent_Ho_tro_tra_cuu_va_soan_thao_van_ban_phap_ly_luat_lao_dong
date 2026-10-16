@@ -43,6 +43,58 @@ class OfflineBoundaries(unittest.TestCase):
         with self.assertRaises(ValueError):
             builder.duplicate_context({"content_hash": "same"})
 
+    def test_nested_missing_blank_or_wrong_type_provenance_is_rejected(self):
+        original = read_rows(ROOT / "exports/legal_forms/v1/form_chunks.jsonl")[0]
+        invalid_refs = [{}, {"source_id": "src:known"}, {"locator": "body/p:1"}]
+        for field in ("source_id", "locator"):
+            for value in (None, "", " \t\n", "\u00a0", 0, False, [], {}):
+                ref = {"source_id": "src:known", "locator": "body/p:1"}
+                ref[field] = value
+                invalid_refs.append(ref)
+        invalid_refs.append({"source_id": "", "locator": ""})
+        for ref in invalid_refs:
+            with self.subTest(ref=ref):
+                left, right = deepcopy(original), deepcopy(original)
+                left["chunk_id"], right["chunk_id"] = "repro:left", "repro:right"
+                left["source_refs"], right["source_refs"] = [deepcopy(ref)], [deepcopy(ref)]
+                before = deepcopy([left, right])
+                with self.assertRaises(ValueError):
+                    builder.duplicate_context(left)
+                with self.assertRaises(ValueError):
+                    builder.deduplicate_hits([left, right])
+                self.assertEqual([left, right], before)
+
+    def test_source_refs_must_be_a_nonempty_list(self):
+        hit = read_rows(ROOT / "exports/legal_forms/v1/form_chunks.jsonl")[0]
+        for refs in (None, [], {}, "source", ({"source_id": "src:known", "locator": "body/p:1"},)):
+            with self.subTest(refs=refs):
+                hit["source_refs"] = refs
+                with self.assertRaises(ValueError):
+                    builder.deduplicate_hits([hit, deepcopy(hit)])
+
+    def test_every_source_ref_is_validated_even_after_a_valid_ref(self):
+        hit = read_rows(ROOT / "exports/legal_forms/v1/form_chunks.jsonl")[0]
+        valid = deepcopy(hit["source_refs"][0])
+        for bad in ({}, None, "source", [], 7):
+            for refs in ([valid, bad], [bad, valid]):
+                with self.subTest(refs=refs):
+                    hit["source_refs"] = refs
+                    with self.assertRaises(ValueError):
+                        builder.deduplicate_hits([hit, deepcopy(hit)])
+
+    def test_complete_provenance_still_collapses_without_changing_input(self):
+        left = read_rows(ROOT / "exports/legal_forms/v1/form_chunks.jsonl")[0]
+        right = deepcopy(left)
+        right["chunk_id"] = "repro:same-context"
+        # Null source URLs are valid when source ID and locator are complete.
+        for hit in (left, right):
+            hit["source_refs"] = [{"source_id": "src:known", "locator": "body/p:1", "source_url": None}]
+        before = deepcopy([left, right])
+        groups = builder.deduplicate_hits([left, right])
+        self.assertEqual(len(groups), 1)
+        self.assertEqual(groups[0]["chunk_ids"], [left["chunk_id"], right["chunk_id"]])
+        self.assertEqual([left, right], before)
+
 
 @unittest.skipUnless(os.environ.get("LEGAL_FORM_SOURCE_REPO"), "Set LEGAL_FORM_SOURCE_REPO for real published snapshot checks")
 class SnapshotV11Tests(unittest.TestCase):

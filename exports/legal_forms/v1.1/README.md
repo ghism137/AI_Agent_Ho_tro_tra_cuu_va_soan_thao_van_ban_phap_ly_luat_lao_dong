@@ -18,7 +18,7 @@ This package supplements `../v1/`; it does not copy or change the 212 form and 1
 
 Join overlay rows by `chunk_id`; fetch content from the unchanged v1 JSONL. Use complete `doc_id`, `provision_id`, `provision_version_id`, `structural_path` and `source_ids` to identify candidates. The helper `select_candidates` performs exact metadata filtering; it does not understand natural-language intent or certify selection correctness. A request such as “Mẫu số 01” alone is insufficient.
 
-`deduplicate_hits` preserves ranking and groups hits only within equal full provenance contexts. It retains all member IDs. Do not deduplicate distinct versions or sources by content hash. No retrieval engine or running product/index is modified.
+`deduplicate_hits` preserves ranking and groups hits only within equal full provenance contexts. It retains all member IDs. It rejects an empty or non-list source_refs value, any non-object reference, or any reference whose source_id/locator is missing, blank/whitespace-only or not a string. Every reference is checked before a grouping key is created; missing URLs remain allowed when ID and locator are complete. Do not deduplicate distinct versions or sources by content hash. No retrieval engine or running product/index is modified.
 
 Example from the repository root:
 
@@ -44,7 +44,7 @@ F04: group membership and source order are covered; lossless reassembly is not v
 
 The original v1 manifest keeps the historical exporter fingerprint. Replaying v1 with the hardened exporter changes its exporter SHA256 only; do not overwrite that historical manifest. Use a fresh output directory for a new export.
 
-Engineering tests do not constitute independent review, legal applicability approval, semantic template-selection acceptance or DOCX structural fidelity acceptance. This delivery awaits independent Bugbot review on its exact feature commit before any owner merge. The requested Bugbot-specific runner is unavailable in the current session; no independent sign-off is claimed.
+Engineering tests do not constitute independent review, legal applicability approval, semantic template-selection acceptance or DOCX structural fidelity acceptance. Direct independent review of commit 4611111680835bf8eb8264a7afe6369aa7fb9ff6 returned MODIFY for EXP11-R01 (incomplete provenance allowed to collapse). The repaired helper rejects those inputs; its exact new commit awaits independent re-review before any owner merge. The requested Bugbot-specific runner remains unavailable; the direct review is not described as Bugbot and the repair is not self-signed off.
 
 ## Reproduction
 

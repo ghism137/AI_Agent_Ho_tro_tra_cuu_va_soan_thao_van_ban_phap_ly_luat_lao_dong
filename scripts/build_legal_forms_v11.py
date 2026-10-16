@@ -31,14 +31,23 @@ def source_ids(chunk):
 def duplicate_context(chunk):
     """Conservative equality: never merge different sources, locators or versions."""
     required = original.REQUIRED | {"issued_date"}
-    if required - chunk.keys() or not chunk["source_refs"]:
+    if required - chunk.keys():
         raise ValueError("Incomplete chunk cannot be deduplicated")
+    refs = chunk["source_refs"]
+    if not isinstance(refs, list) or not refs:
+        raise ValueError("Deduplication requires a nonempty source_refs list")
+    for ref in refs:
+        if not isinstance(ref, dict) or any(
+            not isinstance(ref.get(field), str) or not ref[field].strip()
+            for field in ("source_id", "locator")
+        ):
+            raise ValueError("Deduplication requires nonblank string source_id and locator in every source reference")
     return canonical({
         key: chunk[key] for key in (
             "content_hash", "doc_id", "provision_id", "provision_version_id", "release_id",
             "structural_path", "content_kind", "valid_from", "valid_to", "issued_date", "verification_status",
         )
-    }) + canonical(sorted(chunk["source_refs"], key=canonical))
+    }) + canonical(sorted(refs, key=canonical))
 
 
 def deduplicate_hits(chunks):
@@ -234,7 +243,7 @@ This package supplements `../v1/`; it does not copy or change the 212 form and 1
 
 Join overlay rows by `chunk_id`; fetch content from the unchanged v1 JSONL. Use complete `doc_id`, `provision_id`, `provision_version_id`, `structural_path` and `source_ids` to identify candidates. The helper `select_candidates` performs exact metadata filtering; it does not understand natural-language intent or certify selection correctness. A request such as “Mẫu số 01” alone is insufficient.
 
-`deduplicate_hits` preserves ranking and groups hits only within equal full provenance contexts. It retains all member IDs. Do not deduplicate distinct versions or sources by content hash. No retrieval engine or running product/index is modified.
+`deduplicate_hits` preserves ranking and groups hits only within equal full provenance contexts. It retains all member IDs. It rejects an empty or non-list source_refs value, any non-object reference, or any reference whose source_id/locator is missing, blank/whitespace-only or not a string. Every reference is checked before a grouping key is created; missing URLs remain allowed when ID and locator are complete. Do not deduplicate distinct versions or sources by content hash. No retrieval engine or running product/index is modified.
 
 Example from the repository root:
 
@@ -260,7 +269,7 @@ F04: group membership and source order are covered; lossless reassembly is not v
 
 The original v1 manifest keeps the historical exporter fingerprint. Replaying v1 with the hardened exporter changes its exporter SHA256 only; do not overwrite that historical manifest. Use a fresh output directory for a new export.
 
-Engineering tests do not constitute independent review, legal applicability approval, semantic template-selection acceptance or DOCX structural fidelity acceptance. This delivery awaits independent Bugbot review on its exact feature commit before any owner merge. The requested Bugbot-specific runner is unavailable in the current session; no independent sign-off is claimed.
+Engineering tests do not constitute independent review, legal applicability approval, semantic template-selection acceptance or DOCX structural fidelity acceptance. Direct independent review of commit 4611111680835bf8eb8264a7afe6369aa7fb9ff6 returned MODIFY for EXP11-R01 (incomplete provenance allowed to collapse). The repaired helper rejects those inputs; its exact new commit awaits independent re-review before any owner merge. The requested Bugbot-specific runner remains unavailable; the direct review is not described as Bugbot and the repair is not self-signed off.
 
 ## Reproduction
 
@@ -286,7 +295,9 @@ The full release and v1 checksums are validated, then {counts['direct_raw_source
         "export_timestamp": export_timestamp, "build_base_commit": base_commit,
         "code_sha256": {p.name: pins[p] for p in (Path(__file__).resolve(), Path(original.__file__).resolve())},
         "counts": counts, "legal_metadata_status": "PENDING_REVIEW", "structural_fidelity": "TEXT_ONLY",
-        "independent_review_status": "NOT_RUN_BUGBOT_RUNNER_UNAVAILABLE",
+        "independent_review_status": "MANUAL_REVIEW_MODIFY_FIX_AWAITING_REREVIEW",
+        "manual_review": {"reviewed_commit": "4611111680835bf8eb8264a7afe6369aa7fb9ff6", "decision": "MODIFY", "finding": "EXP11-R01", "repair_status": "BUILDER_FIXED_AWAITING_REREVIEW"},
+        "bugbot_review_status": "NOT_RUN_RUNNER_UNAVAILABLE",
         "automated_legal_document_generation_production": "BLOCKED",
         "files": {name: {"sha256": original.sha(data), "bytes": len(data)} for name, data in sorted(products.items())},
     }
