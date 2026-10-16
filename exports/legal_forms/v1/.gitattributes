@@ -1,0 +1,6 @@
+# Preserve exported JSON bytes and SHA256 values across Windows checkouts.
+*.jsonl -text -whitespace
+*.json -text
+*.md text eol=lf
+SHA256SUMS.txt text eol=lf
+.gitattributes text eol=lf
