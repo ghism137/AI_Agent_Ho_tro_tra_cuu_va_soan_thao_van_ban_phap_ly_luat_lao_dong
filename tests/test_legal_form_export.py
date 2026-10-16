@@ -137,7 +137,15 @@ class PublishedExportTests(unittest.TestCase):
             exporter.export(self.source, dirs[0], self.manifest["export_timestamp"], ROOT, **pins)
             for path in dirs[0].iterdir():
                 self.assertEqual(path.read_bytes(), (dirs[1] / path.name).read_bytes())
-                self.assertEqual(path.read_bytes(), (self.output / path.name).read_bytes())
+                if path.name == "manifest.json":
+                    # v1 is immutable: the hardened exporter now has a different code hash.
+                    replay = json.loads(path.read_bytes())
+                    self.assertEqual(replay.pop("exporter_sha256"), exporter.sha(Path(exporter.__file__).read_bytes()))
+                    historical = dict(self.manifest)
+                    historical.pop("exporter_sha256")
+                    self.assertEqual(replay, historical)
+                else:
+                    self.assertEqual(path.read_bytes(), (self.output / path.name).read_bytes())
 
     def test_conflicting_output_refused_before_partial_write(self):
         with temporary_directory() as tmp:
